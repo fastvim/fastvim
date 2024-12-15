@@ -1,6 +1,14 @@
 return {
-  { lazy = true, "nvim-lua/plenary.nvim" },
-
+  { lazy = true, 
+  "nvim-lua/plenary.nvim" 
+}, 
+{
+  "Shatur/neovim-session-manager",
+  config = true,
+  config = function()
+    require("plugins.configs.neovim-session-manager")
+  end,
+},
   {
     "EdenEast/nightfox.nvim",
     priority = 1000,
