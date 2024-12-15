@@ -27,15 +27,25 @@ return {
     {
     "nvimdev/dashboard-nvim",
     config = function()
-      require("plugins.configs.dashboard-nvim")
+      require("plugins.configs.ui.dashboard-nvim")
     end,
   },
   { 
   "catppuccin/nvim", 
-  name = "catppuccin", 
+  name = "catppuccin",
+  -- config = function()
+  --   require("plugins.configs.ui.themes.catppuccin")
+  -- end, 
   priority = 1000 
 
   },
+{
+    'jose-elias-alvarez/null-ls.nvim',
+    dependencies = { 'nvim-lua/plenary.nvim' },
+    config = function()
+        require('plugins.configs.null-ls').setup()
+    end,
+},
 {
   "BrunoCiccarino/gruverboxer-material.nvim",
   priority = 1000
