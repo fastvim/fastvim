@@ -22,6 +22,12 @@ bash <(curl -s https://raw.githubusercontent.com/BrunoCiccarino/fastvim/main/ins
 ```
 
 ### Goals
-- [ ] Have own color scheme
-- [ ] add orgmode support
-- [ ] add a markdown-mode
+
+| **Goal** 	| stats 	| 
+|-----------------	|------|
+|  Have own color scheme               	|   ❌   	|   
+|  cross platform support               	|   ❌  	| 
+|  add orgmode support               	|   ❌   	| 
+|  add a markdown-mode               	|   ❌  	| 
+|  add a neovim web wowser               	|   ❌  	|
+ 
