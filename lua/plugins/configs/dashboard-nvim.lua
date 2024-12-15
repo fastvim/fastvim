@@ -4,6 +4,7 @@ dashboard.setup({
     theme = "doom",
     shortcut_type = "number",
     statusline = false,
+
     config = {
         header = {
             "",
@@ -15,6 +16,8 @@ dashboard.setup({
             "██╔══╝  ██╔══██║╚════██║   ██║   ╚██╗ ██╔╝██║██║╚██╔╝██║",
             "██║     ██║  ██║███████║   ██║    ╚████╔╝ ██║██║ ╚═╝ ██║",
             "╚═╝     ╚═╝  ╚═╝╚══════╝   ╚═╝     ╚═══╝  ╚═╝╚═╝     ╚═╝",
+            "",
+            "",
         },
         center = {
           {
@@ -49,13 +52,11 @@ dashboard.setup({
               icon = "  ",
               desc = "New file                                ",
               action = "enew",
-              key = "e",
           },
           {
               icon = "󰗼  ",
               desc = "Quit Nvim                               ",
               action = "qa",
-              key = "q",
           },
       },
       footer = {
