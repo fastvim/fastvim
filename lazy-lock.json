@@ -10,6 +10,7 @@
   "conform.nvim": { "branch": "master", "commit": "a203480a350b03092e473bf3001733d547160a73" },
   "cppman.nvim": { "branch": "main", "commit": "d52248494affdad266732a8601077ba0e9a337cc" },
   "dashboard-nvim": { "branch": "master", "commit": "ae309606940d26d8c9df8b048a6e136b6bbec478" },
+  "fastvim.nvim": { "branch": "main", "commit": "a683ceace78a9dd6b0d843b9153b5b092400750f" },
   "friendly-snippets": { "branch": "main", "commit": "de8fce94985873666bd9712ea3e49ee17aadb1ed" },
   "gitsigns.nvim": { "branch": "main", "commit": "5f808b5e4fef30bd8aca1b803b4e555da07fc412" },
   "gruverboxer-material.nvim": { "branch": "main", "commit": "5a516a0ce24a89714b6cfadf800b668317536211" },
