@@ -1,7 +1,19 @@
 return {
   { lazy = true, 
   "nvim-lua/plenary.nvim" 
-}, 
+},
+{
+  "BrunoCiccarino/fastvim.nvim",
+  lazy = false,
+  priority = 1000, 
+  config = true, 
+  opts = {
+    brighter_comments = Boolean,
+    brighter_conditionals = Boolean,
+    italic_comments = Boolean,
+    transparent = Boolean,
+},
+},
 {
   "Shatur/neovim-session-manager",
   config = true,
