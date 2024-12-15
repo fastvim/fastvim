@@ -47,6 +47,12 @@ return {
     end,
 },
 {
+  'folke/neodev.nvim',
+  config = function()
+    require('plugins.configs.neodev').setup()
+  end
+},
+{
   "BrunoCiccarino/gruverboxer-material.nvim",
   priority = 1000
 }, 
