@@ -2,8 +2,7 @@
 
 ![GitHub Release](https://img.shields.io/github/v/release/BrunoCiccarino/fastvim?style=for-the-badge&color=%235e81ac) ![GitHub License](https://img.shields.io/github/license/BrunoCiccarino/fastvim?style=for-the-badge&color=%23b48ead) ![GitHub Repo stars](https://img.shields.io/github/stars/BrunoCiccarino/fastvim?style=for-the-badge&color=%23a3be8c) ![GitHub last commit](https://img.shields.io/github/last-commit/BrunoCiccarino/fastvim?style=for-the-badge&color=%23bf616a)
 
-
-🚀 A fast hackable distro for neovim, made specifically for lazy devs, configure your neovim in a fast and efficient way.
+🚀 A fast  hyperextensible hackable distro for neovim, made specifically for lazy devs, configure your neovim in a fast and efficient way.
 
 ![dashboard](./img/fastvim.jpg)
 
