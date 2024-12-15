@@ -28,9 +28,6 @@ map("n", "<leader>fm", function()
   require("conform").format()
 end)
 
--- require("themesw")
--- map("n", "<C-t>", ":lua SwitchTheme()<CR>", { noremap = true, silent = true })
-
 vim.api.nvim_set_keymap('n', '<Leader>th', ':split | terminal<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<Leader>tv', ':vsplit | terminal<CR>', { noremap = true, silent = true })
 

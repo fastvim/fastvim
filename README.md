@@ -24,8 +24,4 @@ bash <(curl -s https://raw.githubusercontent.com/BrunoCiccarino/fastvim/main/ins
 ### Goals
 - [ ] Have own color scheme
 - [ ] add orgmode support
-- [ ] add a c-cpp-mode
-- [ ] add a haskell-mode
-- [ ] add a lisp-mode
-- [ ] add a lua-mode
 - [ ] add a markdown-mode
