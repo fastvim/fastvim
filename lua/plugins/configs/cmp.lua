@@ -66,9 +66,7 @@ return {
       border = "rounded",   -- Rounded border for completion menu
       winhighlight = "Normal:Pmenu,FloatBorder:PmenuBorder,Search:PmenuSel", -- Highlighting
     },
-    documentation = {
-      border = cmp.config.window.bordered(),   -- Rounded border for documentation
-    },
+    documentation = cmp.config.window.bordered(),
   },
 
   formatting = {

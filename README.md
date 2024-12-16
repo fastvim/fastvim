@@ -4,7 +4,7 @@
 
 🚀 A fast  hyperextensible hackable distro for neovim, made specifically for lazy devs, configure your neovim in a fast and efficient way.
 
-![dashboard](./img/fastvim.jpg)
+![dashboard](./img/fastvim.nvim-theme.jpg)
 
 ## ✨ Features
 - 🔥 Turn your Neovim into a complete IDE.
