@@ -14,9 +14,9 @@ return {
     transparent = Boolean,
 },
 },
+
 {
-  "Shatur/neovim-session-manager",
-  config = true,
+"Shatur/neovim-session-manager",
   config = function()
     require("plugins.configs.neovim-session-manager")
   end,
