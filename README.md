@@ -26,8 +26,7 @@ bash <(curl -s https://raw.githubusercontent.com/BrunoCiccarino/fastvim/main/ins
 | **Goal** 	| stats 	| 
 |-----------------	|------|
 |  Have own color scheme               	|   ✅   	|   
-|  cross platform support               	|   ❌  	| 
-|  add orgmode support               	|   ❌   	| 
+|  cross platform support               	|   ❌  	|  
 |  add a markdown-mode               	|   ❌  	| 
 |  add a neovim web wowser               	|   ❌  	|
  

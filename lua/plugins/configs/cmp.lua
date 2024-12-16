@@ -7,7 +7,7 @@ return {
       luasnip.lsp_expand(args.body)
     end,
   },
-  
+
   mapping = cmp.mapping.preset.insert({
     ["<C-b>"] = cmp.mapping.scroll_docs(-4),
     ["<C-f>"] = cmp.mapping.scroll_docs(4),
@@ -43,35 +43,31 @@ return {
 
     ["<C-n>"] = cmp.mapping.select_next_item(),
     ["<C-p>"] = cmp.mapping.select_prev_item(),
-    
-    ["<CR>"] = cmp.mapping.confirm({ select = true }),
-
-    ["<C-Space>"] = cmp.mapping.complete(),
-
-    ["<C-e>"] = cmp.mapping.abort(),
   }),
 
   sources = cmp.config.sources({
-    { name = "nvim_lsp" },         -- LSP completion
-    { name = "luasnip" },          -- Snippets
-    { name = "buffer" },           -- Buffer words
-    { name = "nvim_lua" },         -- nvim API completion
-    { name = "path" },             -- Path completions
-    { name = "calc" },             -- Mathematical calculations
-    { name = "emoji" },            -- Emoji completions
+    { name = "nvim_lsp" },
+    { name = "luasnip" },
+    { name = "buffer" },
+    { name = "nvim_lua" },
+    { name = "path" },
+    { name = "calc" },
+    { name = "emoji" },
   }),
 
   window = {
-    completion = {
-      border = "rounded",   -- Rounded border for completion menu
-      winhighlight = "Normal:Pmenu,FloatBorder:PmenuBorder,Search:PmenuSel", -- Highlighting
-    },
-    documentation = cmp.config.window.bordered(),
+    completion = cmp.config.window.bordered({
+      border = "rounded",
+      winhighlight = "Normal:Pmenu,FloatBorder:PmenuBorder,Search:PmenuSel",
+    }),
+    documentation = cmp.config.window.bordered({
+      border = "rounded",
+      winhighlight = "NormalFloat:Normal,FloatBorder:FloatBorder,Search:Search",
+    }),
   },
 
   formatting = {
     format = function(entry, vim_item)
-      
       vim_item.menu = ({
         nvim_lsp = "[LSP]",
         luasnip = "[Snippet]",
@@ -86,18 +82,16 @@ return {
   },
 
   experimental = {
-    ghost_text = true,  -- Show ghost text for suggestions
+    ghost_text = true,
   },
 
   completion = {
     autocomplete = {
       require("cmp.types").cmp.TriggerEvent.TextChanged,
     },
-    keyword_length = 3,  -- Minimum length to trigger autocompletion
+    keyword_length = 3,
   },
 
-  documentation = {
-    border = "single",
-    winhighlight = "NormalFloat:Normal,FloatBorder:FloatBorder,Search:Search",
-  },
+  -- Remove deprecated "documentation" section and ensure compatibility
+  -- by handling all window-related configurations within `window`.
 }
