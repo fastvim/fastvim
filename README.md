@@ -29,4 +29,4 @@ bash <(curl -s https://raw.githubusercontent.com/BrunoCiccarino/fastvim/main/ins
 |  cross platform support               	|   ❌  	|  
 |  add a markdown-mode               	|   ❌  	| 
 |  add a neovim web wowser               	|   ❌  	|
- 
+|  adding specialized config in gamedev               	|   ❌  	| 
