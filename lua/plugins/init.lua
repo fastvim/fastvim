@@ -187,20 +187,17 @@ return {
   -- so lets lazyload it at InsertEnter event, to know all the events check h-events
   -- completion , now all of these plugins are dependent on cmp, we load them after cmp
 {
-    "hrsh7th/nvim-cmp",
+   "hrsh7th/nvim-cmp",
     event = "InsertEnter",
     dependencies = {
-      -- cmp sources
       "hrsh7th/cmp-buffer",
       "hrsh7th/cmp-path",
       "hrsh7th/cmp-nvim-lsp",
       "saadparwaiz1/cmp_luasnip",
       "hrsh7th/cmp-nvim-lua",
 
-      --list of default snippets
       "rafamadriz/friendly-snippets",
 
-      -- snippets engine
 {
         "L3MON4D3/LuaSnip",
         config = function()
