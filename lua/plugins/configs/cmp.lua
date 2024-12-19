@@ -6,7 +6,7 @@ return {
     expand = function(args)
       luasnip.lsp_expand(args.body)
     end,
-  },
+},
 
   mapping = cmp.mapping.preset.insert({
     ["<C-b>"] = cmp.mapping.scroll_docs(-4),
@@ -47,7 +47,7 @@ return {
 
   sources = cmp.config.sources({
     { name = "nvim_lsp" },
-    { name = "luasnip" },
+--    { name = "luasnip" },
     { name = "buffer" },
     { name = "nvim_lua" },
     { name = "path" },
