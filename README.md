@@ -2,7 +2,7 @@
 
 ![GitHub Release](https://img.shields.io/github/v/release/fastvim/fastvim?style=for-the-badge&color=%235e81ac) ![GitHub License](https://img.shields.io/github/license/fastvim/fastvim?style=for-the-badge&color=%23b48ead) ![GitHub Repo stars](https://img.shields.io/github/stars/fastvim/fastvim?style=for-the-badge&color=%23a3be8c) ![GitHub last commit](https://img.shields.io/github/last-commit/fastvim/fastvim?style=for-the-badge&color=%23bf616a)[![lua](https://img.shields.io/badge/lua-code?style=for-the-badge&logo=lua&color=%23789DBC)](https://www.lua.org/)
 
-🚀 A fast  hyperextensible hackable distro for neovim, made specifically for lazy devs, configure your neovim in a fast and efficient way.
+🚀 A fast  hyperextensible hackable distro for neovim, made specifically for lazy devs to increase your productivity by up to 100x, with collections of handpicked plugins configured with quality in mind for your workflow, configure your neovim in a fast and efficient way.
 
 ![dashboard](./img/fastvim.nvim-theme.jpg)
 
@@ -18,7 +18,7 @@
 - In linux/mac
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/BrunoCiccarino/fastvim/main/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/fastvim/fastvim/main/install.sh)
 ```
 
 ### Goals
