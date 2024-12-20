@@ -3,7 +3,7 @@ local M = {}
 function M.setup()
   require("neodev").setup({
     lsp = {
-      setup_jsonls = true,  -- Configure jsonls automatically
+       setup_jsonls = true,  -- Configure jsonls automatically
       lspconfig = true,     -- Enables integration with lspconfig
     },
     -- Configure library integration

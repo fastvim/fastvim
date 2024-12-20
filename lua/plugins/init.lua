@@ -5,7 +5,7 @@ return {
   "nvim-lua/plenary.nvim" 
 },
 {
-  "BrunoCiccarino/fastvim.nvim",
+ "BrunoCiccarino/fastvim.nvim",
   lazy = false,
   priority = 1000, 
   config = true, 
@@ -17,13 +17,22 @@ return {
 },
 },
 {
+  "BrunoCiccarino/nekonight",
+  lazy = false,
+  priority = 1000,
+  opts = {},
+},
+{
   "BrunoCiccarino/lazygrep.nvim"
+},
+{
+  "BrunoCiccarino/configtracer.nvim"
 },
 {
   "mikavilpas/yazi.nvim",
   event = "VeryLazy",
     config = function ()
-      require("plugins.configs.yazi")
+       require("plugins.configs.yazi")
   end
  },
 {
@@ -36,7 +45,7 @@ return {
   config = function()
     local ok, telescope = pcall(require, "telescope")
     if ok then
-      telescope.load_extension("ht")
+       telescope.load_extension("ht")
     end
   end,
 },
