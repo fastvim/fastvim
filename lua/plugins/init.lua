@@ -32,7 +32,11 @@ return {
     },
   },
   {
-    "BrunoCiccarino/configtracer.nvim"
+    "zaldih/themery.nvim",
+    lazy = false,
+    config = function()
+      require('plugins.configs.themery')
+    end 
   },
   {
     "mikavilpas/yazi.nvim",
@@ -41,7 +45,7 @@ return {
       require("plugins.configs.yazi")
     end
   },
-  {
+    {
     'SuperBo/fugit2.nvim',
     dependencies = {
       'MunifTanjim/nui.nvim',
@@ -56,7 +60,14 @@ return {
     config = function()
       require('plugins.configs.fugit2')
     end
-},
+  },
+  {
+  'sindrets/diffview.nvim',
+  dependencies = { 'nvim-tree/nvim-web-devicons' },
+  cmd = {
+    'DiffviewFileHistory', 'DiffviewOpen', 'DiffviewToggleFiles', 'DiffviewFocusFiles', 'DiffviewRefresh'
+  }
+  },
   {
     "mrcjkb/haskell-tools.nvim",
     version = "^3",

@@ -28,6 +28,9 @@ map("n", "<leader>fm", function()
   require("conform").format()
 end)
 
+-- Themery
+map("i", "<C-\\>", "<cmd> Themery <CR>")
+
 vim.api.nvim_set_keymap('n', '<Leader>th', ':split | terminal<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<Leader>tv', ':vsplit | terminal<CR>', { noremap = true, silent = true })
 
