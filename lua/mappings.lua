@@ -58,3 +58,12 @@ vim.api.nvim_set_keymap('i', '<A-Down>', '', { noremap = true, silent = true, ca
 vim.api.nvim_set_keymap('i', '<C-Up>', '', { noremap = true, silent = true, callback = select_lines_up })
 vim.api.nvim_set_keymap('i', '<C-Down>', '', { noremap = true, silent = true, callback = select_lines_down })
 
+-- neorg 
+local neorg_leader = "<leader>n" -- Set a leader key for Neorg mappings
+
+vim.keymap.set("n", neorg_leader .. "w", "<cmd>Neorg workspace notes<CR>", { desc = "Switch to Neorg workspace" })
+vim.keymap.set("n", neorg_leader .. "n", "<cmd>Neorg index<CR>", { desc = "Open Neorg index" })
+vim.keymap.set("n", neorg_leader .. "t", "<cmd>Neorg toggle-concealer<CR>", { desc = "Toggle concealer" })
+vim.keymap.set("n", neorg_leader .. "h", "<cmd>Neorg keybind norg core.norg.qol.todo_items.todo.task_toggle<CR>", { desc = "Toggle TODO state" })
+vim.keymap.set("n", neorg_leader .. "c", "<cmd>Neorg toggle-concealer<CR>", { desc = "Toggle concealer visibility" })
+

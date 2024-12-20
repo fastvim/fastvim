@@ -17,6 +17,26 @@ return {
     },
   },
   {
+    "nvim-neorg/neorg",
+    lazy = false,
+    config = function()
+        require("neorg").setup {
+            load = {
+                ["core.defaults"] = {}, -- Load all default settings
+                ["core.concealer"] = {}, -- Enable icons and rich text rendering
+                ["core.dirman"] = { -- Manage Neorg workspaces
+                    config = {
+                        workspaces = {
+                            notes = "~/neorg/notes", 
+                        },
+                        default_workspace = "notes",
+                    },
+                },
+            },
+        }
+    end,
+  },
+  {
     "BrunoCiccarino/nekonight",
     lazy = false,
     priority = 1000,
