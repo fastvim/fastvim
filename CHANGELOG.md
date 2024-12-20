@@ -14,3 +14,17 @@
 - neodev config 
 - nvim-session-manager config
 - null-ls config
+
+## 0.0.3 2024-12-20
+
+#### Added 
+
+- neorg config 
+- new colorscheme nekonight 
+- fugit2 config 
+- neoscroll config 
+
+#### Changed
+
+- switching from autopairs to mini.pairs
+
