@@ -35,6 +35,8 @@ rm -rf .git
 
 Open your nvim normally and the magic will happen .... :)
 
+Ensure all the files is on .config/ folder!!
+
 ### Goals
 
 | **Goal** 	| stats 	| 
