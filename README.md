@@ -17,9 +17,20 @@
 
 - In linux/mac
 
+### OBS: This method of installation is now deprecated.
+
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/fastvim/fastvim/main/install.sh)
 ```
+
+### Use this instead:
+
+git clone https://github.com/natangscalvence/fastvim.git\
+sudo mkdir ~/.config/nvim\
+cd /fastvim\
+sudo cp -r * ~/.config/nvim\
+
+Open your nvim normally and the magic will happen .... :)
 
 ### Goals
 
