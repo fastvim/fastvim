@@ -25,10 +25,13 @@ bash <(curl -s https://raw.githubusercontent.com/fastvim/fastvim/main/install.sh
 
 ### Use this instead:
 
-git clone https://github.com/natangscalvence/fastvim.git\
+```bash
+git clone https://github.com/fastvim/fastvim.git\
 sudo mkdir ~/.config/nvim\
 cd /fastvim\
 sudo cp -r * ~/.config/nvim\
+rm -rf .git 
+```
 
 Open your nvim normally and the magic will happen .... :)
 
