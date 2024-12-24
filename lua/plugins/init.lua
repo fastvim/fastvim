@@ -50,6 +50,9 @@ return {
     opts = {},
   },
   {
+    "BrunoCiccarino/telereplace"
+  },
+  {
     "BrunoCiccarino/lazygrep.nvim"
   },
   {

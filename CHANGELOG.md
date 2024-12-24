@@ -28,3 +28,9 @@
 
 - switching from autopairs to mini.pairs
 
+## 0.0.4 2024-12-25
+
+#### Added 
+
+- adding user configurable module
+
