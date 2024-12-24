@@ -27,7 +27,6 @@ end
 local function load_user_config()
   local config_file = user_config_path .. "/init.lua"
   if vim.loop.fs_stat(config_file) then
-    -- Verificar se Lazy.nvim está instalado
     local lazy_path = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
     if not vim.loop.fs_stat(lazy_path) then
       vim.fn.system {
@@ -39,9 +38,8 @@ local function load_user_config()
         lazy_path,
       }
     end
-    vim.opt.rtp:prepend(lazy_path) 
-
-    dofile(config_file) 
+    vim.opt.rtp:prepend(lazy_path)
+    dofile(config_file)
     return true
   else
     local default_config = [[
@@ -54,7 +52,7 @@ if not vim.loop.fs_stat(lazypath) then
     "clone",
     "--filter=blob:none",
     "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", 
+    "--branch=stable",
     lazypath,
   })
 end
@@ -63,16 +61,14 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins", {
   defaults = { lazy = true },
-  lockfile = vim.fn.stdpath("config") .. "/lazy-lock.json", 
+  lockfile = vim.fn.stdpath("config") .. "/lazy-lock.json",
 })
 ]]
 
-    -- Criar o arquivo de configuração padrão
     local file = io.open(config_file, "w")
     file:write(default_config)
     file:close()
 
-    -- Carregar a configuração após criá-la
     dofile(config_file)
     return true
   end
