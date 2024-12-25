@@ -4,7 +4,7 @@
 
 🚀 A fast  hyperextensible hackable distro for neovim, made specifically for lazy devs to increase your productivity by up to 100x, with collections of handpicked plugins configured with quality in mind for your workflow, configure your neovim in a fast and efficient way.
 
-![dashboard](./img/fastvim.nvim-theme.jpg)
+![dashboard](./img/fastlazyvim.jpg)
 
 ## ✨ Features
 - 🔥 Turn your Neovim into a complete IDE.
@@ -44,3 +44,15 @@ powershell -Command "iex (iwr -UseBasicParsing https://raw.githubusercontent.com
 |  add a neovim web wowser               	|   ❌  	|
 |  add a configuration compatibility between vim and neovim               	|   ❌  	|
 |  adding specialized config in gamedev               	|   ❌  	| 
+
+## 🔥 Contributing
+
+Pull requests are welcome.
+
+That said, there's a bunch of ways you can contribute to this project, like by:
+
+* ⭐ Giving a star on this repository (this is very important and costs nothing)
+* 🪲 Reporting a bug
+* 📄 Improving this [documentation](./doc/getting_started.md)
+* 🚨 Sharing this project and recommending it to your friends
+* 💻 Submitting a pull request to the official repository
