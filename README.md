@@ -15,33 +15,31 @@
 
 ## Installation
 
-- In linux/mac
-
-### OBS: This method of installation is now deprecated.
+#### In linux/mac
 
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/fastvim/fastvim/main/install.sh)
 ```
+#### Windows
 
-### Use this instead:
+- powershell
 
-```bash
-sudo mkdir ~/.config/
-cd /.config\
-git clone https://github.com/fastvim/fastvim.git\
-mv fastvim nvim 
-cd nvim
-rm -rf .git 
+```ps1
+iex (iwr -UseBasicParsing https://raw.githubusercontent.com/fastvim/fastvim/main/install.ps1)
 ```
 
-Open your nvim normally and the magic will happen .... :)
+- cmd
+
+```
+powershell -Command "iex (iwr -UseBasicParsing https://raw.githubusercontent.com/fastvim/fastvim/main/install.ps1)"
+```
 
 ### Goals
 
 | **Goal** 	| stats 	| 
 |-----------------	|------|
 |  Have own color scheme               	|   ✅   	|   
-|  cross platform support               	|   ❌  	|  
+|  cross platform support               	|   ✅  	|  
 |  add a markdown-mode               	|   ❌  	| 
 |  add a neovim web wowser               	|   ❌  	|
 |  add a configuration compatibility between vim and neovim               	|   ❌  	|

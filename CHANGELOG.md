@@ -7,13 +7,15 @@
 - 🧹 Common settings for options, autocms and keymaps
 - 📦 Contains a variety of pre-configured and ready-to-use plugins
 
-## 0.0.2 2024-12-15
+## 0.0.4 2025-01-04
 
-#### Added
+#### improved 
 
-- neodev config 
-- nvim-session-manager config
-- null-ls config
+- installation script for linux
+
+#### Added 
+
+- installation script for windows
 
 ## 0.0.3 2024-12-20
 
@@ -28,9 +30,12 @@
 
 - switching from autopairs to mini.pairs
 
-## 0.0.4 2024-12-25
+## 0.0.2 2024-12-15
 
-#### Added 
+#### Added
 
-- adding user configurable module
+- neodev config 
+- nvim-session-manager config
+- null-ls config
+
 

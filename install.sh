@@ -5,6 +5,18 @@ function error {
     exit 1
 }
 
+function progress_bar {
+    local delay=0.1
+    local spinstr='|/-\'
+    local i=0
+    while kill -0 $1 2>/dev/null; do
+        i=$(( (i + 1) % 4 ))
+        printf "\r%s" "${spinstr:$i:1}"
+        sleep $delay
+    done
+    printf "\r"
+}
+
 echo "🚀 Installing Fastvim..."
 
 if ! command -v git &> /dev/null; then
@@ -20,7 +32,40 @@ if [ -d ~/.config/nvim ]; then
 fi
 
 echo "⬇️ Downloading Fastvim..."
-git clone https://github.com/BrunoCiccarino/fastvim ~/.config/nvim || error "Error cloning the repository."
+{
+    git clone https://github.com/BrunoCiccarino/fastvim ~/.config/nvim
+} &
+progress_bar $!
+[ $? -ne 0 ] && error "Error cloning the repository."
 
-echo "✅ Fastvim installed successfully!"
+echo "⬇️ Installing system dependencies..."
+{
+    sudo apt-get update && sudo apt-get install -y libgit2-1.1
+} &
+progress_bar $!
+[ $? -ne 0 ] && error "Error installing system dependencies."
+
+echo "⬇️ Installing Golang..."
+{
+    sudo apt-get install -y golang
+} &
+progress_bar $!
+[ $? -ne 0 ] && error "Error installing Go."
+
+echo "⬇️ Installing Node.js and npm..."
+{
+    sudo apt-get install -y nodejs npm
+} &
+progress_bar $!
+[ $? -ne 0 ] && error "Error installing Node.js and npm."
+
+echo "⬇️ Installing live-server globally..."
+{
+    npm install -g live-server
+} &
+progress_bar $!
+[ $? -ne 0 ] && error "Error installing live-server."
+
+echo "✅ Fastvim and dependencies installed successfully!"
 echo "➡️ Open Neovim to complete the setup."
+
