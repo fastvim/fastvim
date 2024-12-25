@@ -16,6 +16,7 @@
 #### Added 
 
 - installation script for windows
+- live server configuration 
 
 ## 0.0.3 2024-12-20
 

@@ -112,7 +112,12 @@ return {
     end,
   },
   {
-
+        'barrett-ruth/live-server.nvim',
+        build = 'pnpm add -g live-server',
+        cmd = { 'LiveServerStart', 'LiveServerStop' },
+        config = function ()
+          require('plugins.configs.live-server')
+        end,
   },
   {
     "mrcjkb/haskell-snippets.nvim",
