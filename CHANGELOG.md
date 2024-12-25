@@ -18,6 +18,7 @@
 - installation script for windows
 - live server configuration 
 - initial documentation
+- lualine configuration
 
 ## 0.0.3 2024-12-20
 

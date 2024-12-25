@@ -61,6 +61,13 @@ return {
     },
   },
   {
+    'nvim-lualine/lualine.nvim',
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
+    config = function ()
+      require('plugins.configs.lualine')
+    end,
+  },
+  {
     "zaldih/themery.nvim",
     lazy = false,
     config = function()
