@@ -22,12 +22,12 @@ M.capabilities.textDocument.completion.completionItem = {
 
 
 M.setup_lsp_servers = function()
-  local lua = require 'plugins.configs.lsp.lua'
-  local go = require 'plugins.configs.lsp.go'
-  local ts_ls = require 'plugins.configs.lsp.ts_ls'  
-  local html = require 'plugins.configs.lsp.html'
-  local cssls = require 'plugins.configs.lsp.cssls'
-  local clangd = require 'plugins.configs.lsp.clangd'
+  local lua = require 'configs.lsp.lua'
+  local go = require 'configs.lsp.go'
+  local ts_ls = require 'configs.lsp.ts_ls'  
+  local html = require 'configs.lsp.html'
+  local cssls = require 'configs.lsp.cssls'
+  local clangd = require 'configs.lsp.clangd'
   
   lua.setup(M.capabilities)
   go.setup(M.capabilities)

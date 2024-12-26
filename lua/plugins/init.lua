@@ -19,7 +19,7 @@ return {
     'echasnovski/mini.nvim', 
     version = '*',
     config = function ()
-      require('plugins.configs.mini')
+      require('configs.mini')
     end,
   },
   {
@@ -64,21 +64,21 @@ return {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
     config = function ()
-      require('plugins.configs.lualine')
+      require('configs.lualine')
     end,
   },
   {
     "zaldih/themery.nvim",
     lazy = false,
     config = function()
-      require('plugins.configs.themery')
+      require('configs.themery')
     end 
   },
   {
     "mikavilpas/yazi.nvim",
     event = "VeryLazy",
     config = function()
-      require("plugins.configs.yazi")
+      require("configs.yazi")
     end
   },
     {
@@ -94,7 +94,7 @@ return {
     },
     cmd = { 'Fugit2', 'Fugit2Diff', 'Fugit2Graph' },
     config = function()
-      require('plugins.configs.fugit2')
+      require('configs.fugit2')
     end
   },
   {
@@ -123,7 +123,7 @@ return {
         build = 'pnpm add -g live-server',
         cmd = { 'LiveServerStart', 'LiveServerStop' },
         config = function ()
-          require('plugins.configs.live-server')
+          require('configs.live-server')
         end,
   },
   {
@@ -138,7 +138,7 @@ return {
   {
     "karb94/neoscroll.nvim",
     config = function()
-      require("plugins.configs.neoscroll")
+      require("configs.neoscroll")
     end
   },
   {
@@ -160,7 +160,7 @@ return {
   {
     "Shatur/neovim-session-manager",
     config = function()
-      require("plugins.configs.neovim-session-manager")
+      require("configs.neovim-session-manager")
     end,
   },
   {
@@ -181,14 +181,14 @@ return {
   {
     "nvimdev/dashboard-nvim",
     config = function()
-      require("plugins.configs.ui.dashboard-nvim")
+      require("configs.ui.dashboard-nvim")
     end,
   },
   {
     "catppuccin/nvim",
     name = "catppuccin",
     -- config = function()
-    --   require("plugins.configs.ui.themes.catppuccin")
+    --   require("configs.ui.themes.catppuccin")
     -- end,
     priority = 1000
 
@@ -197,13 +197,13 @@ return {
     'jose-elias-alvarez/null-ls.nvim',
     dependencies = { 'nvim-lua/plenary.nvim' },
     config = function()
-      require('plugins.configs.null-ls').setup()
+      require('configs.null-ls').setup()
     end,
   },
   {
     'folke/neodev.nvim',
     config = function()
-      require('plugins.configs.neodev').setup()
+      require('configs.neodev').setup()
     end
   },
   {
@@ -249,14 +249,14 @@ return {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
     config = function()
-      require "plugins.configs.treesitter"
+      require "configs.treesitter"
     end,
   },
 
   {
     "akinsho/bufferline.nvim",
     event = "BufReadPre",
-    opts = require "plugins.configs.bufferline",
+    opts = require "configs.bufferline",
   },
 
   {
@@ -313,7 +313,7 @@ return {
     -- made opts a function cuz cmp config calls cmp module
     -- and we lazyloaded cmp so we dont want that file to be read on startup!
     opts = function()
-      return require "plugins.configs.cmp"
+      return require "configs.cmp"
     end,
   },
 
@@ -334,16 +334,14 @@ return {
     "neovim/nvim-lspconfig",
     event = { "BufReadPre", "BufNewFile" },
     config = function()
-      require "plugins.configs.lspconfig"
+      require "configs.lspconfig"
     end,
   },
-
   {
     "stevearc/conform.nvim",
     lazy = true,
-    opts = require "plugins.configs.conform",
+    opts = require "configs.conform",
   },
-
   {
     "lukas-reineke/indent-blankline.nvim",
     event = { "BufReadPre", "BufNewFile" },
@@ -359,7 +357,7 @@ return {
   {
     "nvim-telescope/telescope.nvim",
     cmd = "Telescope",
-    opts = require "plugins.configs.telescope",
+    opts = require "configs.telescope",
   },
   {
     "nvim-neotest/neotest",
