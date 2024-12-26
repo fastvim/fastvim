@@ -61,7 +61,7 @@ progress_bar $!
 
 echo "⬇️ Installing live-server globally..."
 {
-    npm install -g live-server
+    sudo npm install -g live-server
 } &
 progress_bar $!
 [ $? -ne 0 ] && error "Error installing live-server."
