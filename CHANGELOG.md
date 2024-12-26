@@ -20,6 +20,7 @@
 - live server configuration 
 - initial documentation
 - lualine configuration
+- clangd configuration
 
 ## 0.0.3 2024-12-20
 

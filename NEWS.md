@@ -16,4 +16,4 @@
 - feat: installation script for windows created
 - refactor: installation script for linux improved
 - refactor: modularizing lspconfig
-
+- feat: adding clangd configuration
