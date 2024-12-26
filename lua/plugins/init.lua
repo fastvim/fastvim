@@ -324,7 +324,8 @@ return {
     opts = {
       ensure_installed = {
         "clangd",
-        "golps"
+        "golps",
+        "ts_ls"
       }
     },
   },
