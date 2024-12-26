@@ -19,4 +19,5 @@
 - feat: adding clangd configuration
 - refactor: changing location configs
 - feat: adding autosave configuration
-- refactor: modularizing git plugins 
+- refactor: modularizing git plugins
+- refactor: changing toggleterm and neoscroll settings

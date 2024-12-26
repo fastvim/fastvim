@@ -15,6 +15,7 @@
 - modularizing lspconfig
 - changing location configs 
 - modularizing git plugins 
+- changing toggleterm and neoscroll settings
 
 #### Added 
 
