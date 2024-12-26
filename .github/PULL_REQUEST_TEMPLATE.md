@@ -14,7 +14,7 @@ Please mark the options that best describe your PR:
 ## Checklist
 
 - [ ] I have read and followed the [CONTRIBUTING.md](CONTRIBUTING.md) guidelines for this project.
-- [ ] Added or updated documentation if needed (e.g., `README.md`, code comments).
+- [ ] Added or updated documentation, changelog, news and if needed (e.g., `README.md`, code comments).
 - [ ] I tested my modifications and they didn't cause any problems.
 - [ ] I have resolved all conflicts (if any)
 - [ ] My commit follows the project conventions
