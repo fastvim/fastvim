@@ -12,6 +12,7 @@
 #### improved 
 
 - installation script for linux
+- modularizing lspconfig
 
 #### Added 
 
