@@ -18,6 +18,7 @@ Get ready to experience a Neovim setup that just works, without all the fluff. L
   - [💤 Installation](#-installation)
       - [linux or mac](#linux-or-mac)
       - [Windows](#windows)
+    - [💻 Setup](#-setup)
     - [Goals](#goals)
   - [🔥 Contributing](#-contributing)
   - [👏 Acknowledgements](#-acknowledgements)
@@ -51,6 +52,19 @@ iex (iwr -UseBasicParsing https://raw.githubusercontent.com/fastvim/fastvim/main
 ```
 powershell -Command "iex (iwr -UseBasicParsing https://raw.githubusercontent.com/fastvim/fastvim/main/install.ps1)"
 ```
+### 💻 Setup
+
+For the distro to work as expected, we need to configure a few things, let's start by downloading the lsp(language server protocol) that you will use by installing with mason
+
+To do this you type: `MasonInstall LspName`
+
+Ex: 
+
+```
+:MasonInstall jdtls
+```
+
+
 
 ### Goals
 

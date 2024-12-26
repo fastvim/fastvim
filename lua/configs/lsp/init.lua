@@ -28,13 +28,15 @@ M.setup_lsp_servers = function()
   local html = require 'configs.lsp.html'
   local cssls = require 'configs.lsp.cssls'
   local clangd = require 'configs.lsp.clangd'
-  
+  local java = require 'configs.lsp.java'
+
   lua.setup(M.capabilities)
   go.setup(M.capabilities)
   ts_ls.setup(M.capabilities)
   html.setup(M.capabilities)
   cssls.setup(M.capabilities)
   clangd.setup(M.capabilities)
+  java.setup(M.capabilities)
 end
 
 return M

@@ -4,11 +4,15 @@ return {
     "nvim-lua/plenary.nvim"
   },
   { 
-    'echasnovski/mini.nvim', 
+    "echasnovski/mini.nvim", 
     version = '*',
     config = function ()
       require('configs.mini')
     end,
+  },
+  {
+    "mfussenegger/nvim-jdtls",
+    lazy = false
   },
   {
       "okuuva/auto-save.nvim",
@@ -324,7 +328,8 @@ return {
       ensure_installed = {
         "clangd",
         "golps",
-        "ts_ls"
+        "ts_ls",
+        "jdtls"
       }
     },
   },
