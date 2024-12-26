@@ -14,6 +14,7 @@
 - installation script for linux
 - modularizing lspconfig
 - changing location configs 
+- modularizing git plugins 
 
 #### Added 
 
@@ -22,6 +23,7 @@
 - initial documentation
 - lualine configuration
 - clangd configuration
+- autosave configuration
 
 ## 0.0.3 2024-12-20
 

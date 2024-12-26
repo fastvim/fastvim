@@ -18,3 +18,5 @@
 - refactor: modularizing lspconfig
 - feat: adding clangd configuration
 - refactor: changing location configs
+- feat: adding autosave configuration
+- refactor: modularizing git plugins 

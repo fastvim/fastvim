@@ -91,7 +91,7 @@ return {
     },
     cmd = { 'Fugit2', 'Fugit2Diff', 'Fugit2Graph' },
     config = function()
-      require('configs.fugit2')
+      require('configs.git.fugit2')
     end
   },
   {
