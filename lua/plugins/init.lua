@@ -135,7 +135,7 @@ return {
   {
     "karb94/neoscroll.nvim",
     config = function()
-      require("configs.neoscroll")
+      require("configs.editor.neoscroll")
     end
   },
   {
@@ -173,7 +173,9 @@ return {
   {
     "akinsho/toggleterm.nvim",
     priority = 100,
-    config = true,
+    config = function ()
+      require('configs.editor.toggleterm')
+    end
   },
   {
     "nvimdev/dashboard-nvim",
