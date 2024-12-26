@@ -49,6 +49,7 @@ powershell -Command "iex (iwr -UseBasicParsing https://raw.githubusercontent.com
 |  add a neovim web wowser               	|   ❌  	|
 |  add a configuration compatibility between vim and neovim               	|   ❌  	|
 |  adding specialized config in gamedev               	|   ❌  	| 
+|  adding full and more complete documentation               	|   ❌  	|
 
 ## 🔥 Contributing
 
