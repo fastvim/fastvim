@@ -7,7 +7,19 @@
 [![lua](https://img.shields.io/badge/built_with_lua-code?style=for-the-badge&logo=lua&color=%23789DBC)](https://www.lua.org/) 
 ![Endpoint Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Floc-counter.onrender.com%3Frepo%3Dfastvim%2Ffastvim%26branch%3Dmain%26ignored%3DREADME.md%2C.gitignore%26stat%3Dlines&style=for-the-badge&logo=lua&color=%23ef6d80)
 
-🚀 A fast  hyperextensible hackable distro for neovim, made specifically for lazy devs to increase your productivity by up to 100x, with collections of handpicked plugins configured with quality in mind for your workflow, configure your neovim in a fast and efficient way.
+Welcome to Fastvim, the next-gen Neovim distro that’s fast, modern, and totally configurable. Built for lazy folks who don’t want to mess with endless configs, and for the Neovim Martian 👽 hackers who want total control over their setup. Whether you just want things to work out of the box or you love tweaking every little detail, Fastvim’s got your back.
+
+Forget about spending hours setting up your Neovim environment. With Fastvim, you can get started right away, but if you're into customization, it's as flexible as you need it to be. This distro has everything you need for a smooth, efficient workflow, and if you're feeling adventurous, you can dive in and make it your own.
+
+Get ready to experience a Neovim setup that just works, without all the fluff. Let’s get you set up, quick and easy!
+
+- [Features](#features)
+- [Installation](#installation)
+    - [Linux/Mac][#linux/mac]
+    - [Windows](#windows)
+- [Goals](#goals)
+- [Contributing](#contributing)
+- [Acknowledgements](#acknowledgements)
 
 ![dashboard](./img/fastlazyvim.jpg)
 
@@ -18,7 +30,7 @@
 - 🧹 Common settings for options, autocms and keymaps
 - 📦 Contains a variety of pre-configured and ready-to-use plugins
 
-## Installation
+## 💤 Installation
 
 #### In linux/mac
 
@@ -62,3 +74,13 @@ That said, there's a bunch of ways you can contribute to this project, like by:
 * 📄 Improving this [documentation](./doc/getting_started.md)
 * 🚨 Sharing this project and recommending it to your friends
 * 💻 Submitting a pull request to the official repository
+
+## 👏 Acknowledgements
+ 
+This project thanks everyone who inspired it
+
+- [doom emacs](https://github.com/doomemacs/doomemacs)
+- [doom-nvim](https://github.com/doom-neovim/doom-nvim)
+- [space-vim](https://github.com/SpaceVim/SpaceVim)
+- [lunar-vim](https://github.com/LunarVim/LunarVim)
+
