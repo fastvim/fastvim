@@ -15,7 +15,7 @@ Get ready to experience a Neovim setup that just works, without all the fluff. L
 
 - [Features](#features)
 - [Installation](#installation)
-    - [Linux/Mac][#linux/mac]
+    - [Linux or Mac][#linux&mac]
     - [Windows](#windows)
 - [Goals](#goals)
 - [Contributing](#contributing)
@@ -32,7 +32,7 @@ Get ready to experience a Neovim setup that just works, without all the fluff. L
 
 ## 💤 Installation
 
-#### In linux/mac
+#### In linux & mac
 
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/fastvim/fastvim/main/install.sh)
