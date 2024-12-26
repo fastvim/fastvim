@@ -23,7 +23,7 @@ return {
     "nvim-neorg/neorg",
     lazy = false,
     config = function()
-        require("neorg").setup {
+        require('neorg').setup {
             load = {
                 ["core.defaults"] = {}, -- Load all default settings
                 ["core.concealer"] = {}, -- Enable icons and rich text rendering
@@ -75,7 +75,7 @@ return {
     "mikavilpas/yazi.nvim",
     event = "VeryLazy",
     config = function()
-      require("configs.yazi")
+      require('configs.yazi')
     end
   },
     {
@@ -128,14 +128,14 @@ return {
     dependencies = { "L3MON4D3/LuaSnip" },
     ft = { "haskell", "lhaskell", "cabal", "cabalproject" },
     config = function()
-      local haskell_snippets = require("haskell-snippets").all
-      require("luasnip").add_snippets("haskell", haskell_snippets, { key = "haskell" })
+      local haskell_snippets = require('haskell-snippets').all
+      require('luasnip').add_snippets('haskell', haskell_snippets, { key = 'haskell' })
     end,
   },
   {
     "karb94/neoscroll.nvim",
     config = function()
-      require("configs.editor.neoscroll")
+      require('configs.editor.neoscroll')
     end
   },
   {
@@ -157,7 +157,7 @@ return {
   {
     "Shatur/neovim-session-manager",
     config = function()
-      require("configs.neovim-session-manager")
+      require('configs.neovim-session-manager')
     end,
   },
   {
@@ -180,7 +180,7 @@ return {
   {
     "nvimdev/dashboard-nvim",
     config = function()
-      require("configs.ui.dashboard-nvim")
+      require('configs.ui.dashboard-nvim')
     end,
   },
   {
@@ -248,20 +248,20 @@ return {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
     config = function()
-      require "configs.treesitter"
+      require ('configs.treesitter')
     end,
   },
 
   {
     "akinsho/bufferline.nvim",
     event = "BufReadPre",
-    opts = require "configs.bufferline",
+    opts = require ('configs.bufferline'),
   },
 
   {
     "echasnovski/mini.statusline",
     config = function()
-      require("mini.statusline").setup { set_vim_settings = false }
+      require('mini.statusline').setup { set_vim_settings = false }
     end,
   },
 
@@ -283,7 +283,7 @@ return {
       {
         "L3MON4D3/LuaSnip",
         config = function()
-          require("luasnip.loaders.from_vscode").lazy_load()
+          require('luasnip.loaders.from_vscode').lazy_load()
         end,
       },
 
@@ -312,7 +312,7 @@ return {
     -- made opts a function cuz cmp config calls cmp module
     -- and we lazyloaded cmp so we dont want that file to be read on startup!
     opts = function()
-      return require "configs.cmp"
+      return require ('configs.cmp')
     end,
   },
 
@@ -333,19 +333,19 @@ return {
     "neovim/nvim-lspconfig",
     event = { "BufReadPre", "BufNewFile" },
     config = function()
-      require "configs.lspconfig"
+      require ('configs.lspconfig')
     end,
   },
   {
     "stevearc/conform.nvim",
     lazy = true,
-    opts = require "configs.conform",
+    opts = require ('configs.conform'),
   },
   {
     "lukas-reineke/indent-blankline.nvim",
     event = { "BufReadPre", "BufNewFile" },
     config = function()
-      require("ibl").setup {
+      require('ibl').setup {
         indent = { char = "│" },
         scope = { char = "│", highlight = "Comment" },
       }
@@ -356,7 +356,7 @@ return {
   {
     "nvim-telescope/telescope.nvim",
     cmd = "Telescope",
-    opts = require "configs.telescope",
+    opts = require ('configs.telescope'),
   },
   {
     "nvim-neotest/neotest",
