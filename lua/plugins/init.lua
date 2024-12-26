@@ -3,24 +3,21 @@ return {
     lazy = true,
     "nvim-lua/plenary.nvim"
   },
-  {
-    "BrunoCiccarino/fastvim.nvim",
-    lazy = false,
-    priority = 1000,
-    config = true,
-    opts = {
-      brighter_comments = Boolean,
-      brighter_conditionals = Boolean,
-      italic_comments = Boolean,
-      transparent = Boolean,
-    },
-  },
   { 
     'echasnovski/mini.nvim', 
     version = '*',
     config = function ()
       require('configs.mini')
     end,
+  },
+  {
+      "okuuva/auto-save.nvim",
+      version = '^1.0.0', 
+      cmd = "ASToggle", 
+      event = { "InsertLeave", "TextChanged" },    
+      config = function ()
+        require('configs.editor.autosave')
+      end
   },
   {
     "nvim-neorg/neorg",
