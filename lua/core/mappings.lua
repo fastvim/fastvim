@@ -5,6 +5,7 @@ local input = vim.api.nvim_input
 map("n", "<C-s>", "<cmd> w <CR>")
 map("i", "jk", "<ESC>")
 map("n", "<C-c>", "<cmd> %y+ <CR>")
+map("n", "<C-z>", "<cmd> undo <CR>")
 
 -- nvimtree
 map("n", "<C-h>", "<cmd> NvimTreeFocus <CR>")
