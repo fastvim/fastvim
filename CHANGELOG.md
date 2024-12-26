@@ -26,6 +26,9 @@
 - clangd configuration
 - autosave configuration
 - adding java lsp module
+- adding keybinding to reverse an action
+- adding setup dictionary
+- adding minimal config to nvim-tree
 
 ## 0.0.3 2024-12-20
 

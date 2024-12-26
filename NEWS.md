@@ -22,3 +22,8 @@
 - refactor: modularizing git plugins
 - refactor: changing toggleterm and neoscroll settings
 - feat: adding java lsp module
+- feat: adding keybinding to reverse an action
+- feat: adding setup dictionary
+- feat: adding minimal config to nvim-tree
+
+
