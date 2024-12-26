@@ -114,6 +114,7 @@ now just type: brew install jdtls and wait for the magic to happen
 |  add a configuration compatibility between vim and neovim               	|   ❌  	|
 |  adding specialized config in gamedev               	|   ❌  	| 
 |  adding full and more complete documentation               	|   ❌  	|
+|  adding full and advanced config for java               	|   ❌  	|
 
 ## 🔥 Contributing
 
