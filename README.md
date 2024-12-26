@@ -96,6 +96,13 @@ brew --version
 ```
 This should return the Homebrew version, confirming the installation was successful.
 
+now just type: brew install jdtls and wait for the magic to happen 
+
+```
+🍺  /home/linuxbrew/.linuxbrew/Cellar/openjdk/23.0.1: 597 files, 348MB
+==> Installing jdtls
+```
+
 ### Goals
 
 | **Goal** 	| stats 	| 
