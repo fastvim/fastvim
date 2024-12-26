@@ -1,6 +1,6 @@
-require "mappings"
-require "commands"
-require "options"
+require "core.mappings"
+require "core.commands"
+require "core.options"
 
 local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim" -- path where its going to be installed
 
