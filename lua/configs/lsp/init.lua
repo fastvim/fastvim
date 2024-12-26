@@ -20,24 +20,26 @@ M.capabilities.textDocument.completion.completionItem = {
   },
 }
 
-
 M.setup_lsp_servers = function()
   local lua = require 'configs.lsp.lua'
   local go = require 'configs.lsp.go'
-  local ts_ls = require 'configs.lsp.ts_ls'  
+  local ts_ls = require 'configs.lsp.ts_ls'
   local html = require 'configs.lsp.html'
   local cssls = require 'configs.lsp.cssls'
   local clangd = require 'configs.lsp.clangd'
-  local java = require 'configs.lsp.java'
 
+  -- Configura os servidores LSP padrões
   lua.setup(M.capabilities)
   go.setup(M.capabilities)
   ts_ls.setup(M.capabilities)
   html.setup(M.capabilities)
   cssls.setup(M.capabilities)
   clangd.setup(M.capabilities)
-  java.setup(M.capabilities)
+
+
+  local java = require('configs.lsp.java')  
+  vim.cmd("doautocmd BufWinEnter *.java")  
+
 end
 
 return M
-
