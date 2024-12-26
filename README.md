@@ -61,10 +61,40 @@ To do this you type: `MasonInstall LspName`
 Ex: 
 
 ```
-:MasonInstall jdtls
+:MasonInstall clangd
 ```
 
+If you are going to use this distro to program in Java, I recommend that you install lsp jdtls through HomeBrew 🍻
 
+To do this, install homebrew by following these steps:
+Open the terminal.
+
+Run the following command to install Homebrew:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+The script will download and install Homebrew. During the process, it may ask for administrator permissions (system password).
+
+After installation, you can add Homebrew to your PATH. The script will suggest the exact command to add to your shell configuration file (e.g. .bashrc, .zshrc or .profile):
+
+Add the line below to your shell configuration file (if necessary):
+
+```bash
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+```
+After that, run the command to reload the configuration file:
+
+```bash
+source ~/.bashrc # Either .zshrc or .profile depending on your shell
+```
+Verify that the installation was successful:
+
+```bash
+brew --version
+```
+This should return the Homebrew version, confirming the installation was successful.
 
 ### Goals
 

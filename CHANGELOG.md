@@ -25,6 +25,7 @@
 - lualine configuration
 - clangd configuration
 - autosave configuration
+- adding java lsp module
 
 ## 0.0.3 2024-12-20
 

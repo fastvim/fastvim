@@ -21,3 +21,4 @@
 - feat: adding autosave configuration
 - refactor: modularizing git plugins
 - refactor: changing toggleterm and neoscroll settings
+- feat: adding java lsp module
