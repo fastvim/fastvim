@@ -17,3 +17,4 @@
 - refactor: installation script for linux improved
 - refactor: modularizing lspconfig
 - feat: adding clangd configuration
+- refactor: changing location configs

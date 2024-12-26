@@ -13,6 +13,7 @@
 
 - installation script for linux
 - modularizing lspconfig
+- changing location configs 
 
 #### Added 
 
