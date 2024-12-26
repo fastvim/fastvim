@@ -137,3 +137,5 @@ This project thanks everyone who inspired it
 - [space-vim](https://github.com/SpaceVim/SpaceVim)
 - [lunar-vim](https://github.com/LunarVim/LunarVim)
 
+## Team: 
+- BrunoCiccarino: wsl-ubuntu
