@@ -13,13 +13,14 @@ Forget about spending hours setting up your Neovim environment. With Fastvim, yo
 
 Get ready to experience a Neovim setup that just works, without all the fluff. Let’s get you set up, quick and easy!
 
-- [Features](#features)
-- [Installation](#installation)
-    - [Linux or Mac][#linux-or-mac]
-    - [Windows](#windows)
-- [Goals](#goals)
-- [Contributing](#contributing)
-- [Acknowledgements](#acknowledgements)
+- [fastvim ](#fastvim-)
+  - [✨ Features](#-features)
+  - [💤 Installation](#-installation)
+      - [linux or mac](#linux-or-mac)
+      - [Windows](#windows)
+    - [Goals](#goals)
+  - [🔥 Contributing](#-contributing)
+  - [👏 Acknowledgements](#-acknowledgements)
 
 ![dashboard](./img/fastlazyvim.jpg)
 
