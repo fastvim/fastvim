@@ -40,7 +40,7 @@ progress_bar $!
 
 echo "⬇️ Installing system dependencies..."
 {
-    sudo apt-get update && sudo apt-get install -y libgit2-1.1
+    sudo apt-get update && sudo apt-get install -y libgit2-1.7 libgit2-dev
 } &
 progress_bar $!
 [ $? -ne 0 ] && error "Error installing system dependencies."
