@@ -53,21 +53,14 @@ Get ready to experience a Neovim setup that just works, without all the fluff. L
 ```bash
 git clone https://github.com/fastvim/fastvim.git ~/.config/nvim 
 cd .config/nvim
-./install.sh
+nvim # Then it will download everything by itself
 ```
 #### Windows
 
-- powershell
-
-```ps1
-iex (iwr -UseBasicParsing https://raw.githubusercontent.com/fastvim/fastvim/main/install.ps1)
+```posh
+git clone https://github.com/fastvim/fastvim.git $HOME\AppData\Local\nvim 
 ```
 
-- cmd
-
-```
-powershell -Command "iex (iwr -UseBasicParsing https://raw.githubusercontent.com/fastvim/fastvim/main/install.ps1)"
-```
 ### 💻 Setup
 
 For the distro to work as expected, we need to configure a few things, let's start by downloading the lsp(language server protocol) that you will use by installing with mason
