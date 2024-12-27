@@ -16,6 +16,7 @@ Get ready to experience a Neovim setup that just works, without all the fluff. L
 
 - [fastvim ](#fastvim-)
   - [✨ Features](#-features)
+  - [📦 requirements](#-requirements)
   - [💤 Installation](#-installation)
       - [linux or mac](#linux-or-mac)
       - [Windows](#windows)
@@ -33,17 +34,12 @@ Get ready to experience a Neovim setup that just works, without all the fluff. L
 - 🧹 Common settings for options, autocms and keymaps
 - 📦 Contains a variety of pre-configured and ready-to-use plugins
 
-### Natives lsp 
+## 📦 requirements 
 
-| language    | checklist |
-| -------- | ------- |
-| java  |  ✅   |
-| c | ✅     |
-| go    | ✅    |
-| typescript    | ✅    |
-| html    | ✅    |
-| lua    | ✅    |
-| css    | ✅    |
+- Neovim >= 0.9.0 (needs to be built with LuaJIT)
+- Git >= 2.19.0 (for partial clones support)
+- a Nerd Font(v3.0 or greater) (optional, but needed to display some icons)
+- a C compiler for nvim-treesitter. See [here](https://github.com/nvim-treesitter/nvim-treesitter#requirements)
 
 ## 💤 Installation
 
