@@ -84,7 +84,9 @@ Lsp (language server protocol) bring you countless benefits when coding, such as
 
 ![code-completions](./img/fastcodecompletions.jpg)
 
+receive real-time error diagnosis
 
+![lint](./img/fastlint.jpg)
 
 ### Goals
 
@@ -111,6 +113,15 @@ That said, there's a bunch of ways you can contribute to this project, like by:
 * 🚨 Sharing this project and recommending it to your friends
 * 💻 Submitting a pull request to the official repository
 
+## Contributors
+
+This project exists thanks to all the people who contribute. 
+
+<a href="https://github.com/fastvim/fastvim/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=fastvim/fastvim&max=24" />
+</a>
+
+
 ## 👏 Acknowledgements
  
 This project thanks everyone who inspired it
@@ -121,4 +132,4 @@ This project thanks everyone who inspired it
 - [lunar-vim](https://github.com/LunarVim/LunarVim)
 
 ## Team: 
-- BrunoCiccarino: wsl-ubuntu
+- [BrunoCiccarino](https://github.com/BrunoCiccarino): wsl-ubuntu
