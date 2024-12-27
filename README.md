@@ -21,7 +21,7 @@ Get ready to experience a Neovim setup that just works, without all the fluff. L
       - [linux or mac](#linux-or-mac)
       - [Windows](#windows)
     - [💻 Setup](#-setup)
-        
+      - [🗺️ Mappings](#-mappings)            
     - [Goals](#goals)
   - [🔥 Contributing](#-contributing)
   - [👏 Acknowledgements](#-acknowledgements)
@@ -108,7 +108,7 @@ To make your workflow much more fluid, we created countless keyboard shortcuts b
 | \/ (Visual)        | toggle_comment_block              |
 | \fm                | format_code                       |
 | ctrl-\             | open_themery                      |
-|                    | h                                 | split_terminal_horizontal |
+| \th                                 | split_terminal_horizontal |
 | \tv                | split_terminal_vertical           |
 | A-Up (Insert)      | move_line_up                      |
 | A-Down (Insert)    | move_line_down                    |
