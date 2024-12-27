@@ -1,4 +1,3 @@
-require "core.mappings"
 require "core.commands"
 require "core.options"
 
@@ -22,4 +21,4 @@ local plugins = require "plugins"
 require("lazy").setup(plugins, require "lazy_config")
 vim.cmd "syntax enable"
 vim.cmd "colorscheme nekonight-noctis-uva"
-
+require('core.mappings')

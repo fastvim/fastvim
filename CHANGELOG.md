@@ -30,6 +30,13 @@
 - adding setup dictionary
 - adding minimal config to nvim-tree
 
+#### Removed
+
+- fugit2 (we switched to neogit)
+- live-server
+- cppman
+- themes: jellybeans, nightfox
+
 ## 0.0.3 2024-12-20
 
 #### Added 

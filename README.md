@@ -132,6 +132,10 @@ nvim myfile.<extension>
 ```
 Replace <extension> with the file type you're working with (e.g., java, go, sql). Autocompletions, syntax highlighting, and LSP features will be ready to assist you.
 
+**update distro**
+
+To update the distro you have two options, `:FastUpdate` which will update the distro to the latest version, and `:FastStable` which will update the distro to the latest stable version (recommended)
+
 **Explore Keymaps**
 This configuration comes with pre-mapped keys for common actions. Check the keybindings guide by pressing:
 
@@ -146,6 +150,8 @@ To make your workflow much more fluid, we created countless keyboard shortcuts b
 
 | shortcut           | action                            |
 |--------------------|-----------------------------------|
+| \fu                | fast update                       |
+| \fs                | fast stable distro update         |
 | ctrl-h             | focus_nvimtree                    |
 | ctrl-n             | toggle_nvimtree                   |
 | \ff                | find_files                        |
