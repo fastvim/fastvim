@@ -34,14 +34,14 @@ fi
 echo "⬇️ Installing system dependencies..."
 {
     sudo apt-get update && sudo apt-get install -y libgit2-1.7 libgit2-dev
-} &
+}
 progress_bar $!
 [ $? -ne 0 ] && error "Error installing system dependencies."
 
 echo "⬇️ Installing Golang..."
 {
     sudo apt-get install -y golang
-} &
+} 
 progress_bar $!
 [ $? -ne 0 ] && error "Error installing Go."
 
