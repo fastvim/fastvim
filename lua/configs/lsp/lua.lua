@@ -1,17 +1,31 @@
-local M = {}
+local lua = {}
 
-M.setup = function(capabilities)
+lua.settings = {
+   disable_treesitter = false,
+   treesitter_grammars = "lua",
+   disable_lsp = false,
+   lsp_name = "lua_ls",
+}
+
+lua.setup = function(capabilities)
   local lspconfig = require 'lspconfig'
 
   lspconfig.lua_ls.setup {
     capabilities = capabilities,
     settings = {
       Lua = {
-        diagnostics = { globals = { "vim" } },
+        diagnostics = { 
+          globals = { 
+            "vim" 
+          } 
+        },
+        format = {
+          enable = true,
+        },
       },
     },
   }
 end
 
-return M
+return lua
 
