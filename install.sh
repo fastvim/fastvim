@@ -31,12 +31,6 @@ if [ -d ~/.config/nvim ]; then
     rm -rf ~/.config/nvim || error "Error removing the ~/.config/nvim directory."
 fi
 
-echo "⬇️ Downloading Fastvim..."
-{
-    git clone https://github.com/BrunoCiccarino/fastvim ~/.config/nvim
-} &
-progress_bar $!
-[ $? -ne 0 ] && error "Error cloning the repository."
 
 echo "⬇️ Installing system dependencies..."
 {
