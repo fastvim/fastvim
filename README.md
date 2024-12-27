@@ -21,6 +21,7 @@ Get ready to experience a Neovim setup that just works, without all the fluff. L
       - [linux or mac](#linux-or-mac)
       - [Windows](#windows)
     - [💻 Setup](#-setup)
+        
     - [Goals](#goals)
   - [🔥 Contributing](#-contributing)
   - [👏 Acknowledgements](#-acknowledgements)
@@ -87,6 +88,41 @@ Lsp (language server protocol) bring you countless benefits when coding, such as
 receive real-time error diagnosis
 
 ![lint](./img/fastlint.jpg)
+
+#### 🗺️ Mappings
+
+To make your workflow much more fluid, we created countless keyboard shortcuts both to use the incredible plugins and to move around neovim in a faster and more efficient way.
+
+| shortcut           | action                            |
+|--------------------|-----------------------------------|
+| ctrl-h             | focus_nvimtree                    |
+| ctrl-n             | toggle_nvimtree                   |
+| \ff                | find_files                        |
+| \fo                | recent_files                      |
+| \fw                | live_grep                         |
+| \gt                | git_status                        |
+| Tab                | cycle_buffer_next                 |
+| S-Tab              | cycle_buffer_prev                 |
+| ctrl-q             | close_buffer                      |
+| \/ (Normal)        | toggle_comment_line               |
+| \/ (Visual)        | toggle_comment_block              |
+| \fm                | format_code                       |
+| ctrl-\             | open_themery                      |
+|                    | h                                 | split_terminal_horizontal |
+| \tv                | split_terminal_vertical           |
+| A-Up (Insert)      | move_line_up                      |
+| A-Down (Insert)    | move_line_down                    |
+| ctrl-Up (Insert)   | select_line_up                    |
+| ctrl-Down (Insert) | select_line_down                  |
+| \nw                | neorg_switch_workspace            |
+| \nn                | neorg_open_index                  |
+| \nt                | neorg_toggle_concealer            |
+| \nh                | neorg_toggle_todo                 |
+| \nc                | neorg_toggle_concealer_visibility |
+| \ls                | start_live_server                 |
+| \le                | stop_live_server                  |
+| \lt                | toggle_live_server                |
+
 
 ### Goals
 
