@@ -165,7 +165,7 @@ To make your workflow much more fluid, we created countless keyboard shortcuts b
 | \/ (Visual)        | toggle_comment_block              |
 | \fm                | format_code                       |
 | ctrl-\             | open_themery                      |
-| \th                                 | split_terminal_horizontal |
+| \t                 | split_terminal_horizontal         |
 | \tv                | split_terminal_vertical           |
 | A-Up (Insert)      | move_line_up                      |
 | A-Down (Insert)    | move_line_down                    |
@@ -176,9 +176,6 @@ To make your workflow much more fluid, we created countless keyboard shortcuts b
 | \nt                | neorg_toggle_concealer            |
 | \nh                | neorg_toggle_todo                 |
 | \nc                | neorg_toggle_concealer_visibility |
-| \ls                | start_live_server                 |
-| \le                | stop_live_server                  |
-| \lt                | toggle_live_server                |
 
 
 ### Goals
