@@ -1,4 +1,5 @@
 local o = vim.o
+local opt = vim.opt 
 
 vim.g.mapleader = " "
 
@@ -14,7 +15,7 @@ o.smartindent = true
 o.tabstop = 2
 o.softtabstop = 2
 
-vim.opt.fillchars = { eob = " " }
+opt.fillchars = { eob = " " }
 o.ignorecase = true
 o.smartcase = true
 o.mouse = "a"

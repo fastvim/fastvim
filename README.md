@@ -33,14 +33,24 @@ Get ready to experience a Neovim setup that just works, without all the fluff. L
 - 🧹 Common settings for options, autocms and keymaps
 - 📦 Contains a variety of pre-configured and ready-to-use plugins
 
+### Natives lsp 
+
+| language    | checklist |
+| -------- | ------- |
+| java  |  ✅   |
+| c | ✅     |
+| go    | ✅    |
+| typescript    | ✅    |
+| html    | ✅    |
+| lua    | ✅    |
+| css    | ✅    |
+
 ## 💤 Installation
 
 #### linux or mac
 
 ```bash
 git clone https://github.com/fastvim/fastvim.git ~/.config/nvim 
-```
-```
 cd .config/nvim
 ./install.sh
 ```

@@ -31,7 +31,6 @@ if [ -d ~/.config/nvim ]; then
     rm -rf ~/.config/nvim || error "Error removing the ~/.config/nvim directory."
 fi
 
-
 echo "⬇️ Installing system dependencies..."
 {
     sudo apt-get update && sudo apt-get install -y libgit2-1.7 libgit2-dev
