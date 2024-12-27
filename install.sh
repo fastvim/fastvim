@@ -26,11 +26,6 @@ fi
 echo "📁 Checking directories..."
 mkdir -p ~/.config || error "Error creating the ~/.config directory."
 
-if [ -d ~/.config/nvim ]; then
-    echo "🗑️ Removing old Neovim installation..."
-    rm -rf ~/.config/nvim || error "Error removing the ~/.config/nvim directory."
-fi
-
 echo "⬇️ Installing system dependencies..."
 {
     sudo apt-get update && sudo apt-get install -y libgit2-1.7 libgit2-dev
@@ -45,19 +40,6 @@ echo "⬇️ Installing Golang..."
 progress_bar $!
 [ $? -ne 0 ] && error "Error installing Go."
 
-echo "⬇️ Installing Node.js and npm..."
-{
-    sudo apt-get install -y nodejs npm
-} &
-progress_bar $!
-[ $? -ne 0 ] && error "Error installing Node.js and npm."
-
-echo "⬇️ Installing live-server globally..."
-{
-    sudo npm install -g live-server
-} &
-progress_bar $!
-[ $? -ne 0 ] && error "Error installing live-server."
 
 echo "✅ Fastvim and dependencies installed successfully!"
 echo "➡️ Open Neovim to complete the setup."
