@@ -1,7 +1,10 @@
 return {
   {
     lazy = true,
-    "nvim-lua/plenary.nvim"
+    "nvim-lua/plenary.nvim",
+    config = function ()
+      require('configs.plenary')
+    end
   },
   { 
     "echasnovski/mini.nvim", 
@@ -89,22 +92,19 @@ return {
       require('configs.yazi')
     end
   },
-    {
-    'SuperBo/fugit2.nvim',
-    dependencies = {
-      'MunifTanjim/nui.nvim',
-      'nvim-tree/nvim-web-devicons',
-      'nvim-lua/plenary.nvim',
-      {
-        'chrisgrieser/nvim-tinygit',
-        dependencies = { 'stevearc/dressing.nvim' }
-      },
-    },
-    cmd = { 'Fugit2', 'Fugit2Diff', 'Fugit2Graph' },
-    config = function()
-      require('configs.git.fugit2')
-    end
+  {
+  "NeogitOrg/neogit",
+  dependencies = {
+    "nvim-lua/plenary.nvim",         
+    "sindrets/diffview.nvim",        
+    "nvim-telescope/telescope.nvim", 
+    "ibhagwan/fzf-lua",              
+    "echasnovski/mini.pick",         
   },
+  config = function ()
+    require('configs.git.neogit')
+  end
+},
   {
   'sindrets/diffview.nvim',
   dependencies = { 'nvim-tree/nvim-web-devicons' },
@@ -127,14 +127,6 @@ return {
     end,
   },
   {
-        'barrett-ruth/live-server.nvim',
-        build = 'pnpm add -g live-server',
-        cmd = { 'LiveServerStart', 'LiveServerStop' },
-        config = function ()
-          require('configs.live-server')
-        end,
-  },
-  {
     "mrcjkb/haskell-snippets.nvim",
     dependencies = { "L3MON4D3/LuaSnip" },
     ft = { "haskell", "lhaskell", "cabal", "cabalproject" },
@@ -150,36 +142,10 @@ return {
     end
   },
   {
-    "kdheepak/lazygit.nvim",
-    cmd = {
-      "LazyGit",
-      "LazyGitConfig",
-      "LazyGitCurrentFile",
-      "LazyGitFilter",
-      "LazyGitFilterCurrentFile",
-    },
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-    },
-    keys = {
-      { "<leader>lg", "<cmd>LazyGit<cr>", desc = "Open lazy git" },
-    },
-  },
-  {
     "Shatur/neovim-session-manager",
     config = function()
       require('configs.neovim-session-manager')
     end,
-  },
-  {
-    "EdenEast/nightfox.nvim",
-    priority = 1000,
-    config = true,
-  },
-  {
-    "wtfox/jellybeans.nvim",
-    priority = 1000,
-    config = true,
   },
   {
     "akinsho/toggleterm.nvim",
@@ -220,14 +186,6 @@ return {
     "BrunoCiccarino/gruverboxer-material.nvim",
     priority = 1000
   },
-
-  {
-    'madskjeldgaard/cppman.nvim',
-    dependencies = {
-      'MunifTanjim/nui.nvim',
-    },
-  },
-
   {
     "folke/noice.nvim",
     event = "VeryLazy",
