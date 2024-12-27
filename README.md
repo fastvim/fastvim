@@ -38,7 +38,11 @@ Get ready to experience a Neovim setup that just works, without all the fluff. L
 #### linux or mac
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/fastvim/fastvim/main/install.sh)
+git clone https://github.com/fastvim/fastvim.git ~/.config/nvim 
+```
+```
+cd .config/nvim
+./install.sh
 ```
 #### Windows
 
