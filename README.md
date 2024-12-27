@@ -27,6 +27,7 @@ Get ready to experience a Neovim setup that just works, without all the fluff. L
   - [Contributors](#contributors)
   - [👏 Acknowledgements](#-acknowledgements)
   - [Team:](#team)
+  - [☕ Sponsor this project](#-sponsor-this-project)
 
 ![dashboard](./img/fastlazyvim.jpg)
 
@@ -171,3 +172,7 @@ This project thanks everyone who inspired it
 
 ## Team: 
 - [BrunoCiccarino](https://github.com/BrunoCiccarino): wsl-ubuntu
+
+## ☕ Sponsor this project
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/ciccabr9p)
