@@ -1,6 +1,11 @@
 local map = vim.keymap.set
 local cmd = vim.cmd
 local input = vim.api.nvim_input 
+require('core.update')
+
+-- updates 
+map('n', '<leader>fu', function() M.update_to_latest() end, { noremap = true, silent = true, desc = 'Update to the latest version' })
+map('n', '<leader>fs', function() M.update_to_stable() end, { noremap = true, silent = true, desc = 'Update to the stable version' })
 
 map("n", "<C-s>", "<cmd> w <CR>")
 map("i", "jk", "<ESC>")
@@ -70,7 +75,4 @@ map("n", neorg_leader .. "t", "<cmd>Neorg toggle-concealer<CR>", { desc = "Toggl
 map("n", neorg_leader .. "h", "<cmd>Neorg keybind norg core.norg.qol.todo_items.todo.task_toggle<CR>", { desc = "Toggle TODO state" })
 map("n", neorg_leader .. "c", "<cmd>Neorg toggle-concealer<CR>", { desc = "Toggle concealer visibility" })
 
--- live server 
-map("n", "<leader>ls", ":LiveServerStart<CR>", { noremap = true, silent = true }) -- Start the server
-map("n", "<leader>le", ":LiveServerStop<CR>", { noremap = true, silent = true })  -- Stop the server
-map("n", "<leader>lt", ":LiveServerToggle<CR>", { noremap = true, silent = true }) -- Toggle Server State
+
