@@ -3,6 +3,7 @@
 ![GitHub Release](https://img.shields.io/github/v/release/fastvim/fastvim?style=for-the-badge&color=%235e81ac) 
 ![GitHub License](https://img.shields.io/github/license/fastvim/fastvim?style=for-the-badge&color=%23b48ead) 
 ![GitHub Repo stars](https://img.shields.io/github/stars/fastvim/fastvim?style=for-the-badge&color=%23a3be8c) 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](http://makeapullrequest.com)
 ![GitHub last commit](https://img.shields.io/github/last-commit/fastvim/fastvim?style=for-the-badge&color=%23bf616a)
 [![lua](https://img.shields.io/badge/built_with_lua-code?style=for-the-badge&logo=lua&color=%23789DBC)](https://www.lua.org/) 
 ![Endpoint Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Floc-counter.onrender.com%3Frepo%3Dfastvim%2Ffastvim%26branch%3Dmain%26ignored%3DREADME.md%2C.gitignore%26stat%3Dlines&style=for-the-badge&logo=lua&color=%23ef6d80)
@@ -63,45 +64,17 @@ Ex:
 ```
 :MasonInstall clangd
 ```
-
-If you are going to use this distro to program in Java, I recommend that you install lsp jdtls through HomeBrew 🍻
-
-To do this, install homebrew by following these steps:
-Open the terminal.
-
-Run the following command to install Homebrew:
-
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-The script will download and install Homebrew. During the process, it may ask for administrator permissions (system password).
-
-After installation, you can add Homebrew to your PATH. The script will suggest the exact command to add to your shell configuration file (e.g. .bashrc, .zshrc or .profile):
-
-Add the line below to your shell configuration file (if necessary):
-
-```bash
-export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
-```
-After that, run the command to reload the configuration file:
-
-```bash
-source ~/.bashrc # Either .zshrc or .profile depending on your shell
-```
-Verify that the installation was successful:
-
-```bash
-brew --version
-```
-This should return the Homebrew version, confirming the installation was successful.
-
-now just type: brew install jdtls and wait for the magic to happen 
+Or if you are java dev 
 
 ```
-🍺  /home/linuxbrew/.linuxbrew/Cellar/openjdk/23.0.1: 597 files, 348MB
-==> Installing jdtls
+MasonInstall jdtls
 ```
+
+Lsp (language server protocol) bring you countless benefits when coding, such as auto completions, syntactic error warnings in real time, and for this we have some plugins like [nvim-cmp](), for snippets we have [ luasnip]() that works exceptionally well and we have mini.pairs to autocomplete special characters like [], (), <>, etc...
+
+![code-completions](./img/fastcodecompletions.jpg)
+
+
 
 ### Goals
 

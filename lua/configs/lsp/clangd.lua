@@ -1,8 +1,8 @@
-local M = {}
+local cc = {}
 
-M.setup = function(on_attach, capabilities)
+cc.setup = function(on_attach, capabilities)
   local lspconfig = require("lspconfig")
-
+  
   lspconfig.clangd.setup({
     cmd = { "clangd", "--background-index", "--clang-tidy", "--completion-style=detailed", "--header-insertion=never" },
     filetypes = { "c", "cpp", "objc", "objcpp" },
@@ -15,5 +15,5 @@ M.setup = function(on_attach, capabilities)
   })
 end
 
-return M
+return cc
 

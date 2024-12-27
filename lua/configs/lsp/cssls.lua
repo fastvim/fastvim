@@ -1,6 +1,6 @@
-local M = {}
+local css = {}
 
-M.setup = function(capabilities)
+css.setup = function(capabilities)
   local lspconfig = require 'lspconfig'
 
   lspconfig.cssls.setup {
@@ -8,5 +8,5 @@ M.setup = function(capabilities)
   }
 end
 
-return M
+return css
 

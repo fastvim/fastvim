@@ -10,6 +10,13 @@ return {
       require('configs.mini')
     end,
   },
+  { 
+    "ellisonleao/gruvbox.nvim", 
+    priority = 1000 , 
+    config = function ()
+      require('configs.ui.themes.gruvbox')
+    end
+  },
   {
     "mfussenegger/nvim-jdtls",
     lazy = false
@@ -240,7 +247,9 @@ return {
   {
     "nvim-tree/nvim-tree.lua",
     cmd = { "NvimTreeToggle", "NvimTreeFocus" },
-    opts = {},
+    config = function ()
+      require('configs.nvim-tree')
+    end
   },
 
   {
