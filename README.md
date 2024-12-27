@@ -21,10 +21,12 @@ Get ready to experience a Neovim setup that just works, without all the fluff. L
       - [linux or mac](#linux-or-mac)
       - [Windows](#windows)
     - [💻 Setup](#-setup)
-      - [🗺️ Mappings](#-mappings)            
+      - [🗺️ Mappings](#️-mappings)
     - [Goals](#goals)
   - [🔥 Contributing](#-contributing)
+  - [Contributors](#contributors)
   - [👏 Acknowledgements](#-acknowledgements)
+  - [Team:](#team)
 
 ![dashboard](./img/fastlazyvim.jpg)
 
