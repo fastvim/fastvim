@@ -21,12 +21,13 @@ Get ready to experience a Neovim setup that just works, without all the fluff. L
       - [linux or mac](#linux-or-mac)
       - [Windows](#windows)
     - [💻 Setup](#-setup)
-      - [🗺️ Mappings](#️-mappings)
+    - [Quickstart](#quickstart)
+      - [🗺️ keymaps](#️-keymaps)
     - [Goals](#goals)
   - [🔥 Contributing](#-contributing)
   - [Contributors](#contributors)
   - [👏 Acknowledgements](#-acknowledgements)
-  - [Team:](#team)
+  - [👨‍🏫 Team](#-team)
   - [☕ Sponsor this project](#-sponsor-this-project)
 
 ![dashboard](./img/fastlazyvim.jpg)
@@ -92,7 +93,54 @@ receive real-time error diagnosis
 
 ![lint](./img/fastlint.jpg)
 
-#### 🗺️ Mappings
+With the setup complete, you're now ready to dive into using your new Neovim IDE. Let's get started!
+
+### Quickstart
+
+Now that everything is set up, let's jump into using FastVim. Follow these steps to start coding efficiently:
+
+Open Neovim
+Launch Neovim by running:
+
+```bash
+nvim
+```
+Explore the Dashboard
+Upon starting Neovim, you'll see a customizable dashboard. Use it to quickly open recent files, create new projects, or access settings.
+
+Install Plugins
+Ensure all required plugins are installed by running:
+
+```bash
+:Lazy
+```
+This will display the plugin manager. Press u to update all plugins.
+
+Set Up LSP
+If you haven't installed your language server yet, use Mason:
+
+```bash
+:MasonInstall <LspName>
+```
+Replace <LspName> with the appropriate server for your language (e.g., clangd for C/C++, jdtls for Java).
+
+Start Coding
+Open a file or create a new one:
+
+```bash
+nvim myfile.<extension>
+```
+Replace <extension> with the file type you're working with (e.g., java, go, sql). Autocompletions, syntax highlighting, and LSP features will be ready to assist you.
+
+**Explore Keymaps**
+This configuration comes with pre-mapped keys for common actions. Check the keybindings guide by pressing:
+
+```bash
+:help keymaps
+```
+You're now ready to enjoy a complete IDE experience with FastVim!
+
+#### 🗺️ keymaps
 
 To make your workflow much more fluid, we created countless keyboard shortcuts both to use the incredible plugins and to move around neovim in a faster and more efficient way.
 
@@ -170,7 +218,7 @@ This project thanks everyone who inspired it
 - [space-vim](https://github.com/SpaceVim/SpaceVim)
 - [lunar-vim](https://github.com/LunarVim/LunarVim)
 
-## Team: 
+## 👨‍🏫 Team 
 - [BrunoCiccarino](https://github.com/BrunoCiccarino): wsl-ubuntu
 
 ## ☕ Sponsor this project
