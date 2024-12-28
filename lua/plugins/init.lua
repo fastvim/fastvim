@@ -68,6 +68,15 @@ return {
     "BrunoCiccarino/telereplace"
   },
   {
+    'jmbuhr/otter.nvim',
+    dependencies = {
+      'nvim-treesitter/nvim-treesitter',
+    },
+    config = function ()
+      require('configs.otter')
+    end
+  },
+  {
     "BrunoCiccarino/lazygrep.nvim"
   },
   {
