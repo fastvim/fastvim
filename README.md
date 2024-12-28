@@ -39,6 +39,16 @@ Get ready to experience a Neovim setup that just works, without all the fluff. L
 - 🧹 Common settings for options, autocms and keymaps
 - 📦 Contains a variety of pre-configured and ready-to-use plugins
 
+- ⚙️ **LSP (Language Server Protocol)**:
+    - 🖥️ **clangd.lua** - clangd server configuration
+    - 🌐 **cssls.lua** - CSSLS server configuration
+    - 🖥️ **go.lua** - Go server configuration
+    - 🌐 **html.lua** - HTML server configuration
+    - 🖥️ **java.lua** - Java server configuration
+    - 🖥️ **lua.lua** - Lua server configuration
+    - 🖥️ **ts_ls.lua** - TypeScript server configuration
+    - 🔧 **utils.lua** - LSP utilities
+
 ## 📦 requirements 
 
 - Neovim >= 0.9.0 (needs to be built with LuaJIT)
