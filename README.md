@@ -85,10 +85,6 @@ Lsp (language server protocol) bring you countless benefits when coding, such as
 
 ![code-completions](./img/fastcodecompletions.jpg)
 
-receive real-time error diagnosis
-
-![lint](./img/fastlint.jpg)
-
 With the setup complete, you're now ready to dive into using your new Neovim IDE. Let's get started!
 
 ### Quickstart
