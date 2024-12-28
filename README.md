@@ -48,6 +48,9 @@ Get ready to experience a Neovim setup that just works, without all the fluff. L
 
 ## 💤 Installation
 
+> [!WARNING]
+> Please, before installing, remember to make a backup of your dotfiles.
+
 #### linux or mac
 
 ```bash
