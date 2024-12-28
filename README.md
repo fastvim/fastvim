@@ -169,7 +169,7 @@ To make your workflow much more fluid, we created countless keyboard shortcuts b
 | \nt                | neorg_toggle_concealer            |
 | \nh                | neorg_toggle_todo                 |
 | \nc                | neorg_toggle_concealer_visibility |
-
+| ctrl+t             | open toggle terminal              |
 
 ### Goals
 
