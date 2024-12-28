@@ -30,6 +30,7 @@
 - adding setup dictionary
 - adding minimal config to nvim-tree
 - adding ui modicator plugin 
+- adding logging module 
 
 #### Removed
 
