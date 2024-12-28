@@ -39,9 +39,6 @@ end)
 -- Themery
 map("i", "<C-\\>", "<cmd> Themery <CR>")
 
-map('n', '<Leader>th', ':split | terminal<CR>', { noremap = true, silent = true })
-map('n', '<Leader>tv', ':vsplit | terminal<CR>', { noremap = true, silent = true })
-
 local function move_line_up()
   cmd('move .-2')
 end
