@@ -61,6 +61,11 @@ Get ready to experience a Neovim setup that just works, without all the fluff. L
 > [!WARNING]
 > Please, before installing, remember to make a backup of your dotfiles.
 
+```
+mv ~/.config/nvim ~/.config/nvim.bak
+mv ~/.local/share/nvim ~/.local/share/nvim.bak 
+```
+
 #### linux or mac
 
 ```bash

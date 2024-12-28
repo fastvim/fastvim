@@ -35,7 +35,8 @@
 - fugit2 (we switched to neogit)
 - live-server
 - cppman
-- themes: jellybeans, nightfox
+- themes: jellybeans, nightfox gruverboxer material
+- neovim-session-manager
 
 ## 0.0.3 2024-12-20
 

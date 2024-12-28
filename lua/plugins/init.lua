@@ -26,6 +26,13 @@ return {
     end
   },
   {
+  "folke/todo-comments.nvim",
+  dependencies = { "nvim-lua/plenary.nvim" },
+  config = function ()
+    require('configs.todo-comments')
+  end
+},
+  {
     "mfussenegger/nvim-jdtls",
     lazy = false
   },
@@ -63,9 +70,6 @@ return {
     lazy = false,
     priority = 1000,
     opts = {},
-  },
-  {
-    "BrunoCiccarino/telereplace"
   },
   {
     'jmbuhr/otter.nvim',
@@ -156,12 +160,6 @@ return {
     end
   },
   {
-    "Shatur/neovim-session-manager",
-    config = function()
-      require('configs.neovim-session-manager')
-    end,
-  },
-  {
     "akinsho/toggleterm.nvim",
     priority = 100,
     config = function ()
@@ -175,15 +173,6 @@ return {
     end,
   },
   {
-    "catppuccin/nvim",
-    name = "catppuccin",
-    -- config = function()
-    --   require("configs.ui.themes.catppuccin")
-    -- end,
-    priority = 1000
-
-  },
-  {
     'jose-elias-alvarez/null-ls.nvim',
     dependencies = { 'nvim-lua/plenary.nvim' },
     config = function()
@@ -195,10 +184,6 @@ return {
     config = function()
       require('configs.neodev').setup()
     end
-  },
-  {
-    "BrunoCiccarino/gruverboxer-material.nvim",
-    priority = 1000
   },
   {
     "folke/noice.nvim",
