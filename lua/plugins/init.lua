@@ -13,11 +13,16 @@ return {
       require('configs.mini')
     end,
   },
-  { 
-    "ellisonleao/gruvbox.nvim", 
-    priority = 1000 , 
+  {
+    "OXY2DEV/markview.nvim",
+    lazy = false,      
+
+    dependencies = {
+        "nvim-treesitter/nvim-treesitter",
+        "nvim-tree/nvim-web-devicons"
+    },
     config = function ()
-      require('configs.ui.themes.gruvbox')
+      require('configs.editor.markeview')
     end
   },
   {
