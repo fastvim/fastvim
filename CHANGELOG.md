@@ -29,6 +29,7 @@
 - adding keybinding to reverse an action
 - adding setup dictionary
 - adding minimal config to nvim-tree
+- adding ui modicator plugin 
 
 #### Removed
 
