@@ -14,14 +14,6 @@ return {
     end,
   },
   {
-    "Dynge/gitmoji.nvim",
-    dependencies = {
-        "hrsh7th/nvim-cmp",
-    },
-    opts = {},
-    ft = "gitcommit",
-  },
-  {
     "OXY2DEV/markview.nvim",
     lazy = false,      
 
