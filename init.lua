@@ -20,6 +20,6 @@ local plugins = require "plugins"
 
 require("lazy").setup(plugins, require "lazy_config")
 vim.cmd "syntax enable"
-vim.cmd "colorscheme nekonight-noctis-uva"
+vim.cmd "colorscheme nekonight-dracula"
 require('core.mappings')
 require('modules.loader.init')
