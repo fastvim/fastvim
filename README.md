@@ -227,6 +227,7 @@ This project thanks everyone who inspired it
 - [doom-nvim](https://github.com/doom-neovim/doom-nvim)
 - [space-vim](https://github.com/SpaceVim/SpaceVim)
 - [lunar-vim](https://github.com/LunarVim/LunarVim)
+- [LazyVim](https://github.com/LazyVim/LazyVim)
 
 ## 👨‍🏫 Team 
 - [BrunoCiccarino](https://github.com/BrunoCiccarino): wsl-ubuntu
