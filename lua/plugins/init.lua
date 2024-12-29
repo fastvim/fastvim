@@ -38,13 +38,6 @@ return {
     end
   },
   {
-  "folke/todo-comments.nvim",
-  dependencies = { "nvim-lua/plenary.nvim" },
-  config = function ()
-    require('configs.todo-comments')
-  end
-},
-  {
     "mfussenegger/nvim-jdtls",
     lazy = false
   },
@@ -91,15 +84,6 @@ return {
     config = function ()
       require('configs.otter')
     end
-  },
-  {
-    "BrunoCiccarino/lazygrep.nvim"
-  },
-  {
-    "azratul/live-share.nvim",
-    dependencies = {
-      "jbyuki/instant.nvim",
-    },
   },
   {
     'nvim-lualine/lualine.nvim',
@@ -268,31 +252,7 @@ return {
           require('luasnip.loaders.from_vscode').lazy_load()
         end,
       },
-
-      -- autopairs , autocompletes ()[] etc
-      -- {
-    -- "windwp/nvim-autopairs",
-    -- config = function()
-        -- Require and setup nvim-autopairs
-      --  local npairs = require("nvim-autopairs")
-       -- npairs.setup({
-         --   check_ts = true, -- Enable treesitter integration if needed
-       -- })
-
-        -- Remove the backtick rule explicitly
-       -- local Rule = require('nvim-autopairs.rule')
-       -- npairs.remove_rule('`') -- Try removing directly
-       -- npairs.add_rule(Rule('`', '')) -- Add an empty rule as a fallback
-
-        -- nvim-cmp integration
-       -- local cmp_autopairs = require "nvim-autopairs.completion.cmp"
-       -- local cmp = require "cmp"
-       -- cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
-    -- end,
-     -- },
     },
-    -- made opts a function cuz cmp config calls cmp module
-    -- and we lazyloaded cmp so we dont want that file to be read on startup!
     opts = function()
       return require ('configs.cmp')
     end,
