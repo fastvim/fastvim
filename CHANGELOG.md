@@ -31,6 +31,7 @@
 - adding minimal config to nvim-tree
 - adding ui modicator plugin 
 - adding logging module 
+- adding alpha.nvim dashboard config 
 
 #### Removed
 
@@ -39,6 +40,7 @@
 - cppman
 - themes: jellybeans, nightfox gruverboxer material
 - neovim-session-manager
+- dashboard-nvim config 
 
 ## 0.0.3 2024-12-20
 
