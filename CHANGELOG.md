@@ -41,6 +41,8 @@
 - themes: jellybeans, nightfox gruverboxer material
 - neovim-session-manager
 - dashboard-nvim config 
+- ui modicator 
+- themery
 
 ## 0.0.3 2024-12-20
 

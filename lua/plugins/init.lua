@@ -20,18 +20,6 @@ return {
     end
 };
   {
-  'mawkler/modicator.nvim',
-  dependencies = 'mawkler/onedark.nvim', 
-  init = function()
-    vim.o.cursorline = true
-    vim.o.number = true
-    vim.o.termguicolors = true
-  end,
-    config = function ()
-      require('configs.ui.modicator')
-    end
-},
-  {
     "OXY2DEV/markview.nvim",
     lazy = false,      
 
@@ -97,13 +85,6 @@ return {
     config = function ()
       require('configs.lualine')
     end,
-  },
-  {
-    "zaldih/themery.nvim",
-    lazy = false,
-    config = function()
-      require('configs.themery')
-    end 
   },
   {
     "mikavilpas/yazi.nvim",
