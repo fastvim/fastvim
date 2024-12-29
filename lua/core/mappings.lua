@@ -36,9 +36,6 @@ map("n", "<leader>fm", function()
   require("conform").format()
 end)
 
--- Themery
-map("i", "<C-\\>", "<cmd> Themery <CR>")
-
 local function move_line_up()
   cmd('move .-2')
 end
