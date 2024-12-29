@@ -14,6 +14,12 @@ return {
     end,
   },
   {
+    'goolord/alpha-nvim',
+    config = function ()
+      require('configs.ui.alpha')
+    end
+};
+  {
   'mawkler/modicator.nvim',
   dependencies = 'mawkler/onedark.nvim', 
   init = function()
@@ -138,12 +144,6 @@ return {
     config = function ()
       require('configs.editor.toggleterm')
     end
-  },
-  {
-    "nvimdev/dashboard-nvim",
-    config = function()
-      require('configs.ui.dashboard-nvim')
-    end,
   },
   {
     'jose-elias-alvarez/null-ls.nvim',
