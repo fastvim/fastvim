@@ -1,4 +1,3 @@
--- Initialize lua-line plugin
 local M = {}
 
 M.config = function()
