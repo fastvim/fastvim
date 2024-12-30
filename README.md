@@ -33,6 +33,7 @@ Get ready to experience a Neovim setup that just works, without all the fluff. L
   - [☕ Sponsor this project](#-sponsor-this-project)
 
 ![dashboard](./img/fastlazyvim.jpg)
+![code](./img/fastcode.jpg)
 
 ## ✨ Features
 - 🔥 Turn your Neovim into a complete IDE.
