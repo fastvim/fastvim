@@ -7,6 +7,14 @@
 - 🧹 Common settings for options, autocms and keymaps
 - 📦 Contains a variety of pre-configured and ready-to-use plugins
 
+## 0.0.5
+
+#### improved
+
+#### Added
+
+#### Removed
+
 ## 0.0.4 2025-01-02
 
 #### improved 
