@@ -229,7 +229,14 @@ To make your workflow much more fluid, we created countless keyboard shortcuts b
     - [ ] to enable or disable one of the lsp
 - Ui: 
     - [ ] custom theme for alpha nvim 
-
+- Lsp: 
+    - [ ] lsp for astro js
+    - [ ] lsp for csharp
+    - [ ] lsp for godot script 
+    - [ ] lsp for haskell
+    - [ ] lsp for python
+- Config loader:
+    - [ ] Add asynchronous job to load config in real time
 
 ### Goals
 
