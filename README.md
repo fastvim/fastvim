@@ -218,6 +218,19 @@ To make your workflow much more fluid, we created countless keyboard shortcuts b
 | ctrl+t             | open toggle terminal              |
 
 
+### Tasks
+
+- Handlers:
+    - [ ] to exclude plugins from config
+    - [ ] to add plugins to config
+    - [ ] to set env vars
+    - [ ] to set default theme
+    - [ ] to choose between snacks and mini
+    - [ ] to enable or disable one of the lsp
+- Ui: 
+    - [ ] custom theme for alpha nvim 
+
+
 ### Goals
 
 | **Goal** 	| stats 	| 
