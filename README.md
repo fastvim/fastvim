@@ -1,14 +1,34 @@
 # fastvim <img src="https://github.com/BrunoCiccarino/BrunoCiccarino/blob/main/img/icons8-lua-language-96.png" height="48" width="48">
 
-![GitHub Release](https://img.shields.io/github/v/release/fastvim/fastvim?style=for-the-badge&color=%235e81ac) 
-![GitHub License](https://img.shields.io/github/license/fastvim/fastvim?style=for-the-badge&color=%23b48ead) 
-![GitHub Repo stars](https://img.shields.io/github/stars/fastvim/fastvim?style=for-the-badge&color=%23a3be8c) 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](http://makeapullrequest.com)
-![GitHub last commit](https://img.shields.io/github/last-commit/fastvim/fastvim?style=for-the-badge&color=%23bf616a)
-[![lua](https://img.shields.io/badge/built_with_lua-code?style=for-the-badge&logo=lua&color=%23789DBC)](https://www.lua.org/) 
-![Lines Of Code](https://img.shields.io/endpoint?url=https%3A%2F%2Floc-counter.onrender.com%3Frepo%3Dfastvim%2Ffastvim%26branch%3Dmain%26ignored%3DREADME.md%2C.gitignore%26stat%3Dlines&style=for-the-badge&logo=lua&color=%23ef6d80)
-[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/fastvim)
-![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)
+<p align="center">
+  <a href="https://github.com/fastvim/fastvim">
+    <img src="https://img.shields.io/github/v/release/fastvim/fastvim?style=for-the-badge&color=%235e81ac">
+  </a>
+    <a href="https://github.com/fastvim/fastvim">
+    <img src="https://img.shields.io/github/license/fastvim/fastvim?style=for-the-badge&color=%23b48ead">
+  </a>  
+  <a href="https://github.com/fastvim/fastvim">
+    <img src="https://img.shields.io/github/stars/fastvim/fastvim?style=for-the-badge&color=%23a3be8c">
+  </a>  
+  <a href="http://makeapullrequest.com">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge">
+  </a>  
+  <a href="https://github.com/fastvim/fastvim">
+    <img src="https://img.shields.io/github/last-commit/fastvim/fastvim?style=for-the-badge&color=%23bf616a">
+  </a>  
+  <a href="https://github.com/fastvim/fastvim">
+    <img src="https://img.shields.io/badge/built_with_lua-code?style=for-the-badge&logo=lua&color=%23789DBC">
+  </a>  
+    <a href="https://github.com/fastvim/fastvim">
+    <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Floc-counter.onrender.com%3Frepo%3Dfastvim%2Ffastvim%26branch%3Dmain%26ignored%3DREADME.md%2C.gitignore%26stat%3Dlines&style=for-the-badge&logo=lua&color=%23ef6d80">
+  </a>  
+  <a href="https://t.me/fastvim">
+    <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white">
+  </a>  
+  <a href="https://github.com/BrunoCiccarino/nekonight">
+    <img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white">
+  </a>  
+</p>
 
 Welcome to Fastvim, the next-gen Neovim distro that’s fast, modern, and totally configurable. Built for lazy folks who don’t want to mess with endless configs, and for the Neovim Martian 👽 hackers who want total control over their setup. Whether you just want things to work out of the box or you love tweaking every little detail, Fastvim’s got your back.
 
