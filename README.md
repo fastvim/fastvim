@@ -217,35 +217,6 @@ To make your workflow much more fluid, we created countless keyboard shortcuts b
 | \nc                | neorg_toggle_concealer_visibility |
 | ctrl+t             | open toggle terminal              |
 
-#### 🎨 Color theme 
-
-Our default theme is nekonight, it comes with a pack with more than 25 themes, this is the table of some of them:
-
-| Theme Name            | Color |
-|-----------------------|-------|
-| Moon                  |       |
-| Storm                 |       |
-| Night                 |       |
-| Day                   |       |
-| Mars                  |       |
-| Nord                  |       |
-| Shades of Purple      |       |
-| Shades of Purple Dark |       |
-| OneDark               |       |
-| Fire Obsidian         |       |
-| Palenight             |       |
-| Noctis-Uva            |       |
-| Gruvbox               |       |
-| Dracula               |       |
-| Doom One              |       |
-| Zenburn               |       |
-| Material Theme        |       |
-| Arcdark               |       |
-| Moonlight             |       |
-| Synthwave             |       |
-| Space                 |       |
-| Aurora                |       |
-| OneDark Deep          |       |
 
 ### Goals
 
