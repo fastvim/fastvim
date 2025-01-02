@@ -1,4 +1,12 @@
-# fastvim <img src="https://github.com/BrunoCiccarino/BrunoCiccarino/blob/main/img/icons8-lua-language-96.png" height="48" width="48">
+<h1 align="center">
+  <br>
+  <a href="https://github.com/fastvim/fastvim">
+    <img src="./fastvim.png" width="600" height="400">
+  </a>
+  <br>
+  FastVim <img src="https://github.com/BrunoCiccarino/BrunoCiccarino/blob/main/img/icons8-lua-language-96.png" height="48" width="48"> 
+  <br>
+</h1>
 
 <p align="center">
   <a href="https://github.com/fastvim/fastvim">
@@ -45,6 +53,7 @@ Get ready to experience a Neovim setup that just works, without all the fluff. L
     - [💻 Setup](#-setup)
     - [Quickstart](#quickstart)
       - [🗺️ keymaps](#️-keymaps)
+      - [🎨 Color theme](#-color-theme)
     - [Goals](#goals)
   - [🔥 Contributing](#-contributing)
   - [Contributors](#contributors)
@@ -207,6 +216,36 @@ To make your workflow much more fluid, we created countless keyboard shortcuts b
 | \nh                | neorg_toggle_todo                 |
 | \nc                | neorg_toggle_concealer_visibility |
 | ctrl+t             | open toggle terminal              |
+
+#### 🎨 Color theme 
+
+Our default theme is nekonight, it comes with a pack with more than 25 themes, this is the table of some of them:
+
+| Theme Name            | Color |
+|-----------------------|-------|
+| Moon                  |       |
+| Storm                 |       |
+| Night                 |       |
+| Day                   |       |
+| Mars                  |       |
+| Nord                  |       |
+| Shades of Purple      |       |
+| Shades of Purple Dark |       |
+| OneDark               |       |
+| Fire Obsidian         |       |
+| Palenight             |       |
+| Noctis-Uva            |       |
+| Gruvbox               |       |
+| Dracula               |       |
+| Doom One              |       |
+| Zenburn               |       |
+| Material Theme        |       |
+| Arcdark               |       |
+| Moonlight             |       |
+| Synthwave             |       |
+| Space                 |       |
+| Aurora                |       |
+| OneDark Deep          |       |
 
 ### Goals
 
