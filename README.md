@@ -231,10 +231,13 @@ To make your workflow much more fluid, we created countless keyboard shortcuts b
     - [ ] custom theme for alpha nvim 
 - Lsp: 
     - [ ] lsp for astro js
+    - [ ] lsp for angular js
     - [ ] lsp for csharp
     - [ ] lsp for godot script 
     - [ ] lsp for haskell
     - [ ] lsp for python
+    - [ ] lsp for sveltejs
+    - [ ] lsp for vuejs 
 - Config loader:
     - [ ] Add asynchronous job to load config in real time
 
