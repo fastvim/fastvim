@@ -30,6 +30,7 @@ dashboard.section.footer.val = {
 
 alpha.setup(dashboard.config)
 
+
 require('telescope').setup({
     defaults = {
         mappings = {
