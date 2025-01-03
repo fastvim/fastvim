@@ -38,11 +38,11 @@
   </a>  
 </p>
 
-Welcome to Fastvim, the next-gen Neovim distro that’s fast, modern, and totally configurable. Built for lazy folks who don’t want to mess with endless configs, and for the Neovim Martian 👽 hackers who want total control over their setup. Whether you just want things to work out of the box or you love tweaking every little detail, Fastvim’s got your back.
+Welcome to Fastvim, the next-gen galactic ☄️ Neovim distro that’s fast, modern, and fully configurable. Built for both lazy people who don’t want to mess around with endless configurations, and for the martian 👽 Neovim hackers who want full control over their setup. Whether you just want things to work right out of the box or you love tweaking every little detail, Fastvim is here to help.
 
-This distro has everything you need for a smooth, efficient workflow, and if you're feeling adventurous, you can dive in and make it your own.
+This distro has everything you need for a smooth and efficient workflow, and if you’re feeling adventurous, you can dive in and make it your own. With custom themes 🎨 made just for you, if you like having themes for every phase and mood you’re going through, just like me.
 
-Get ready to experience a Neovim setup that just works, without all the fluff. Let’s get you set up, quick and easy!
+Get ready to experience a Neovim setup that just works, without all the hassle. Let’s get you set up, fast and easy!
 
 - [✨ Features](#-features)
 - [📦 requirements](#-requirements)
