@@ -224,7 +224,7 @@ FastVim introduces two exciting configurable features: seamless theme switching 
 Configuration Directory
 FastVim uses a dedicated directory for configurations, and its location depends on your operating system:
 
-Linux: `~/.fast.d/`
+- Linux: `~/.fast.d/`
 - Windows: `%AppData%\\.fast.d\\` (this points to the Roaming directory).
 Ensure this directory exists before proceeding.
 
