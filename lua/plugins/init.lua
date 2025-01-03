@@ -14,6 +14,20 @@ return {
     end,
   },
   {
+    "Dan7h3x/LazyDo",
+    branch = "main",
+    keys = {
+	{
+	"<F2>","<ESC><CMD>LazyDoToggle<CR>",
+	mode = {"n","i"},
+	},
+    },
+    event = "VeryLazy",
+    config = function ()
+      require('configs.editor.lazydo')
+    end,
+},
+  {
     'goolord/alpha-nvim',
     config = function ()
       require('configs.ui.alpha')
