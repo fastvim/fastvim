@@ -52,7 +52,7 @@ Get ready to experience a Neovim setup that just works, without all the hassle. 
   - [💻 Setup](#-setup)
   - [Quickstart](#quickstart)
     - [🗺️ keymaps](#️-keymaps)
-    - [⚙️  Config](#️--config)
+    - [⚙️  Unified Guide: Customizing FastVim](#️--unified-guide-customizing-fastvim)
   - [Tasks](#tasks)
   - [Goals](#goals)
 - [🔥 Contributing](#-contributing)
@@ -217,43 +217,59 @@ To make your workflow much more fluid, we created countless keyboard shortcuts b
 | \nc                | neorg_toggle_concealer_visibility |
 | ctrl+t             | open toggle terminal              |
 
+#### ⚙️  Unified Guide: Customizing FastVim 
 
-#### ⚙️  Config 
-
-With the latest update, fastvim introduces its first configurable module, the File Starter. This module is enabled by default, but if you prioritize performance, it is recommended to disable it. Here’s how you can configure this feature directly through the init file.
+FastVim introduces two exciting configurable features: seamless theme switching and the File Starter module. Both are simple to set up and give you control over your editor’s behavior. Let’s explore both options!
 
 Configuration Directory
-fastvim uses a dedicated configuration directory, which varies depending on your operating system:
+FastVim uses a dedicated directory for configurations, and its location depends on your operating system:
 
-- On Linux: ~/.fast.d/
-- On Windows: %AppData%\.fast.d\ (this points to the Roaming directory).
+Linux: `~/.fast.d/`
+- Windows: `%AppData%\\.fast.d\\` (this points to the Roaming directory).
 Ensure this directory exists before proceeding.
 
-Setting Up the Init File
+Setting Up Theme Switching
+Customize the look of your editor by easily switching themes.
+
 Open the configuration directory for your OS.
+Inside .fast.d, ensure there’s an init.lua file (create it if needed).
+Add this line to define your desired theme:
 
-Inside .fast.d, ensure there is an init file (create one if it doesn’t exist).
+```lua
+vim.g.define_colorscheme("themename")
+```
 
-Add the following line to disable the File Starter:
+Replace "themename" with the theme you want, like "gruvbox":
 
+```lua
+vim.g.define_colorscheme("gruvbox")
+```
+Managing the File Starter Module:
+The File Starter module is enabled by default, automatically creating Java class files. If performance is your priority, you might want to disable it.
+
+In the same init.lua file, add the following line to disable the module:
 ```lua
 vim.g.auto_create_java_class = false
 ```
-Loader Behavior
-The loader automatically parses the init file and applies your configurations during NeoVim startup. No additional imports or setup are required—just define your settings, and they’ll take effect.
+
+FastVim’s loader will automatically parse the init.lua file in your configuration directory and apply all settings during Neovim startup. No extra steps are required—just define your preferences, and they’ll take effect.
+
+Why Configure These Features?
+Theme Switching: Personalize your editor with styles that suit your taste, whether vibrant or minimalist.
 
 Why Disable the File Starter?
 Disabling this module removes the overhead associated with automatically creating Java class files. For users who value faster startup times or don’t rely on this feature, disabling it is a practical choice.
 
 This setup ensures flexibility while maintaining simplicity in configuration.
 
+
 ### Tasks
 
 - Handlers:
+    - [x] to set default theme
     - [ ] to exclude plugins from config
     - [ ] to add plugins to config
     - [ ] to set env vars
-    - [ ] to set default theme
     - [ ] to choose between snacks and mini
     - [ ] to enable or disable one of the lsp
 - Ui: 
