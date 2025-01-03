@@ -11,6 +11,8 @@
 
 #### improved
 
+- performance removing unused plugins 
+
 #### Added
 
 - LazyDo config 
@@ -18,6 +20,12 @@
 - Theme switcher handler 
 
 #### Removed
+
+- neogit 
+- lazydo 
+- markedviewer 
+- neotest
+- neogit 
 
 ## 0.0.4 2025-01-02
 
