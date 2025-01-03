@@ -35,6 +35,7 @@ local function load_config(config_dir)
 end
 
 local function init_config()
+  require('modules.handlers.init')
   local config_dir = get_config_directory()
   
   if config_dir then
