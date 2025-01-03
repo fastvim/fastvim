@@ -23,3 +23,6 @@ vim.cmd "syntax enable"
 vim.cmd "colorscheme nekonight-deep-ocean"
 require('core.mappings')
 require('modules.loader.init')
+require('modules.starter.init').setup()
+
+vim.g.auto_create_java_class = true

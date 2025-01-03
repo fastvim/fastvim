@@ -52,6 +52,7 @@ Get ready to experience a Neovim setup that just works, without all the hassle. 
   - [💻 Setup](#-setup)
   - [Quickstart](#quickstart)
     - [🗺️ keymaps](#️-keymaps)
+    - [⚙️  Config](#️--config)
   - [Tasks](#tasks)
   - [Goals](#goals)
 - [🔥 Contributing](#-contributing)
@@ -216,6 +217,35 @@ To make your workflow much more fluid, we created countless keyboard shortcuts b
 | \nc                | neorg_toggle_concealer_visibility |
 | ctrl+t             | open toggle terminal              |
 
+
+#### ⚙️  Config 
+
+With the latest update, fastvim introduces its first configurable module, the File Starter. This module is enabled by default, but if you prioritize performance, it is recommended to disable it. Here’s how you can configure this feature directly through the init file.
+
+Configuration Directory
+fastvim uses a dedicated configuration directory, which varies depending on your operating system:
+
+- On Linux: ~/.fast.d/
+- On Windows: %AppData%\.fast.d\ (this points to the Roaming directory).
+Ensure this directory exists before proceeding.
+
+Setting Up the Init File
+Open the configuration directory for your OS.
+
+Inside .fast.d, ensure there is an init file (create one if it doesn’t exist).
+
+Add the following line to disable the File Starter:
+
+```lua
+vim.g.auto_create_java_class = false
+```
+Loader Behavior
+The loader automatically parses the init file and applies your configurations during NeoVim startup. No additional imports or setup are required—just define your settings, and they’ll take effect.
+
+Why Disable the File Starter?
+Disabling this module removes the overhead associated with automatically creating Java class files. For users who value faster startup times or don’t rely on this feature, disabling it is a practical choice.
+
+This setup ensures flexibility while maintaining simplicity in configuration.
 
 ### Tasks
 
