@@ -14,37 +14,11 @@ return {
     end,
   },
   {
-    "Dan7h3x/LazyDo",
-    branch = "main",
-    keys = {
-	{
-	"<F2>","<ESC><CMD>LazyDoToggle<CR>",
-	mode = {"n","i"},
-	},
-    },
-    event = "VeryLazy",
-    config = function ()
-      require('configs.editor.lazydo')
-    end,
-},
-  {
     'goolord/alpha-nvim',
     config = function ()
       require('configs.ui.alpha')
     end
 };
-  {
-    "OXY2DEV/markview.nvim",
-    lazy = false,      
-
-    dependencies = {
-        "nvim-treesitter/nvim-treesitter",
-        "nvim-tree/nvim-web-devicons"
-    },
-    config = function ()
-      require('configs.editor.markeview')
-    end
-  },
   {
     "mfussenegger/nvim-jdtls",
     lazy = false
@@ -106,26 +80,6 @@ return {
     config = function()
       require('configs.yazi')
     end
-  },
-  {
-  "NeogitOrg/neogit",
-  dependencies = {
-    "nvim-lua/plenary.nvim",         
-    "sindrets/diffview.nvim",        
-    "nvim-telescope/telescope.nvim", 
-    "ibhagwan/fzf-lua",              
-    "echasnovski/mini.pick",         
-  },
-  config = function ()
-    require('configs.git.neogit')
-  end
-},
-  {
-  'sindrets/diffview.nvim',
-  dependencies = { 'nvim-tree/nvim-web-devicons' },
-  cmd = {
-    'DiffviewFileHistory', 'DiffviewOpen', 'DiffviewToggleFiles', 'DiffviewFocusFiles', 'DiffviewRefresh'
-  }
   },
   {
     "karb94/neoscroll.nvim",
@@ -272,18 +226,6 @@ return {
     "nvim-telescope/telescope.nvim",
     cmd = "Telescope",
     opts = require ('configs.telescope'),
-  },
-  {
-    "nvim-neotest/neotest",
-    optional = true,
-    dependencies = {
-      { "mrcjkb/neotest-haskell" },
-    },
-    opts = {
-      adapters = {
-        ["neotest-haskell"] = {},
-      },
-    },
   },
   {
     "lewis6991/gitsigns.nvim",
