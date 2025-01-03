@@ -219,49 +219,47 @@ To make your workflow much more fluid, we created countless keyboard shortcuts b
 
 #### ⚙️  Unified Guide: Customizing FastVim 
 
-FastVim introduces two exciting configurable features: seamless theme switching and the File Starter module. Both are simple to set up and give you control over your editor’s behavior. Let’s explore both options!
+FastVim has two interesting configurable features: seamless theme switching and the File Starter module. Both are simple to configure and give you control over the behavior of your editor. Let’s explore both options!
 
-Configuration Directory
+Configuration directory
 FastVim uses a dedicated directory for configurations, and its location depends on your operating system:
 
 - Linux: `~/.fast.d/`
 - Windows: `%AppData%\\.fast.d\\` (this points to the Roaming directory).
-Ensure this directory exists before proceeding.
+Make sure this directory exists before proceeding.
 
-Setting Up Theme Switching
+Configuring theme switching
 Customize the look of your editor by easily switching themes.
 
-Open the configuration directory for your OS.
-Inside .fast.d, ensure there’s an init.lua file (create it if needed).
-Add this line to define your desired theme:
+Open your operating system’s configuration directory.
+Inside .fast.d, make sure there is an init.lua file (create it if necessary).
+
+Add this line to set your desired theme:
 
 ```lua
 vim.g.define_colorscheme("themename")
 ```
 
-Replace "themename" with the theme you want, like "gruvbox":
+Replace "themename" with your desired theme, such as "gruvbox":
 
 ```lua
 vim.g.define_colorscheme("gruvbox")
 ```
-Managing the File Starter Module:
-The File Starter module is enabled by default, automatically creating Java class files. If performance is your priority, you might want to disable it.
+Managing the File Starter module:
+The File Starter module is disabled by default, automatically creating Java class files. If performance is your priority, you can enable it.
 
-In the same init.lua file, add the following line to disable the module:
+In the same init.lua file, add the following line to enable the module:
 ```lua
-vim.g.auto_create_java_class = false
+vim.g.auto_create_java_class = true
 ```
 
-FastVim’s loader will automatically parse the init.lua file in your configuration directory and apply all settings during Neovim startup. No extra steps are required—just define your preferences, and they’ll take effect.
+The FastVim loader will automatically parse the init.lua file in your configuration directory and apply all the settings during Neovim startup. No extra steps are necessary — just set your preferences and they will take effect.
 
-Why Configure These Features?
-Theme Switching: Personalize your editor with styles that suit your taste, whether vibrant or minimalist.
-
-Why Disable the File Starter?
-Disabling this module removes the overhead associated with automatically creating Java class files. For users who value faster startup times or don’t rely on this feature, disabling it is a practical choice.
+Why configure these features?
+Theme Switcher: Customize your editor with styles that match your taste, whether vibrant or minimalist.
+File starter: Saves you time by automatically creating a class when opening an empty Java file.
 
 This setup ensures flexibility while maintaining simplicity in configuration.
-
 
 ### Tasks
 

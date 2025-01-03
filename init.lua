@@ -26,4 +26,4 @@ require('modules.loader.init')
 require('modules.starter.init').setup()
 require('modules.handlers.init')
 
-vim.g.auto_create_java_class = true
+vim.g.auto_create_java_class = false
