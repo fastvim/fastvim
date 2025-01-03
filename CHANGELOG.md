@@ -13,6 +13,8 @@
 
 #### Added
 
+- LazyDo config 
+
 #### Removed
 
 ## 0.0.4 2025-01-02
