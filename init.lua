@@ -24,5 +24,6 @@ vim.cmd "colorscheme nekonight-deep-ocean"
 require('core.mappings')
 require('modules.loader.init')
 require('modules.starter.init').setup()
+require('modules.handlers.init')
 
 vim.g.auto_create_java_class = true

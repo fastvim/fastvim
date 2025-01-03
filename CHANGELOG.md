@@ -14,6 +14,8 @@
 #### Added
 
 - LazyDo config 
+- File starter handler
+- Theme switcher handler 
 
 #### Removed
 
