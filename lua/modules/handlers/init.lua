@@ -14,4 +14,3 @@ end
 vim.g.define_colorscheme = define_colorscheme
 
 return M
-
