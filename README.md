@@ -181,6 +181,15 @@ This configuration comes with pre-mapped keys for common actions. Check the keyb
 ```bash
 :help keymaps
 ```
+
+FastVim features a robust, Telescope-based search-and-replace system designed to optimize your workflow. With just two commands, you can efficiently find and replace terms across your project:
+
+Replace in Selected Files: `:LazyReplace`
+Use this command to replace terms within files containing matches for your search term.
+FastVim will perform the replacements in the selected files and provide a summary of the results.
+
+Replace Everywhere: `:LazyReplaceAll`
+For project-wide replacements, simply use `:LazyReplaceAll`.
 You're now ready to enjoy a complete IDE experience with FastVim!
 
 #### 🗺️ keymaps
