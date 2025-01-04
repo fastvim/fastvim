@@ -270,6 +270,7 @@ This setup ensures flexibility while maintaining simplicity in configuration.
     - [ ] to set env vars
     - [ ] to choose between snacks and mini
     - [ ] to enable or disable one of the lsp
+    - [ ] fast mode (load only lsp and completion plugins)
 - Ui: 
     - [ ] custom theme for alpha nvim 
 - Lsp: 
