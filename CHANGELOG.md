@@ -18,6 +18,7 @@
 - LazyDo config 
 - File starter handler
 - Theme switcher handler 
+- LazyReplace
 
 #### Removed
 
