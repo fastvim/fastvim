@@ -21,6 +21,7 @@
 - Theme switcher handler 
 - LazyReplace
 - typescript tools plugin 
+- adding distro snippets
 
 #### Removed
 
