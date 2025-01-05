@@ -1,6 +1,6 @@
-local M = {}
+local htmll = {}
 
-M.setup = function(capabilities)
+htmll.setup = function(capabilities)
   local lspconfig = require 'lspconfig'
 
   lspconfig.html.setup {
@@ -8,5 +8,5 @@ M.setup = function(capabilities)
   }
 end
 
-return M
+return htmll
 

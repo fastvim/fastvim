@@ -1,6 +1,6 @@
-local M = {}
+local ts = {}
 
-M.setup = function(capabilities, on_attach)
+ts.setup = function(capabilities, on_attach)
   require('lspconfig').ts_ls.setup {
     capabilities = capabilities,
     on_attach = on_attach, 
@@ -42,5 +42,5 @@ M.setup = function(capabilities, on_attach)
   }
 end
 
-return M
+return ts
 
