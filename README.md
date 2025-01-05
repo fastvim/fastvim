@@ -283,13 +283,13 @@ This setup ensures flexibility while maintaining simplicity in configuration.
 - Ui: 
     - [ ] custom theme for alpha nvim 
 - Lsp: 
-    - [ ] lsp for astro js
+    - [x] lsp for astro js
     - [x] lsp for angular js
     - [ ] lsp for csharp
     - [ ] lsp for godot script 
     - [ ] lsp for haskell
-    - [ ] lsp for python
-    - [ ] lsp for sveltejs
+    - [x] lsp for python
+    - [x] lsp for sveltejs
     - [x] lsp for vuejs 
 - Config loader:
     - [ ] Add asynchronous job to load config in real time

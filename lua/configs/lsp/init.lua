@@ -29,6 +29,9 @@ M.setup_lsp_servers = function()
   local clangd = require 'configs.lsp.clangd'
   local vue = require 'configs.lsp.vue'
   local angular = require 'configs.lsp.angular'
+  local astro = require 'configs.lsp.astro'
+  local svelte = require 'configs.lsp.svelte'
+  local python = require 'configs.lsp.python'
 
   lua.setup(M.capabilities)
   go.setup(M.capabilities)
@@ -38,6 +41,9 @@ M.setup_lsp_servers = function()
   clangd.setup(M.capabilities)
   vue.setup(M.capabilities)
   angular.setup(M.capabilities)
+  astro.setup(M.capabilities)
+  svelte.setup(M.capabilities)
+  python.setup(M.capabilities)
 
   local java = require('configs.lsp.java')  
   vim.cmd("doautocmd BufWinEnter *.java")  

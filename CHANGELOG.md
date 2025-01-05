@@ -22,6 +22,10 @@
 - LazyReplace
 - typescript tools plugin 
 - adding distro snippets
+- adding astro js lsp 
+- adding angular lsp 
+- adding svelte lsp 
+- adding python lsp 
 
 #### Removed
 
