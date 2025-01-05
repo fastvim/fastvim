@@ -30,6 +30,7 @@ return {
         'typescript',
         'typescriptreact',
         'vue',
+        'angular'
       },
       settings = {
         tsserver_plugins = {

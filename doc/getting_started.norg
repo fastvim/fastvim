@@ -23,6 +23,5 @@
 
   Get ready to experience a Neovim setup that just works, without all the hassle. Let’s get you set up, fast and easy!
 
-* Configuring fastvim
-
-
+* Configuring Fastvim
+  From version 0.0.4 we have the ability to be configurable, the distro settings must be in Linux in the home/.fast.d directory and in Windows in AppData\Roaming\.fast.d and now to start I will show you some of the configuration options you can do!

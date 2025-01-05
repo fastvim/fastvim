@@ -25,6 +25,7 @@ require('core.mappings')
 require('modules.loader.init')
 require('modules.starter.init').setup()
 require('modules.handlers.init')
+require('core.functions')
 
 vim.g.auto_create_java_class = false
 
