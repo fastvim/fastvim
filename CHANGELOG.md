@@ -12,6 +12,7 @@
 #### improved
 
 - performance removing unused plugins 
+- standard theme changing highlights
 
 #### Added
 
@@ -19,6 +20,7 @@
 - File starter handler
 - Theme switcher handler 
 - LazyReplace
+- typescript tools plugin 
 
 #### Removed
 

@@ -29,3 +29,4 @@ require('modules.handlers.init')
 vim.g.auto_create_java_class = false
 
 require('modules.lazyreplace.init').setup()
+require('modules.snippets.init')
