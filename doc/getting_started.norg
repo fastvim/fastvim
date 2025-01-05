@@ -1,0 +1,28 @@
+@document.meta
+  title: fastvim manual
+	description: FastVim User Manual
+	author: Bruno Ciccarino
+	categories: fast vim manual
+  created: 2024-12-14
+	version: 0.4
+@end
+
+= TOC Table of Contents
+
+* Table of Contents
+  -> {# Introduction}
+  -> {# Configuring fastvim}
+  --> {# Modules}
+  -> {# Features}
+
+* Introduction 
+
+  Welcome to Fastvim, the next-gen galactic ☄️ Neovim distro that’s fast, modern, and fully configurable. Built for both lazy people who don’t want to mess around with endless configurations, and for the martian 👽 Neovim hackers who want full control over their setup. Whether you just want things to work right out of the box or you love tweaking every little detail, Fastvim is here to help.
+
+  This distro has everything you need for a smooth and efficient workflow, and if you’re feeling adventurous, you can dive in and make it your own. With custom themes 🎨 made just for you, if you like having themes for every phase and mood you’re going through, just like me.
+
+  Get ready to experience a Neovim setup that just works, without all the hassle. Let’s get you set up, fast and easy!
+
+* Configuring fastvim
+
+

@@ -1,3 +1,4 @@
+
 local function get_config_directory()
   local home = vim.fn.expand('$HOME')
   local appdata = vim.fn.getenv('APPDATA')
@@ -15,6 +16,8 @@ local function get_config_directory()
 end
 
 local function load_config(config_dir)
+  local Logger = require('modules.logger.init')
+  
   if config_dir and vim.fn.isdirectory(config_dir) == 1 then
     local files = vim.fn.glob(config_dir .. '/*', false, true)
     
@@ -27,21 +30,22 @@ local function load_config(config_dir)
         end
       end
     else
-      print("No configuration files found in: " .. config_dir)
+      Logger.error("No configuration files found in: " .. config_dir)
     end
   else
-    print("Configuration directory does not exist: " .. config_dir)
+    Logger.error("Configuration directory does not exist: " .. config_dir)
   end
 end
 
 local function init_config()
+  local Logger = require('modules.logger.init')
   require('modules.handlers.init')
   local config_dir = get_config_directory()
   
   if config_dir then
     load_config(config_dir)
   else
-    print("Unable to determine config directory.")
+    Logger.error("Unable to determine config directory.")
   end
 end
 
