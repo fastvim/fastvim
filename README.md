@@ -320,7 +320,7 @@ That said, there's a bunch of ways you can contribute to this project, like by:
 
 * ⭐ Giving a star on this repository (this is very important and costs nothing)
 * 🪲 Reporting a bug
-* 📄 Improving this [documentation](./doc/getting_started.md)
+* 📄 Improving this [documentation](./doc/getting_started.norg)
 * 🚨 Sharing this project and recommending it to your friends
 * 💻 Submitting a pull request to the official repository
 
