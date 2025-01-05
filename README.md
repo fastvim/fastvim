@@ -72,14 +72,19 @@ Get ready to experience a Neovim setup that just works, without all the hassle. 
 - 📦 Contains a variety of pre-configured and ready-to-use plugins
 
 - ⚙️ **LSP (Language Server Protocol)**:
+    - 🖥️ **astro.lua** - Astro server configuration
+    - 🖥️ **angular.lua** - Angular server configuration
     - 🖥️ **clangd.lua** - clangd server configuration
     - 🌐 **cssls.lua** - CSSLS server configuration
     - 🖥️ **go.lua** - Go server configuration
     - 🌐 **html.lua** - HTML server configuration
     - 🖥️ **java.lua** - Java server configuration
     - 🖥️ **lua.lua** - Lua server configuration
-    - 🖥️ **ts_ls.lua** - TypeScript server configuration
+    - 🖥️ **python.lua** - Python server configuration
+    - 🖥️ **svelte.lua** - Svelte server configuration
+    - 🖥️ **ts_ls.lua** - TypeScript/JavaScript server configuration
     - 🔧 **utils.lua** - LSP utilities
+    - 🖥️ **vue.lua** - Vue server configuration
 
 ## 📦 requirements 
 
