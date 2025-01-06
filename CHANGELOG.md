@@ -26,6 +26,8 @@
 - adding angular lsp 
 - adding svelte lsp 
 - adding python lsp 
+- adding colorfull-menu config
+- doc function
 
 #### Removed
 
@@ -34,7 +36,11 @@
 - markedviewer 
 - neotest
 - neogit 
-
+- diffview.nvim 
+- fastvim.nvim 
+- fzf-lua 
+-  LazyDo  
+  
 ## 0.0.4 2025-01-02
 
 #### improved 
