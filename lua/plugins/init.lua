@@ -23,6 +23,29 @@ return {
     config = function ()
       require('configs.mini')
     end,
+  },
+  {
+    "hrsh7th/nvim-cmp",
+    event = "InsertEnter",
+    dependencies = {
+      "hrsh7th/cmp-buffer",
+      "hrsh7th/cmp-path",
+      "hrsh7th/cmp-nvim-lsp",
+      "saadparwaiz1/cmp_luasnip",
+      "hrsh7th/cmp-nvim-lua",
+
+      "rafamadriz/friendly-snippets",
+
+      {
+        "L3MON4D3/LuaSnip",
+        config = function()
+          require('luasnip.loaders.from_vscode').lazy_load()
+        end,
+      },
+    },
+    opts = function()
+      return require ('configs.cmp')
+    end,
   }, 
   {
     "BrunoCiccarino/neokinds",
