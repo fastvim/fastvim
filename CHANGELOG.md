@@ -28,6 +28,7 @@
 - adding python lsp 
 - adding colorfull-menu config
 - doc function
+- blinl cmp
 
 #### Removed
 
@@ -39,8 +40,9 @@
 - diffview.nvim 
 - fastvim.nvim 
 - fzf-lua 
--  LazyDo  
-  
+- LazyDo  
+- cmp
+
 ## 0.0.4 2025-01-02
 
 #### improved 

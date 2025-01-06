@@ -6,13 +6,24 @@ return {
       require('configs.plenary')
     end
   },
+  {
+    'saghen/blink.cmp',
+    dependencies = 'rafamadriz/friendly-snippets',
+  
+    version = '*',
+    ---@module 'blink.cmp'
+    ---@type blink.cmp.Config
+    config = function ()
+      require('configs.blink-cmp')
+    end,
+  },
   { 
     "echasnovski/mini.nvim", 
     version = '*',
     config = function ()
       require('configs.mini')
     end,
-  },
+  }, 
   {
     "xzbdmw/colorful-menu.nvim",
     config = function ()
@@ -204,30 +215,6 @@ return {
   -- so lets lazyload it at InsertEnter event, to know all the events check h-events
   -- completion , now all of these plugins are dependent on cmp, we load them after cmp
   {
-    "hrsh7th/nvim-cmp",
-    event = "InsertEnter",
-    dependencies = {
-      "hrsh7th/cmp-buffer",
-      "hrsh7th/cmp-path",
-      "hrsh7th/cmp-nvim-lsp",
-      "saadparwaiz1/cmp_luasnip",
-      "hrsh7th/cmp-nvim-lua",
-
-      "rafamadriz/friendly-snippets",
-
-      {
-        "L3MON4D3/LuaSnip",
-        config = function()
-          require('luasnip.loaders.from_vscode').lazy_load()
-        end,
-      },
-    },
-    opts = function()
-      return require ('configs.cmp')
-    end,
-  },
-
-  {
     "williamboman/mason.nvim",
     build = ":MasonUpdate",
     cmd = { "Mason", "MasonInstall" },
@@ -247,6 +234,11 @@ return {
     config = function()
       require ('configs.lspconfig')
     end,
+  },
+  {
+    "L3MON4D3/LuaSnip",
+    version = "v2.*", 
+    build = "make install_jsregexp"
   },
   {
     "stevearc/conform.nvim",
