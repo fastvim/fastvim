@@ -195,6 +195,11 @@ FastVim will perform the replacements in the selected files and provide a summar
 
 Replace Everywhere: `:LazyReplaceAll`
 For project-wide replacements, simply use `:LazyReplaceAll`.
+
+**documentation**
+
+In this latest update of version 0.0.4 we added documentation written in neorg, as neorg is more complete, both in highlighting and other features, it is as good as markdown for documentation, and at any time you can open the documentation to ask any questions with `Ctrl + d`. 
+
 You're now ready to enjoy a complete IDE experience with FastVim!
 
 #### 🗺️ keymaps

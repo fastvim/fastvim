@@ -1,5 +1,7 @@
+local functions = {}
+
 -- Open FastVim user manual
-open_docs = function()
+functions.open_docs = function()
     local docs_path = vim.fn.stdpath("config") .. "/doc/getting_started.norg"
   
     if not vim.loop.fs_stat(docs_path) then
@@ -32,3 +34,4 @@ open_docs = function()
     end
   end
   
+return functions
