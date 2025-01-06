@@ -30,7 +30,6 @@ require("colorful-menu").setup({
     roslyn = {
       extra_info_hl = "@comment",
     },
-
     fallback = true,
     },
   fallback_highlight = "@variable",

@@ -1,11 +1,16 @@
 local map = vim.keymap.set
 local cmd = vim.cmd
 local input = vim.api.nvim_input 
-require('core.update')
+
+local up = require('core.update')
+local fn = require('core.functions')
+
+-- see doc 
+map('n', '<C-d>', function() fn.open_docs() end, { noremap = true, silent = true, desc = 'Split window and open FastVim user manual' })
 
 -- updates 
-map('n', '<leader>fu', function() M.update_to_latest() end, { noremap = true, silent = true, desc = 'Update to the latest version' })
-map('n', '<leader>fs', function() M.update_to_stable() end, { noremap = true, silent = true, desc = 'Update to the stable version' })
+map('n', '<leader>fu', function() up.update_to_latest() end, { noremap = true, silent = true, desc = 'Update to the latest version' })
+map('n', '<leader>fs', function() up.update_to_stable() end, { noremap = true, silent = true, desc = 'Update to the stable version' })
 
 map("n", "<C-s>", "<cmd> w <CR>")
 map("i", "jk", "<ESC>")
