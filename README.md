@@ -235,6 +235,7 @@ To make your workflow much more fluid, we created countless keyboard shortcuts b
 | \nh                | neorg_toggle_todo                 |
 | \nc                | neorg_toggle_concealer_visibility |
 | ctrl+t             | open toggle terminal              |
+| ctrl+d             | open fastvim user reference manual|
 
 #### ⚙️  Unified Guide: Customizing FastVim 
 
