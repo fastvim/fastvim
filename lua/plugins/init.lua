@@ -14,6 +14,12 @@ return {
     end,
   },
   {
+    "xzbdmw/colorful-menu.nvim",
+    config = function ()
+      require('configs.colorful-menu')
+    end
+  },
+  {
     'pmizio/typescript-tools.nvim',
   dependencies = { 'nvim-lua/plenary.nvim', 'neovim/nvim-lspconfig' },
   opts = {},
@@ -81,6 +87,12 @@ return {
                 },
             },
         }
+    end,
+  },
+  {
+    'grzegorzszczepanek/gamify.nvim',
+    config = function()
+      require('gamify')
     end,
   },
   {

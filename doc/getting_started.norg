@@ -24,4 +24,46 @@
   Get ready to experience a Neovim setup that just works, without all the hassle. Let’s get you set up, fast and easy!
 
 * Configuring Fastvim
-  From version 0.0.4 we have the ability to be configurable, the distro settings must be in Linux in the home/.fast.d directory and in Windows in AppData\Roaming\.fast.d and now to start I will show you some of the configuration options you can do!
+  
+FastVim has two interesting configurable features: seamless theme switching and the File Starter module. Both are simple to configure and give you control over the behavior of your editor. Let’s explore both options!
+
+Configuration directory
+FastVim uses a dedicated directory for configurations, and its location depends on your operating system:
+
+  - Linux: `~/.fast.d/`
+  - Windows: `%AppData%\\.fast.d\\` (this points to the Roaming directory).
+Make sure this directory exists before proceeding.
+
+Configuring theme switching
+Customize the look of your editor by easily switching themes.
+
+Open your operating system’s configuration directory.
+Inside .fast.d, make sure there is an init.lua file (create it if necessary).
+
+Add this line to set your desired theme:
+
+@code lua
+vim.g.define_colorscheme("themename")
+@end
+
+Replace "themename" with your desired theme, such as "gruvbox":
+
+@code lua
+vim.g.define_colorscheme("gruvbox")
+@end
+
+Managing the File Starter module:
+The File Starter module is disabled by default, automatically creating Java class files. If performance is your priority, you can enable it.
+
+In the same init.lua file, add the following line to enable the module:
+@code lua
+vim.g.auto_create_java_class = true
+@end
+
+The FastVim loader will automatically parse the init.lua file in your configuration directory and apply all the settings during Neovim startup. No extra steps are necessary — just set your preferences and they will take effect.
+
+Why configure these features?
+Theme Switcher: Customize your editor with styles that match your taste, whether vibrant or minimalist.
+File starter: Saves you time by automatically creating a class when opening an empty Java file.
+
+This setup ensures flexibility while maintaining simplicity in configuration.
