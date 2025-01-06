@@ -25,6 +25,12 @@ return {
     end,
   }, 
   {
+    "BrunoCiccarino/neokinds",
+    config = function ()
+      require('configs.neokinds')
+    end    
+  },
+  {
     "xzbdmw/colorful-menu.nvim",
     config = function ()
       require('configs.colorful-menu')

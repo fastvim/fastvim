@@ -1,25 +1,28 @@
-require('blink-cmp').setup({
-        completion = {
-            menu = {
-              draw = {
-                components = {
-                  kind_icon = {
-                    ellipsis = false,
-                    text = function(ctx)
-                      local kind_icon, _, _ = require('mini.icons').get('lsp', ctx.kind)
-                      return kind_icon
-                    end,
-                    
-                    highlight = function(ctx)
-                      local _, hl, _ = require('mini.icons').get('lsp', ctx.kind)
-                      return hl
-                    end,
-                  },
-                },
-              },
-            },
-          },        
+local neokinds = require("neokinds")
 
+require('blink-cmp').setup({
+    completion = {
+        list = { selection = function(ctx) return ctx.mode == "cmdline" and "auto_insert" or "preselect" end },
+        menu = {
+            border = "rounded",
+            winhighlight = "Normal:NormalFloat,FloatBorder:FloatBorder,CursorLine:PmenuSel,Search:None",
+            draw = {
+                components = {
+                    kind_icon = {
+                        text = function(ctx)
+                            
+                            local icon = neokinds.config.completion_kinds[ctx.kind] or ""
+                            return icon .. " " .. (ctx.kind or "")
+                        end,
+                        highlight = function(ctx)
+                            
+                            return "CmpItemKind" .. (ctx.kind or "Default")
+                        end,
+                    },
+                },
+            },
+        },
+    },
           keymap = {
             preset = 'enter',
         
@@ -42,7 +45,8 @@ require('blink-cmp').setup({
             
       appearance = {
         use_nvim_cmp_as_default = true,
-        nerd_font_variant = 'mono'
+        nerd_font_variant = 'mono',
+        use_nvim_cmp_as_default = true,
       },
       snippets = {
         expand = function(snippet) require('luasnip').lsp_expand(snippet) end,
@@ -58,6 +62,6 @@ require('blink-cmp').setup({
       sources = {
         default = { 'lsp', 'path', 'snippets', 'buffer' },
         cmdline = {},
-      },    
+      },
 --    opts_extend = { "sources.default" },    
 })
