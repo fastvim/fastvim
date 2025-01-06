@@ -1,12 +1,13 @@
 local cmp = require("cmp")
 local luasnip = require("luasnip")
+local neokinds = require("neokinds") -- Certifique-se de que o plugin está instalado
 
-return {
+cmp.setup({
   snippet = {
     expand = function(args)
       luasnip.lsp_expand(args.body)
     end,
-},
+  },
 
   mapping = cmp.mapping.preset.insert({
     ["<C-b>"] = cmp.mapping.scroll_docs(-4),
@@ -14,35 +15,24 @@ return {
     ["<C-Space>"] = cmp.mapping.complete(),
     ["<C-e>"] = cmp.mapping.abort(),
     ["<CR>"] = cmp.mapping.confirm({ select = true }),
-
     ["<Tab>"] = cmp.mapping(function(fallback)
       if cmp.visible() then
         cmp.select_next_item()
       elseif luasnip.expand_or_jumpable() then
-        vim.fn.feedkeys(vim.api.nvim_replace_termcodes("<Plug>luasnip-expand-or-jump", true, true, true), "")
+        luasnip.expand_or_jump()
       else
         fallback()
       end
-    end, {
-      "i",
-      "s",
-    }),
-
+    end, { "i", "s" }),
     ["<S-Tab>"] = cmp.mapping(function(fallback)
       if cmp.visible() then
         cmp.select_prev_item()
       elseif luasnip.jumpable(-1) then
-        vim.fn.feedkeys(vim.api.nvim_replace_termcodes("<Plug>luasnip-jump-prev", true, true, true), "")
+        luasnip.jump(-1)
       else
         fallback()
       end
-    end, {
-      "i",
-      "s",
-    }),
-
-    ["<C-n>"] = cmp.mapping.select_next_item(),
-    ["<C-p>"] = cmp.mapping.select_prev_item(),
+    end, { "i", "s" }),
   }),
 
   sources = cmp.config.sources({
@@ -56,18 +46,14 @@ return {
   }),
 
   window = {
-    completion = cmp.config.window.bordered({
-      border = "rounded",
-      winhighlight = "Normal:Pmenu,FloatBorder:PmenuBorder,Search:PmenuSel",
-    }),
-    documentation = cmp.config.window.bordered({
-      border = "rounded",
-      winhighlight = "NormalFloat:Normal,FloatBorder:FloatBorder,Search:Search",
-    }),
+    completion = cmp.config.window.bordered(),
+    documentation = cmp.config.window.bordered(),
   },
 
   formatting = {
     format = function(entry, vim_item)
+      
+      vim_item.kind = string.format("%s %s", neokinds[vim_item.kind] or "", vim_item.kind)
       vim_item.menu = ({
         nvim_lsp = "[LSP]",
         luasnip = "[Snippet]",
@@ -77,11 +63,10 @@ return {
         calc = "[Calc]",
         emoji = "[Emoji]",
       })[entry.source.name] or ""
-        vim_item.kind = string.format("%s %s", M.config.completion_kinds[vim_item.kind] or "", vim_item.kind)
-    return vim_item
+      return vim_item
     end,
   },
-  
+
   experimental = {
     ghost_text = true,
   },
@@ -96,12 +81,7 @@ return {
   },
 
   completion = {
-    autocomplete = {
-      require("cmp.types").cmp.TriggerEvent.TextChanged,
-    },
+    autocomplete = { cmp.TriggerEvent.TextChanged },
     keyword_length = 3,
   },
-
-  -- Remove deprecated "documentation" section and ensure compatibility
-  -- by handling all window-related configurations within `window`.
-}
+})

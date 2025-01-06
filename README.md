@@ -348,6 +348,7 @@ This project thanks everyone who inspired it
 - [space-vim](https://github.com/SpaceVim/SpaceVim)
 - [lunar-vim](https://github.com/LunarVim/LunarVim)
 - [LazyVim](https://github.com/LazyVim/LazyVim)
+- [NvChad](https://github.com/NvChad/NvChad)
 
 ## 👨‍🏫 Team 
 - [BrunoCiccarino](https://github.com/BrunoCiccarino): wsl-ubuntu
