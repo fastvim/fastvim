@@ -1,0 +1,308 @@
+doc.txt
+
+================================================================================
+CONTENTS                                                            *doc-contents*
+
+    1. ✨ Features.............................................|doc-✨_features|
+    2. 📦 requirements...................................|doc-📦_requirements|
+    3. 💤 Installation...................................|doc-💤_installation|
+            3.1. linux or mac...................................|doc-linux_or_mac|
+            3.2. Windows.............................................|doc-windows|
+        3.1. 💻 Setup...........................................|doc-💻_setup|
+        3.2. Quickstart...........................................|doc-quickstart|
+            3.2.1. 🗺️ keymaps...........................|doc-🗺️_keymaps|
+            3.2.2. ⚙️  Unified Guide: Customizing FastVim.|doc-⚙️__unified_guide:_customizing_fastvim|
+        3.3. Tasks.....................................................|doc-tasks|
+        3.4. Goals.....................................................|doc-goals|
+    4. 🔥 Contributing...................................|doc-🔥_contributing|
+    5. Contributors.............................................|doc-contributors|
+    6. 👏 Acknowledgements...........................|doc-👏_acknowledgements|
+    7. 👨‍🏫 Team.....................................|doc-👨‍🏫_team|
+    8. ☕ Sponsor this project.....................|doc-☕_sponsor_this_project|
+
+Welcome to Fastvim, the next-gen galactic ☄️ Neovim distro that’s fast, modern, and fully configurable. Built for both lazy people who don’t want to mess around with endless configurations, and for the martian 👽 Neovim hackers who want full control over their setup. Whether you just want things to work right out of the box or you love tweaking every little detail, Fastvim is here to help.
+
+This distro has everything you need for a smooth and efficient workflow, and if you’re feeling adventurous, you can dive in and make it your own. With custom themes 🎨 made just for you, if you like having themes for every phase and mood you’re going through, just like me.
+
+Get ready to experience a Neovim setup that just works, without all the hassle. Let’s get you set up, fast and easy!
+
+--------------------------------------------------------------------------------
+✨ FEATURES                                                    *doc-✨_features*
+
+*   🔥 Turn your Neovim into a complete IDE.
+*   💤 Customize and extend your configuration easily with lazy.nvim
+*   🚀 Super fast
+*   🧹 Common settings for options, autocms and keymaps
+*   📦 Contains a variety of pre-configured and ready-to-use plugins
+*   ⚙️ LSP (Language Server Protocol):
+    *   🖥️ astro.lua - Astro server configuration
+    *   🖥️ angular.lua - Angular server configuration
+    *   🖥️ clangd.lua - clangd server configuration
+    *   🌐 cssls.lua - CSSLS server configuration
+    *   🖥️ go.lua - Go server configuration
+    *   🌐 html.lua - HTML server configuration
+    *   🖥️ java.lua - Java server configuration
+    *   🖥️ lua.lua - Lua server configuration
+    *   🖥️ python.lua - Python server configuration
+    *   🖥️ svelte.lua - Svelte server configuration
+    *   🖥️ ts_ls.lua - TypeScript/JavaScript server configuration
+    *   🔧 utils.lua - LSP utilities
+    *   🖥️ vue.lua - Vue server configuration
+
+--------------------------------------------------------------------------------
+📦 REQUIREMENTS                                          *doc-📦_requirements*
+
+*   Neovim >= 0.9.0 (needs to be built with LuaJIT)
+*   Git >= 2.19.0 (for partial clones support)
+*   a Nerd Font(v3.0 or greater) (optional, but needed to display some icons)
+*   a C compiler for nvim-treesitter. See here (https://github.com/nvim-treesitter/nvim-treesitter#requirements)
+
+--------------------------------------------------------------------------------
+💤 INSTALLATION                                          *doc-💤_installation*
+>
+    mv ~/.config/nvim ~/.config/nvim.bak
+    mv ~/.local/share/nvim ~/.local/share/nvim.bak 
+<
+
+LINUX OR MAC                                                    *doc-linux_or_mac*
+>
+    git clone https://github.com/fastvim/fastvim.git ~/.config/nvim 
+    cd .config/nvim
+    nvim # Then it will download everything by itself
+<
+
+WINDOWS                                                              *doc-windows*
+>
+    git clone https://github.com/fastvim/fastvim.git $HOME\AppData\Local\nvim 
+<
+
+💻 SETUP                                                        *doc-💻_setup*
+
+For the distro to work as expected, we need to configure a few things, let's start by downloading the lsp(language server protocol) that you will use by installing with mason
+
+To do this you type: `MasonInstall LspName`
+
+Ex:
+>
+    :MasonInstall clangd
+<
+
+Or if you are java dev
+>
+    MasonInstall jdtls
+<
+
+Lsp (language server protocol) bring you countless benefits when coding, such as auto completions, syntactic error warnings in real time, and for this we have some plugins like [nvim-cmp](), for snippets we have [ luasnip]() that works exceptionally well and we have mini.pairs to autocomplete special characters like [], (), <>, etc...
+
+
+
+With the setup complete, you're now ready to dive into using your new Neovim IDE. Let's get started!
+
+QUICKSTART                                                        *doc-quickstart*
+
+Now that everything is set up, let's jump into using FastVim. Follow these steps to start coding efficiently:
+
+Open Neovim
+Launch Neovim by running:
+>
+    nvim
+<
+
+Explore the Dashboard
+Upon starting Neovim, you'll see a customizable dashboard. Use it to quickly open recent files, create new projects, or access settings.
+
+Install Plugins
+Ensure all required plugins are installed by running:
+>
+    :Lazy
+<
+
+This will display the plugin manager. Press u to update all plugins.
+
+Set Up LSP
+If you haven't installed your language server yet, use Mason:
+>
+    :MasonInstall <LspName>
+<
+
+Replace  with the appropriate server for your language (e.g., clangd for C/C++, jdtls for Java).
+
+Start Coding
+Open a file or create a new one:
+>
+    nvim myfile.<extension>
+<
+
+Replace  with the file type you're working with (e.g., java, go, sql). Autocompletions, syntax highlighting, and LSP features will be ready to assist you.
+
+update distro
+
+To update the distro you have two options, `:FastUpdate` which will update the distro to the latest version, and `:FastStable` which will update the distro to the latest stable version (recommended)
+
+Explore Keymaps
+This configuration comes with pre-mapped keys for common actions. Check the keybindings guide by pressing:
+>
+    :help keymaps
+<
+
+FastVim features a robust, Telescope-based search-and-replace system designed to optimize your workflow. With just two commands, you can efficiently find and replace terms across your project:
+
+Replace in Selected Files: `:LazyReplace`
+Use this command to replace terms within files containing matches for your search term.
+FastVim will perform the replacements in the selected files and provide a summary of the results.
+
+Replace Everywhere: `:LazyReplaceAll`
+For project-wide replacements, simply use `:LazyReplaceAll`.
+
+documentation
+
+In this latest update of version 0.0.4 we added documentation written in neorg, as neorg is more complete, both in highlighting and other features, it is as good as markdown for documentation, and at any time you can open the documentation to ask any questions with `Ctrl + d`.
+
+You're now ready to enjoy a complete IDE experience with FastVim!
+
+🗺️ KEYMAPS                                              *doc-🗺️_keymaps*
+
+To make your workflow much more fluid, we created countless keyboard shortcuts both to use the incredible plugins and to move around neovim in a faster and more efficient way.
+
+| shortcut           | action                            |
+|--------------------|-----------------------------------|
+| \fu                | fast update                       |
+| \fs                | fast stable distro update         |
+| ctrl-h             | focus_nvimtree                    |
+| ctrl-n             | toggle_nvimtree                   |
+| \ff                | find_files                        |
+| \fo                | recent_files                      |
+| \fw                | live_grep                         |
+| \gt                | git_status                        |
+| Tab                | cycle_buffer_next                 |
+| S-Tab              | cycle_buffer_prev                 |
+| ctrl-q             | close_buffer                      |
+| \/ (Normal)        | toggle_comment_line               |
+| \/ (Visual)        | toggle_comment_block              |
+| \fm                | format_code                       |
+| ctrl-\             | open_themery                      |
+| \t                 | split_terminal_horizontal         |
+| \tv                | split_terminal_vertical           |
+| A-Up (Insert)      | move_line_up                      |
+| A-Down (Insert)    | move_line_down                    |
+| ctrl-Up (Insert)   | select_line_up                    |
+| ctrl-Down (Insert) | select_line_down                  |
+| \nw                | neorg_switch_workspace            |
+| \nn                | neorg_open_index                  |
+| \nt                | neorg_toggle_concealer            |
+| \nh                | neorg_toggle_todo                 |
+| \nc                | neorg_toggle_concealer_visibility |
+| ctrl+t             | open toggle terminal              |
+| ctrl+d             | open fastvim user reference manual|
+
+⚙️  UNIFIED GUIDE: CUSTOMIZING FASTVIM *doc-⚙️__unified_guide:_customizing_fastvim*
+
+FastVim has two interesting configurable features: seamless theme switching and the File Starter module. Both are simple to configure and give you control over the behavior of your editor. Let’s explore both options!
+
+Configuration directory
+FastVim uses a dedicated directory for configurations, and its location depends on your operating system:
+
+*   Linux: `~/.fast.d/`
+*   Windows: `%AppData%\\.fast.d\\` (this points to the Roaming directory).
+    Make sure this directory exists before proceeding.
+
+Configuring theme switching
+Customize the look of your editor by easily switching themes.
+
+Open your operating system’s configuration directory.
+Inside .fast.d, make sure there is an init.lua file (create it if necessary).
+
+Add this line to set your desired theme:
+>
+    vim.g.define_colorscheme("themename")
+<
+
+Replace "themename" with your desired theme, such as "gruvbox":
+>
+    vim.g.define_colorscheme("gruvbox")
+<
+
+Managing the File Starter module:
+The File Starter module is disabled by default, automatically creating Java class files. If performance is your priority, you can enable it.
+
+In the same init.lua file, add the following line to enable the module:
+>
+    vim.g.auto_create_java_class = true
+<
+
+The FastVim loader will automatically parse the init.lua file in your configuration directory and apply all the settings during Neovim startup. No extra steps are necessary — just set your preferences and they will take effect.
+
+Why configure these features?
+Theme Switcher: Customize your editor with styles that match your taste, whether vibrant or minimalist.
+File starter: Saves you time by automatically creating a class when opening an empty Java file.
+
+This setup ensures flexibility while maintaining simplicity in configuration.
+
+TASKS                                                                  *doc-tasks*
+
+*   Handlers:
+    *   [x] to set default theme
+    *   [ ] to exclude plugins from config
+    *   [ ] to add plugins to config
+    *   [ ] to set env vars
+    *   [ ] to choose between snacks and mini
+    *   [ ] to enable or disable one of the lsp
+    *   [ ] fast mode (load only lsp and completion plugins)
+*   Ui:
+    *   [ ] custom theme for alpha nvim
+*   Lsp:
+    *   [x] lsp for astro js
+    *   [x] lsp for angular js
+    *   [ ] lsp for csharp
+    *   [ ] lsp for godot script
+    *   [ ] lsp for haskell
+    *   [x] lsp for python
+    *   [x] lsp for sveltejs
+    *   [x] lsp for vuejs
+*   Config loader:
+    *   [ ] Add asynchronous job to load config in real time
+
+GOALS                                                                  *doc-goals*
+
+| Goal  | stats     |
+|-----------------  |------|
+|  Have own color scheme                |   ✅       |
+|  cross platform support                   |   ✅   |
+|  add a markdown-mode                  |   ❌   |
+|  add a neovim web wowser                  |   ❌   |
+|  add a configuration compatibility between vim and neovim                 |   ❌   |
+|  adding specialized config in gamedev                 |   ❌   |
+|  adding full and more complete documentation                  |   ❌   |
+|  adding full and advanced config for java                 |   ❌   |
+
+--------------------------------------------------------------------------------
+🔥 CONTRIBUTING                                          *doc-🔥_contributing*
+
+Pull requests are welcome.
+
+That said, there's a bunch of ways you can contribute to this project, like by:
+
+*   ⭐ Giving a star on this repository (this is very important and costs nothing)
+*   🪲 Reporting a bug
+*   📄 Improving this documentation (./doc/getting_started.norg)
+*   🚨 Sharing this project and recommending it to your friends
+*   💻 Submitting a pull request to the official repository
+
+
+--------------------------------------------------------------------------------
+👏 ACKNOWLEDGEMENTS                                  *doc-👏_acknowledgements*
+
+This project thanks everyone who inspired it
+
+*   doom emacs (https://github.com/doomemacs/doomemacs)
+*   doom-nvim (https://github.com/doom-neovim/doom-nvim)
+*   space-vim (https://github.com/SpaceVim/SpaceVim)
+*   lunar-vim (https://github.com/LunarVim/LunarVim)
+*   LazyVim (https://github.com/LazyVim/LazyVim)
+*   NvChad (https://github.com/NvChad/NvChad)
+
+--------------------------------------------------------------------------------
+👨‍🏫 TEAM                                            *doc-👨‍🏫_team*
+
+*   BrunoCiccarino (https://github.com/BrunoCiccarino): wsl-ubuntu
+
