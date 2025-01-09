@@ -49,3 +49,31 @@ ls.add_snippets("cpp", {
     t({"", "    "}), i(5, "return_value"), t({"", "}"})
   })
 })
+
+-- html standard structure 
+
+ls.add_snippets("html", {
+  s("!", {
+    t({
+      "<!DOCTYPE html>",
+      "<html lang=\"en\">",
+      "<head>",
+      "    <meta charset=\"UTF-8\">",
+      "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+      "    <title>"
+    }),
+    i(1, "Document"),
+    t({
+      "</title>",
+      "</head>",
+      "<body>",
+      "    "
+    }),
+    i(2),
+    t({
+      "",
+      "</body>",
+      "</html>"
+    }),
+  })
+})

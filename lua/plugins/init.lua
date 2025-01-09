@@ -25,18 +25,6 @@ return {
     end,
   },
   {
-  'mawkler/modicator.nvim',
-  dependencies = 'BrunoCiccarino/nekonight', 
-  init = function()
-    vim.o.cursorline = true
-    vim.o.number = true
-    vim.o.termguicolors = true
-  end,
-    config = function ()
-      require('configs.ui.modicator')
-    end
-},
-  {
     "hrsh7th/nvim-cmp",
     event = "InsertEnter",
     dependencies = {
