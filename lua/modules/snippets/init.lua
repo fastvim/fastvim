@@ -1,4 +1,5 @@
 local ls = require("luasnip")
+local map = vim.api.nvim_set_keymap
 
 ls.config.set_config({
   history = true,
@@ -7,7 +8,7 @@ ls.config.set_config({
 
 require('modules.snippets.snippets')
 
-vim.api.nvim_set_keymap("s", "<Tab>", "luasnip.expand_or_jump()", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("i", "<S-Tab>", "luasnip.jump(-1)", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("s", "<S-Tab>", "luasnip.jump(-1)", { noremap = true, silent = true })
+map("s", "<Tab>", "luasnip.expand_or_jump()", { noremap = true, silent = true }) 
+map("i", "<S-Tab>", "luasnip.jump(-1)", { noremap = true, silent = true })
+map("s", "<S-Tab>", "luasnip.jump(-1)", { noremap = true, silent = true })
 

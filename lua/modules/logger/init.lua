@@ -9,7 +9,7 @@ local levels = {
 
 function Logger.log(message, level)
   level = levels[level] or levels.INFO
-  vim.notify("[FastNVim] " .. message, level)
+  vim.notify("[FastVim] " .. message, level)
 end
 
 function Logger.info(message)
