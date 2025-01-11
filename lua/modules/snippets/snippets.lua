@@ -10,7 +10,7 @@ ls.add_snippets("python", {
     t("def "), i(1, "function_name"), t("("), i(2, "args"), t("):"),
     t({"", "    "}), i(3, "pass")
   }),
-   s("doc", {
+   s("docs", {
     t('"""'), i(1, "Description of the function."), t({"", "", "Args:"}),
     t("param1 (type): "), i(2, "Description of param1."), t({"", "param2 (type): "}), i(3, "Description of param2."),
     t({"", "", "Returns:"}), t("return_type: "), i(4, "Description of the return value."),
@@ -23,7 +23,7 @@ ls.add_snippets("python", {
 })
 
 ls.add_snippets("go", {
-  s("doc", {
+  s("docs", {
     t("// "), i(1, "Description of the function."), t({"", "", "Args:"}),
     t("param1 (type): "), i(2, "Description of param1."), t({"", "param2 (type): "}), i(3, "Description of param2."),
     t({"", "", "Returns:"}), t("return_type: "), i(4, "Description of the return value."),
@@ -33,7 +33,7 @@ ls.add_snippets("go", {
 })
 
 ls.add_snippets("javascript", {
-  s("doc", {
+  s("docs", {
     t("/**"), t({"", " * "}), i(1, "Description of the function."), t({"", " *"}), t({"", " * @param {type} param1 Description of param1."}),
     t({"", " * @param {type} param2 Description of param2."}), t({"", " *"}), t({"", " * @returns {return_type} Description of the return value."}),
     t({"", " */"}), t({"", "function "}), i(2, "function_name"), t({"("}), i(3, "param1"), t(", "), i(4, "param2"), t({")", "{"}),
@@ -42,7 +42,7 @@ ls.add_snippets("javascript", {
 })
 
 ls.add_snippets("cpp", {
-  s("doc", {
+  s("docs", {
     t("/**"), t({"", " * "}), i(1, "Description of the function."), t({"", " *"}), t({"", " * @param param1 Description of param1."}),
     t({"", " * @param param2 Description of param2."}), t({"", " *"}), t({"", " * @return Description of the return value."}),
     t({"", " */"}), t({"", "return_type "}), i(2, "function_name"), t({"("}), i(3, "param1"), t(", "), i(4, "param2"), t({")", "{"}),
