@@ -92,6 +92,8 @@ Get ready to experience a Neovim setup that just works, without all the hassle. 
 - Git >= 2.19.0 (for partial clones support)
 - a Nerd Font(v3.0 or greater) (optional, but needed to display some icons)
 - a C compiler for nvim-treesitter. See [here](https://github.com/nvim-treesitter/nvim-treesitter#requirements)
+- pnpm for compile live server plugin (optional, but needed to load live server)
+- build-essential needed to compile lua snip
 
 ## 💤 Installation
 

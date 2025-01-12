@@ -1,6 +1,6 @@
 local cmp = require("cmp")
 local luasnip = require("luasnip")
-local neokinds = require("neokinds") -- Certifique-se de que o plugin está instalado
+local neokinds = require("neokinds") 
 
 cmp.setup({
   snippet = {
@@ -15,24 +15,24 @@ cmp.setup({
     ["<C-Space>"] = cmp.mapping.complete(),
     ["<C-e>"] = cmp.mapping.abort(),
     ["<CR>"] = cmp.mapping.confirm({ select = true }),
-    ["<Tab>"] = cmp.mapping(function(fallback)
-      if cmp.visible() then
-        cmp.select_next_item()
-      elseif luasnip.expand_or_jumpable() then
-        luasnip.expand_or_jump()
-      else
-        fallback()
-      end
-    end, { "i", "s" }),
-    ["<S-Tab>"] = cmp.mapping(function(fallback)
-      if cmp.visible() then
-        cmp.select_prev_item()
-      elseif luasnip.jumpable(-1) then
-        luasnip.jump(-1)
-      else
-        fallback()
-      end
-    end, { "i", "s" }),
+["<Tab>"] = cmp.mapping(function(fallback)
+  if luasnip.expand_or_jumpable() then
+    luasnip.expand_or_jump()
+  elseif cmp.visible() then
+    cmp.select_next_item()
+  else
+    fallback()
+  end
+  end, { "i", "s" }),
+  ["<S-Tab>"] = cmp.mapping(function(fallback)
+    if luasnip.jumpable(-1) then
+      luasnip.jump(-1)
+    elseif cmp.visible() then
+      cmp.select_prev_item()
+    else
+      fallback()
+    end
+  end, { "i", "s" }),
   }),
 
   sources = cmp.config.sources({
@@ -82,6 +82,6 @@ cmp.setup({
 
   completion = {
     autocomplete = { cmp.TriggerEvent.TextChanged },
-    keyword_length = 3,
+    keyword_length = 1,
   },
 })

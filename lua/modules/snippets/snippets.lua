@@ -5,6 +5,8 @@ local t = ls.text_node
 local i = ls.insert_node
 local c = ls.choice_node
 
+print("Carregando snippets.lua")
+
 ls.add_snippets("python", {
   s("def", {
     t("def "), i(1, "function_name"), t("("), i(2, "args"), t("):"),
@@ -53,7 +55,7 @@ ls.add_snippets("cpp", {
 -- html standard structure 
 
 ls.add_snippets("html", {
-  s("!", {
+  s("!!!", {
     t({
       "<!DOCTYPE html>",
       "<html lang=\"en\">",

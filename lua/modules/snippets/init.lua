@@ -1,4 +1,8 @@
-local ls = require("luasnip")
+local ok, ls = pcall(require, "luasnip")
+if not ok then
+  print("LuaSnip not loaded!")
+  return
+end
 local map = vim.api.nvim_set_keymap
 
 ls.config.set_config({
