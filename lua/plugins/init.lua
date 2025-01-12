@@ -22,7 +22,7 @@ return {
       "hrsh7th/cmp-nvim-lsp",
       "saadparwaiz1/cmp_luasnip",
       "hrsh7th/cmp-nvim-lua",
-
+--      "Jezda1337/nvim-html-css",
       "rafamadriz/friendly-snippets",
 
       {

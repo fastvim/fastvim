@@ -74,6 +74,10 @@ Please, before installing, remember to make a backup of your dotfiles.
 @code 
 mv ~/.config/nvim ~/.config/nvim.bak
 mv ~/.local/share/nvim ~/.local/share/nvim.bak 
+
+# optional but recommended
+mv ~/.local/state/nvim{,.bak}
+mv ~/.cache/nvim{,.bak}
 @end
 
 

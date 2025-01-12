@@ -103,6 +103,10 @@ Get ready to experience a Neovim setup that just works, without all the hassle. 
 ```
 mv ~/.config/nvim ~/.config/nvim.bak
 mv ~/.local/share/nvim ~/.local/share/nvim.bak 
+
+# optional but recommended
+mv ~/.local/state/nvim{,.bak}
+mv ~/.cache/nvim{,.bak}
 ```
 
 #### linux or mac
