@@ -60,7 +60,13 @@ return {
   config = function ()
     require('configs.editor.monospace')
     end
-},
+  },
+  {
+    "folke/zen-mode.nvim",
+    config = function ()
+      require('configs.ui.zenmode')
+    end
+  },
   {
         'barrett-ruth/live-server.nvim',
         build = 'pnpm add -g live-server',

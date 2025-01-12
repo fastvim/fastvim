@@ -30,6 +30,7 @@
 - doc function
 - blink cmp
 - live server
+- zenmode
 
 #### Removed
 

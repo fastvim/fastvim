@@ -31,7 +31,6 @@
   "nui.nvim": { "branch": "main", "commit": "53e907ffe5eedebdca1cd503b00aa8692068ca46" },
   "null-ls.nvim": { "branch": "main", "commit": "0010ea927ab7c09ef0ce9bf28c2b573fc302f5a7" },
   "nvim-cmp": { "branch": "main", "commit": "8c82d0bd31299dbff7f8e780f5e06d2283de9678" },
-  "nvim-html-css": { "branch": "main", "commit": "c23b0e48aa1877b525a02d563eccfb466b391a9c" },
   "nvim-jdtls": { "branch": "master", "commit": "baae618ccc7b6045f7d9453ea0566d1333100740" },
   "nvim-lspconfig": { "branch": "master", "commit": "88157521e890fe7fdf18bee22438875edd6300a6" },
   "nvim-nio": { "branch": "master", "commit": "a428f309119086dc78dd4b19306d2d67be884eee" },
@@ -45,5 +44,6 @@
   "telescope.nvim": { "branch": "master", "commit": "415af52339215926d705cccc08145f3782c4d132" },
   "toggleterm.nvim": { "branch": "main", "commit": "e76134e682c1a866e3dfcdaeb691eb7b01068668" },
   "typescript-tools.nvim": { "branch": "master", "commit": "35e397ce467bedbbbb5bfcd0aa79727b59a08d4a" },
-  "yazi.nvim": { "branch": "main", "commit": "50fc963539dba15f66793f45986836d981169114" }
+  "yazi.nvim": { "branch": "main", "commit": "50fc963539dba15f66793f45986836d981169114" },
+  "zen-mode.nvim": { "branch": "main", "commit": "863f150ca321b3dd8aa1a2b69b5f411a220e144f" }
 }
