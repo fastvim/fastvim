@@ -2,8 +2,13 @@ local neokinds = require("neokinds")
 
 require('blink-cmp').setup({
     completion = {
-        list = { selection = function(ctx) return ctx.mode == "cmdline" and "auto_insert" or "preselect" end },
-        menu = {
+      list = {
+        selection = {
+          preselect = true, 
+          auto_insert = false, 
+        },
+      },
+      menu = {
             border = "rounded",
             winhighlight = "Normal:NormalFloat,FloatBorder:FloatBorder,CursorLine:PmenuSel,Search:None",
             draw = {

@@ -1,15 +1,17 @@
-local htmll = {}
+local html5 = {}
 
-htmll.setup = function(capabilities)
-  local lspconfig = require('lspconfig')
+html5.settings = {
+  disable_treesitter = false,
+  treesitter_grammars = "html",
+  disable_lsp = false,
+  lsp_name = "html",
+}
+
+html5.setup = function(capabilities)
+  local lspconfig = require 'lspconfig'
 
   lspconfig.html.setup {
     capabilities = capabilities or vim.lsp.protocol.make_client_capabilities(),
-    on_attach = function(client, bufnr)
-      local opts = { noremap = true, silent = true, buffer = bufnr }
-      vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
-      vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
-    end,
     settings = {
       html = {
         format = {
@@ -21,8 +23,13 @@ htmll.setup = function(capabilities)
         },
       },
     },
+    on_attach = function(client, bufnr)
+      local opts = { noremap = true, silent = true, buffer = bufnr }
+      vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
+      vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
+    end,
   }
 end
 
-return htmll
+return html5
 

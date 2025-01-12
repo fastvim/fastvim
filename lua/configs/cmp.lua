@@ -82,6 +82,6 @@ sources = cmp.config.sources({
 
   completion = {
     autocomplete = { cmp.TriggerEvent.TextChanged },
-    keyword_length = 1,
+    keyword_length = 3,
   },
 })
