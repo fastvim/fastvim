@@ -28,7 +28,7 @@ return {
       {
         "L3MON4D3/LuaSnip",
         config = function()
-            local ls = require("luasnip")
+          local ls = require("luasnip")
             ls.config.set_config({
               history = true,
               enable_autosnippets = true,
@@ -40,6 +40,17 @@ return {
     },
     opts = function()
       return require ('configs.cmp')
+    end,
+  },
+  {
+    'saghen/blink.cmp',
+    dependencies = 'rafamadriz/friendly-snippets',
+  
+    version = '*',
+    ---@module 'blink.cmp'
+    ---@type blink.cmp.Config
+    config = function ()
+      require('configs.blink-cmp')
     end,
   },
   {
