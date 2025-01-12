@@ -17,7 +17,8 @@ Get ready to experience a Neovim setup that just works, without all the hassle. 
 -- {#-setup}[💻 Setup] 
 -- {# Quickstart} 
 --- {#️-keymaps}[🗺️ keymaps] 
---- {#️--unified-guide-customizing-fastvim}[⚙️ Unified Guide: Customizing FastVim] 
+  --- {#️--nified-guide-customizing-fastvim}[⚙️ Unified Guide: Customizing FastVim]
+  --- {# -snippets}[🌊snippets]
 -- {# Tasks} 
 -- {# Goals} 
 - {#-contributing}[🔥 Contributing] 
@@ -274,7 +275,7 @@ To make your workflow much more fluid, we created countless keyboard shortcuts b
 
 
 
-**** ⚙️ Unified Guide: Customizing FastVim
+*** ⚙️ Unified Guide: Customizing FastVim
 
 FastVim has two interesting configurable features: seamless theme switching and the File Starter module. Both are simple to configure and give you control over the behavior of your editor. Let’s explore both options! 
 
@@ -334,6 +335,51 @@ File starter: Saves you time by automatically creating a class when opening an e
 
 This setup ensures flexibility while maintaining simplicity in configuration. 
 
+
+*** 🌊 Snippets
+    We have configured some snippets to make your life as a developer easier, but there are few of them because it is still the beginning of the distro, more snippets will come over time...
+
+    Let's start with Python snippets which have more snippets than other languages.
+
+    `def`
+
+    Will complete with
+
+    @code python
+      def function_name(args):
+        pass
+    @end
+    
+    `doc`
+
+    Will complete with
+
+    @code python
+    """
+    Description of the function. 
+
+    Args:
+
+      param1 (type):
+        Description of param1
+      param2 (type):
+        Description of param2.
+
+    Returns:
+      
+      return_type:
+        Description of the return value.
+    """
+    @end
+
+    `for`
+
+    Will complete with
+
+    @code python
+      for item in list:
+        pass
+    @end
 
 *** Tasks
 
