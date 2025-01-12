@@ -60,6 +60,13 @@ return {
     end
   },
   {
+  "jackplus-xyz/monaspace.nvim",
+  lazy = false,
+  config = function ()
+    require('configs.editor.monospace')
+    end
+}, 
+  {
     'pmizio/typescript-tools.nvim',
   dependencies = { 'nvim-lua/plenary.nvim', 'neovim/nvim-lspconfig' },
   opts = {},
