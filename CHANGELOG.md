@@ -28,7 +28,8 @@
 - adding python lsp 
 - adding colorfull-menu config
 - doc function
-- blinl cmp
+- blink cmp
+- live server
 
 #### Removed
 

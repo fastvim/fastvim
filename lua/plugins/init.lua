@@ -6,17 +6,6 @@ return {
       require('configs.plenary')
     end
   },
-  {
-    'saghen/blink.cmp',
-    dependencies = 'rafamadriz/friendly-snippets',
-  
-    version = '*',
-    ---@module 'blink.cmp'
-    ---@type blink.cmp.Config
-    config = function ()
-      require('configs.blink-cmp')
-    end,
-  },
   { 
     "echasnovski/mini.nvim", 
     version = '*',
@@ -65,7 +54,13 @@ return {
   config = function ()
     require('configs.editor.monospace')
     end
-}, 
+},
+  {
+        'barrett-ruth/live-server.nvim',
+        build = 'pnpm add -g live-server',
+        cmd = { 'LiveServerStart', 'LiveServerStop' },
+        config = true
+    },
   {
     'pmizio/typescript-tools.nvim',
   dependencies = { 'nvim-lua/plenary.nvim', 'neovim/nvim-lspconfig' },
