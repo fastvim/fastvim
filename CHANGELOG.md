@@ -32,6 +32,7 @@
 - live server
 - zenmode
 - conform
+- mini.comment
 
 #### Removed
 
