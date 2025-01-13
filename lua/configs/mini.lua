@@ -4,11 +4,9 @@ require('mini.pairs').setup({
     ['('] = { action = 'open', pair = '()', neigh_pattern = '[^\\].' },
     ['['] = { action = 'open', pair = '[]', neigh_pattern = '[^\\].' },
     ['{'] = { action = 'open', pair = '{}', neigh_pattern = '[^\\].' },
-    ['<'] = { action = 'open', pair = '<>', neigh_pattern = '[^\\].' },
     [')'] = { action = 'close', pair = '()', neigh_pattern = '[^\\].' },
     [']'] = { action = 'close', pair = '[]', neigh_pattern = '[^\\].' },
     ['}'] = { action = 'close', pair = '{}', neigh_pattern = '[^\\].' },
-    ['>'] = { action = 'close', pair = '<>', neigh_pattern = '[^\\].' },
   },
 })
 

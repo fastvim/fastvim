@@ -4,7 +4,6 @@ java.settings = {
   disable_treesitter = false,
   treesitter_grammars = "java",
 
-  disable_lsp = false,
   lsp_name = "jdtls",
   lsp_config = nil,
 

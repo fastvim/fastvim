@@ -3,7 +3,6 @@ local lua = {}
 lua.settings = {
    disable_treesitter = false,
    treesitter_grammars = "lua",
-   disable_lsp = false,
    lsp_name = "lua_ls",
 }
 

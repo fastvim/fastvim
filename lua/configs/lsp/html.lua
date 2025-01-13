@@ -3,15 +3,20 @@ local html5 = {}
 html5.settings = {
   disable_treesitter = false,
   treesitter_grammars = "html",
-  disable_lsp = false,
   lsp_name = "html",
 }
+
 
 html5.setup = function(capabilities)
   local lspconfig = require 'lspconfig'
 
+  vim.lsp.set_log_level('debug')
   lspconfig.html.setup {
-    capabilities = capabilities or vim.lsp.protocol.make_client_capabilities(),
+    root_dir = function(fname)
+      return lspconfig.util.find_git_ancestor(fname)
+        or lspconfig.util.path.dirname(fname) 
+    end,
+    capabilities = capabilities,
     settings = {
       html = {
         format = {

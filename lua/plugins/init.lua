@@ -13,6 +13,22 @@ return {
       require('configs.mini')
     end,
   },
+    {
+    "windwp/nvim-ts-autotag",
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",  
+    },
+    config = function()
+     require("nvim-ts-autotag").setup({
+        filetypes = { "html", "xml", "javascript", "typescript", "tsx", "jsx", "vue" },
+        enable_check_bracket_line = false, 
+        autotag = {
+          enable = true, 
+        },
+
+      })
+    end,
+  },
   {
     "hrsh7th/nvim-cmp",
     event = "InsertEnter",
@@ -64,6 +80,10 @@ return {
     config = function ()
       require('configs.colorful-menu')
     end
+  },
+  {
+    "BrunoCiccarino/webdev.nvim",
+    dependencies = { "ColinKennedy/mega.cmdparse", "ColinKennedy/mega.logging", "stevearc/dressing.nvim" }
   },
   {
   "jackplus-xyz/monaspace.nvim",
