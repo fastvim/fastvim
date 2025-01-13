@@ -89,4 +89,15 @@ map("n", neorg_leader .. "c", "<cmd>Neorg toggle-concealer<CR>", { desc = "Toggl
 map("n", "<leader>ls", "<cmd> LiveServerStart <CR>")
 map("n", "<leader>lt", "<cmd> LiveServerStop <CR>")
 
+-- multi cursor
+local status, multicursor = pcall(require, "multicursor-nvim")
+if not status then
+  vim.notify("Failed to load multicursor-nvim", vim.log.levels.ERROR)
+  return
+end
 
+local mc = multicursor.setup()
+map("n", "<C-Up>", ":lua require('multicursor-nvim').lineAddCursor(-1)<CR>", { noremap = true, silent = true })
+map("n", "<C-Down>", ":lua require('multicursor-nvim').lineAddCursor(1)<CR>", { noremap = true, silent = true })
+map("n", "<leader><Up>", ":lua require('multicursor-nvim').lineSkipCursor(-1)<CR>", { noremap = true, silent = true })
+map("n", "<leader><Down>", ":lua require('multicursor-nvim').lineSkipCursor(1)<CR>", { noremap = true, silent = true })

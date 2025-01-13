@@ -27,6 +27,7 @@
   "mini.nvim": { "branch": "main", "commit": "64e95aa77587d04f97a5579b2106a82a08a7d968" },
   "mini.statusline": { "branch": "main", "commit": "1b0edf76fe2af015f8c989385ff949f1db7aade2" },
   "monaspace.nvim": { "branch": "main", "commit": "9d23c3e78494270c804fb3d163b759e700e1cbff" },
+  "multicursor.nvim": { "branch": "1.0", "commit": "f454cac9d03ccaf20008f4793f05b159f5547e78" },
   "nekonight": { "branch": "main", "commit": "63fb9cf9d6e3896893e573522470758190f287f5" },
   "neodev.nvim": { "branch": "main", "commit": "46aa467dca16cf3dfe27098042402066d2ae242d" },
   "neokinds": { "branch": "main", "commit": "183479bc2b1db8f242f70f85e74efe9973cfb15f" },
@@ -49,7 +50,7 @@
   "telescope.nvim": { "branch": "master", "commit": "415af52339215926d705cccc08145f3782c4d132" },
   "toggleterm.nvim": { "branch": "main", "commit": "e76134e682c1a866e3dfcdaeb691eb7b01068668" },
   "typescript-tools.nvim": { "branch": "master", "commit": "35e397ce467bedbbbb5bfcd0aa79727b59a08d4a" },
-  "webdev.nvim": { "branch": "main", "commit": "622c637e0131c8962e40530a723f8df3f86f434f" },
+  "webdev.nvim": { "branch": "main", "commit": "79aa5714ff135c7f4ed9c9cd0a03129fa48a66c9" },
   "yazi.nvim": { "branch": "main", "commit": "50fc963539dba15f66793f45986836d981169114" },
   "zen-mode.nvim": { "branch": "main", "commit": "863f150ca321b3dd8aa1a2b69b5f411a220e144f" }
 }

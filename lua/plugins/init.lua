@@ -140,13 +140,17 @@ return {
       },
     }
   end,
-},
+  },
+  {
+    "jake-stewart/multicursor.nvim",
+    branch = "1.0",
+  },
   {
     'goolord/alpha-nvim',
     config = function ()
       require('configs.ui.alpha')
     end
-};
+  };
   {
     "mfussenegger/nvim-jdtls",
     lazy = false
