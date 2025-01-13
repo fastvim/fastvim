@@ -160,9 +160,9 @@ return {
     config = function()
         require('neorg').setup {
             load = {
-                ["core.defaults"] = {}, -- Load all default settings
-                ["core.concealer"] = {}, -- Enable icons and rich text rendering
-                ["core.dirman"] = { -- Manage Neorg workspaces
+                ["core.defaults"] = {}, 
+                ["core.concealer"] = {}, 
+                ["core.dirman"] = { 
                     config = {
                         workspaces = {
                             notes = "~/neorg/notes", 
@@ -173,6 +173,12 @@ return {
             },
         }
     end,
+  },
+  {
+  'stevearc/conform.nvim',
+  opts = function ()
+    require('configs.editor.conform')
+  end
   },
   {
     'grzegorzszczepanek/gamify.nvim',
@@ -222,13 +228,13 @@ return {
       require('configs.editor.toggleterm')
     end
   },
-  {
-    'jose-elias-alvarez/null-ls.nvim',
-    dependencies = { 'nvim-lua/plenary.nvim' },
-    config = function()
-      require('configs.null-ls').setup()
-    end,
-  },
+--  {
+--    'jose-elias-alvarez/null-ls.nvim',
+--    dependencies = { 'nvim-lua/plenary.nvim' },
+--    config = function()
+--      require('configs.null-ls').setup()
+--    end,
+--  },
   {
     'folke/neodev.nvim',
     config = function()
@@ -313,11 +319,6 @@ return {
     "L3MON4D3/LuaSnip",
     version = "v2.*", 
     build = "make install_jsregexp"
-  },
-  {
-    "stevearc/conform.nvim",
-    lazy = true,
-    opts = require ('configs.conform'),
   },
   {
     "lukas-reineke/indent-blankline.nvim",

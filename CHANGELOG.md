@@ -31,6 +31,7 @@
 - blink cmp
 - live server
 - zenmode
+- conform
 
 #### Removed
 
@@ -43,7 +44,7 @@
 - fastvim.nvim 
 - fzf-lua 
 - LazyDo  
-- cmp
+- null-ls
 
 ## 0.0.4 2025-01-02
 
