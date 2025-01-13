@@ -30,6 +30,12 @@ return {
     end,
   },
   {
+    "aaron-p1/match-visual.nvim",
+    config = function ()
+      require('configs.ui.match-visual')
+    end
+  },
+  {
     "hrsh7th/nvim-cmp",
     event = "InsertEnter",
     dependencies = {

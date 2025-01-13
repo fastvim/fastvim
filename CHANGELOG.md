@@ -33,6 +33,7 @@
 - zenmode
 - conform
 - mini.comment
+- match-visual.nvim
 
 #### Removed
 
