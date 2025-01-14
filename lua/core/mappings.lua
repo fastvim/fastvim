@@ -70,11 +70,29 @@ local function select_lines_down()
   input('gi')
 end
 
+local function select_line_left()
+  input('<Esc><S-v>h')
+  input('gi')
+end
+
+local function select_line_right()
+  input('<Esc><S-v>l')
+  input('gi')
+end
+
+local function cancel_selection()
+  input('<Esc>')
+end
+
 -- Key bindings for insert mode
 map('i', '<A-Up>', '', { noremap = true, silent = true, callback = move_line_up })
 map('i', '<A-Down>', '', { noremap = true, silent = true, callback = move_line_down })
 map('i', '<C-Up>', '', { noremap = true, silent = true, callback = select_lines_up })
 map('i', '<C-Down>', '', { noremap = true, silent = true, callback = select_lines_down })
+map('i', '<C-Left>', '', { noremap = true, silent = true, callback = select_line_left })
+map('i', '<C-Right>', '', { noremap = true, silent = true, callback = select_line_right })
+map('n', '<leader><Left>', '', { noremap = true, silent = true, callback = cancel_selection })
+map('n', '<leader><Right>', '', { noremap = true, silent = true, callback = cancel_selection })
 
 -- neorg 
 local neorg_leader = "<leader>n" -- Set a leader key for Neorg mappings
