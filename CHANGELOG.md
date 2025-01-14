@@ -34,6 +34,7 @@
 - conform
 - mini.comment
 - match-visual.nvim
+- multicursor-nvim
 
 #### Removed
 
@@ -45,7 +46,6 @@
 - diffview.nvim 
 - fastvim.nvim 
 - fzf-lua 
-- LazyDo  
 - null-ls
 
 ## 0.0.4 2025-01-02
