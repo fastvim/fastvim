@@ -235,6 +235,8 @@ To make your workflow much more fluid, we created countless keyboard shortcuts b
 | A-Down (Insert)    | move_line_down                    |
 | ctrl-Up (Insert)   | select_line_up                    |
 | ctrl-Down (Insert) | select_line_down                  |
+| ctrl-left (Insert) | select_line_left                  |
+| ctrl-right (Insert)| select_line_right                 |
 | \nw                | neorg_switch_workspace            |
 | \nn                | neorg_open_index                  |
 | \nt                | neorg_toggle_concealer            |
