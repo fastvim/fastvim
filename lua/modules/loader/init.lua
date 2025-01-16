@@ -40,7 +40,6 @@ end
 local function init_config()
   local Logger = require('modules.logger.init')
   require('modules.handlers.init')
-  require('configs.editor.conform')
   local config_dir = get_config_directory()
   
   if config_dir then
