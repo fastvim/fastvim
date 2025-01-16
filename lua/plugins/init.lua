@@ -99,12 +99,6 @@ return {
     end
   },
   {
-        'barrett-ruth/live-server.nvim',
-        build = 'pnpm add -g live-server',
-        cmd = { 'LiveServerStart', 'LiveServerStop' },
-        config = true
-    },
-  {
     'pmizio/typescript-tools.nvim',
   dependencies = { 'nvim-lua/plenary.nvim', 'neovim/nvim-lspconfig' },
   opts = {},
