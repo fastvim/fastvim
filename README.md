@@ -281,18 +281,6 @@ In the same init.lua file, add the following line to enable the module:
 vim.g.auto_create_java_class = true
 ```
 
-We also have handlers for automatic formatting that works when saving the file, to activate just type in your init file
-
-```lua
-vim.g.format_enable = true
-```
-
-And to disable just type this in the init file
-
-```lua
-vim.g.format_disable = false
-```
-
 The FastVim loader will automatically parse the init.lua file in your configuration directory and apply all the settings during Neovim startup. No extra steps are necessary — just set your preferences and they will take effect.
 
 Why configure these features?
