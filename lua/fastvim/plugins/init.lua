@@ -171,6 +171,23 @@ return {
     end,
   },
   {
+    'saghen/blink.cmp',
+    dependencies = 'rafamadriz/friendly-snippets',
+  
+    version = '*',
+    ---@module 'blink.cmp'
+    ---@type blink.cmp.Config
+    config = function ()
+      require('fastvim.configs.blink-cmp')
+    end,
+  },
+  {
+    "xzbdmw/colorful-menu.nvim",
+    config = function ()
+      require('fastvim.configs.colorful-menu')
+    end
+  },
+  {
     "lukas-reineke/indent-blankline.nvim",
     event = { "BufReadPre", "BufNewFile" },
     config = function()
