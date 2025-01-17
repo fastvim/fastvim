@@ -12,9 +12,8 @@ map("i", "jk", "<ESC>")
 map("n", "<C-c>", "<cmd> %y+ <CR>")
 map("n", "<C-z>", "<cmd> undo <CR>")
 
--- nvimtree
-map("n", "<C-h>", "<cmd> NvimTreeFocus <CR>")
-map("n", "<C-n>", "<cmd> NvimTreeToggle <CR>")
+-- neotree
+map("n", "<C-n>", "<cmd> Neotree toggle <CR>", { noremap = true, silent = true })
 
 -- telescope
 map("n", "<leader>ff", "<cmd> Telescope find_files <CR>")

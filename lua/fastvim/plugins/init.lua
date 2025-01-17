@@ -141,12 +141,6 @@ return {
   end,
   },
   {
-    "folke/zen-mode.nvim",
-    config = function ()
-      require('fastvim.core.ui')
-    end
-  },
-  {
     "windwp/nvim-ts-autotag",
     dependencies = {
       "nvim-treesitter/nvim-treesitter",  
@@ -197,5 +191,34 @@ return {
     cmd = "Telescope",
     opts = require ('fastvim.configs.telescope'),
   },
-
+  {
+    "williamboman/mason.nvim",
+    build = ":MasonUpdate",
+    cmd = { "Mason", "MasonInstall" },
+    opts = {
+      ensure_installed = {
+        "clangd",
+        "golps",
+        "ts_ls",
+        "jdtls"
+      }
+    },
+  },
+  {
+    "akinsho/bufferline.nvim",
+    event = "BufReadPre",
+    opts = require ('fastvim.configs.bufferline'),
+  },
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v3.x",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "BrunoCiccarino/neokinds", 
+      "MunifTanjim/nui.nvim",
+        },
+    config = function ()
+        require('fastvim.configs.neo-tree')
+    end
+    },
 }
