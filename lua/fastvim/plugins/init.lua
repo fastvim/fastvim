@@ -32,7 +32,7 @@ return {
 			require("fastvim.configs.neokinds")
 		end,
 	},
-	{ -- Autoformat
+	{ 
 		"stevearc/conform.nvim",
 		event = { "BufWritePre" },
 		cmd = { "ConformInfo" },
@@ -150,29 +150,7 @@ return {
 		dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
 		ft = { "javascript", "javascriptreact", "typescript", "typescriptreact", "vue" },
 		config = function()
-			require("typescript-tools").setup({
-				on_attach = function(client, bufnr)
-					client.server_capabilities.documentFormattingProvider = false
-					client.server_capabilities.documentRangeFormattingProvider = false
-				end,
-				filetypes = {
-					"javascript",
-					"javascriptreact",
-					"typescript",
-					"typescriptreact",
-					"vue",
-					"angular",
-				},
-				settings = {
-					tsserver_plugins = {
-						"@vue/typescript-plugin",
-					},
-					jsx_close_tag = {
-						enable = true,
-						filetypes = { "javascriptreact", "typescriptreact" },
-					},
-				},
-			})
+          require('fastvim.configs.lsp')
 		end,
 	},
 	{
