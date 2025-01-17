@@ -2,7 +2,7 @@ local map = vim.keymap.set
 local cmd = vim.cmd
 local input = vim.api.nvim_input 
 
-local fn = require('core.functions')
+local fn = require('fastvim.core.functions')
 
 -- see doc 
 map('n', '<C-d>', function() fn.open_docs() end, { noremap = true, silent = true, desc = 'Split window and open FastVim user manual' })
@@ -11,9 +11,6 @@ map("n", "<C-s>", "<cmd> w <CR>")
 map("i", "jk", "<ESC>")
 map("n", "<C-c>", "<cmd> %y+ <CR>")
 map("n", "<C-z>", "<cmd> undo <CR>")
-
--- neotree
-map("n", "<C-n>", "<cmd> Neotree toggle <CR>", { noremap = true, silent = true })
 
 -- telescope
 map("n", "<leader>ff", "<cmd> Telescope find_files <CR>")
@@ -30,6 +27,12 @@ map("n", "<C-q>", "<cmd> bd <CR>")
 map("n", "<leader>/", "gcc", { remap = true })
 map("v", "<leader>/", "gc", { remap = true })
 
+-- neotree
+
+map("n", "<C-n>", function()
+    vim.cmd("Neotree toggle")
+  end, { noremap = true, silent = true })
+  
 -- format
 map("n", "<leader>fm", function()
   require("conform").format()

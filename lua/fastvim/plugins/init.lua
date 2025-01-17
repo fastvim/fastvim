@@ -165,12 +165,6 @@ return {
     lazy = false
   },
   {
-    'folke/neodev.nvim',
-    config = function()
-      require('fastvim.configs.neodev').setup()
-    end
-  },
-  {
     "echasnovski/mini.statusline",
     config = function()
       require('mini.statusline').setup { set_vim_settings = false }
