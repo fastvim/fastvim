@@ -32,7 +32,14 @@ return {
 			require("fastvim.configs.neokinds")
 		end,
 	},
-	{ 
+	{
+		"nvim-treesitter/nvim-treesitter",
+		build = ":TSUpdate",
+		config = function()
+			require("fastvim.configs.treesitter")
+		end,
+	},
+	{
 		"stevearc/conform.nvim",
 		event = { "BufWritePre" },
 		cmd = { "ConformInfo" },
@@ -150,7 +157,7 @@ return {
 		dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
 		ft = { "javascript", "javascriptreact", "typescript", "typescriptreact", "vue" },
 		config = function()
-          require('fastvim.configs.lsp')
+			require("fastvim.configs.lsp")
 		end,
 	},
 	{
@@ -245,4 +252,3 @@ return {
 		end,
 	},
 }
-
