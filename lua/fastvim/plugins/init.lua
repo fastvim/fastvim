@@ -188,6 +188,34 @@ return {
     end
   },
   {
+    "hrsh7th/nvim-cmp",
+    event = "InsertEnter",
+    dependencies = {
+      "hrsh7th/cmp-buffer",
+      "hrsh7th/cmp-path",
+      "hrsh7th/cmp-nvim-lsp",
+      "saadparwaiz1/cmp_luasnip",
+      "hrsh7th/cmp-nvim-lua",
+--      "Jezda1337/nvim-html-css",
+      "rafamadriz/friendly-snippets",
+
+      {
+        "L3MON4D3/LuaSnip",
+        config = function()
+          local ls = require("luasnip")
+            ls.config.set_config({
+              history = true,
+              enable_autosnippets = true,
+            })
+          require('luasnip.loaders.from_vscode').lazy_load()
+        end,
+      },
+    },
+    opts = function()
+      return require ('fastvim.core.lsp')
+    end,
+  },
+  {
     "lukas-reineke/indent-blankline.nvim",
     event = { "BufReadPre", "BufNewFile" },
     config = function()
