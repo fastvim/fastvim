@@ -39,4 +39,3 @@ function PlenaryUtils.run_job(opts)
 end
 
 return PlenaryUtils
-

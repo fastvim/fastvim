@@ -1,6 +1,3 @@
-require "core.commands"
-require "core.options"
-
 local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim" -- path where its going to be installed
 
 if not vim.loop.fs_stat(lazypath) then
@@ -15,19 +12,9 @@ if not vim.loop.fs_stat(lazypath) then
 end
 
 vim.opt.rtp:prepend(lazypath)
+local plugins = require "fastvim.plugins"
 
-local plugins = require "plugins"
+require("lazy").setup(plugins)
 
-require("lazy").setup(plugins, require "lazy_config")
 vim.cmd "syntax enable"
 vim.cmd "colorscheme nekonight-dracula"
-require('core.mappings')
-require('modules.loader.init')
-require('modules.starter.init').setup()
-require('modules.handlers.init')
-require('core.functions')
-
-vim.g.auto_create_java_class = false
-
-require('modules.lazyreplace.init').setup()
-require('modules.snippets.init')
