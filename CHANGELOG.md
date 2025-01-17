@@ -17,15 +17,7 @@
 #### Added
 
 - LazyDo config 
-- File starter handler
-- Theme switcher handler 
-- LazyReplace
 - typescript tools plugin 
-- adding distro snippets
-- adding astro js lsp 
-- adding angular lsp 
-- adding svelte lsp 
-- adding python lsp 
 - adding colorfull-menu config
 - doc function
 - blink cmp
@@ -35,6 +27,7 @@
 - mini.comment
 - match-visual.nvim
 - multicursor-nvim
+- neotree
 
 #### Removed
 
@@ -50,6 +43,7 @@
 - match-visual.nvim 
 - live-server
 - zenmode 
+- nvim-tree
 
 ## 0.0.4 2025-01-02
 

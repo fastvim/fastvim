@@ -1,3 +1,4 @@
+require('fastvim.core.commands')
 require('fastvim.core.options')
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim" 

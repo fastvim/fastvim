@@ -4,6 +4,12 @@ local input = vim.api.nvim_input
 
 local fn = require('fastvim.core.functions')
 
+-- TIP: Disable arrow keys in normal mode
+-- map('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')
+-- map('n', '<right>', '<cmd>echo "Use l to move!!"<CR>')
+-- map('n', '<up>', '<cmd>echo "Use k to move!!"<CR>')
+-- map('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
+
 -- see doc 
 map('n', '<C-d>', function() fn.open_docs() end, { noremap = true, silent = true, desc = 'Split window and open FastVim user manual' })
 

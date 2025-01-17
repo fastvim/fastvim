@@ -114,11 +114,11 @@ return {
           },
         },
         opts = function()
-          return require ('fastvim.core.lsp')
+          return require ('fastvim.configs.lsp')
         end,
       },    
      config = function()
-       require('fastvim.core.lsp')
+       require('fastvim.configs.lsp')
      end,
    },
    {
@@ -133,7 +133,7 @@ return {
    {
     'goolord/alpha-nvim',
     config = function ()
-      require('fastvim.core.ui')
+      require('fastvim.configs.ui')
     end
   },
   {
