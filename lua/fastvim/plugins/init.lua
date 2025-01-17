@@ -83,11 +83,26 @@ return {
        'WhoIsSethDaniel/mason-tool-installer.nvim',
        { 'j-hui/fidget.nvim', opts = {} },
        'hrsh7th/cmp-nvim-lsp',
+       'hrsh7th/nvim-cmp', 
+       'hrsh7th/cmp-buffer', 
+       'hrsh7th/cmp-path', 
+       'hrsh7th/cmp-cmdline', 
+       'saadparwaiz1/cmp_luasnip', 
+       'L3MON4D3/LuaSnip', 
      },
      config = function()
        require('fastvim.core.lsp')
      end,
    },
+   {
+    'folke/lazydev.nvim',
+    ft = 'lua',
+    opts = {
+      library = {
+        { path = '${3rd}/luv/library', words = { 'vim%.uv' } },
+      },
+    },
+  },
    {
     'goolord/alpha-nvim',
     config = function ()
@@ -130,6 +145,57 @@ return {
     config = function ()
       require('fastvim.core.ui')
     end
+  },
+  {
+    "windwp/nvim-ts-autotag",
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",  
+    },
+    config = function()
+     require("nvim-ts-autotag").setup({
+        filetypes = { "html", "xml", "javascript", "typescript", "tsx", "jsx", "vue" },
+        enable_check_bracket_line = false, 
+        autotag = {
+          enable = true, 
+        },
+
+      })
+    end,
+  },
+  {
+    "jake-stewart/multicursor.nvim",
+    branch = "1.0",
+  },
+  {
+    "mfussenegger/nvim-jdtls",
+    lazy = false
+  },
+  {
+    'folke/neodev.nvim',
+    config = function()
+      require('fastvim.configs.neodev').setup()
+    end
+  },
+  {
+    "echasnovski/mini.statusline",
+    config = function()
+      require('mini.statusline').setup { set_vim_settings = false }
+    end,
+  },
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    event = { "BufReadPre", "BufNewFile" },
+    config = function()
+      require('ibl').setup {
+        indent = { char = "│" },
+        scope = { char = "│", highlight = "Comment" },
+      }
+    end,
+  },
+  {
+    "nvim-telescope/telescope.nvim",
+    cmd = "Telescope",
+    opts = require ('fastvim.configs.telescope'),
   },
 
 }
