@@ -28,6 +28,7 @@
 - match-visual.nvim
 - multicursor-nvim
 - neotree
+- to-do comments
 
 #### Removed
 
