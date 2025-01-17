@@ -47,6 +47,9 @@
 - fastvim.nvim 
 - fzf-lua 
 - null-ls
+- match-visual.nvim 
+- live-server
+- zenmode 
 
 ## 0.0.4 2025-01-02
 
