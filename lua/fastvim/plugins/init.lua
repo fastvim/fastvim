@@ -1,12 +1,5 @@
 return {
 	{
-		lazy = true,
-		"nvim-lua/plenary.nvim",
-		config = function()
-			require("fastvim.configs.plenary")
-		end,
-	},
-	{
 		"echasnovski/mini.nvim",
 		version = "*",
 		config = function()
@@ -18,6 +11,7 @@ return {
 		lazy = false,
 		otps = {},
 	},
+  require "fastvim.configs.plenary",
 
 	{
 		"akinsho/toggleterm.nvim",
