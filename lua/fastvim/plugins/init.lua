@@ -1,123 +1,32 @@
 return {
-	{
-		"BrunoCiccarino/nekonight",
-		lazy = false,
-		otps = {},
-	},
-  require "fastvim.configs.plenary",
-  require "fastvim.configs.mini",
-  require "fastvim.configs.toggleterm",
-  require "fastvim.configs.neokinds",
-  require "fastvim.configs.treesitter",
-
-	{
-		"folke/todo-comments.nvim",
-		event = "VimEnter",
-		dependencies = { "nvim-lua/plenary.nvim" },
-		opts = { signs = false },
-	},
-	{
-		"folke/lazydev.nvim",
-		ft = "lua",
-		opts = {
-			library = {
-				{ path = "${3rd}/luv/library", words = { "vim%.uv" } },
-			},
-		},
-	},
-	{
-		"neovim/nvim-lspconfig",
-		dependencies = {
-			{ "williamboman/mason.nvim", opts = {} },
-			"williamboman/mason-lspconfig.nvim",
-			"WhoIsSethDaniel/mason-tool-installer.nvim",
-			{ "j-hui/fidget.nvim", opts = {} },
-			"hrsh7th/cmp-nvim-lsp",
-			"hrsh7th/nvim-cmp",
-			"hrsh7th/cmp-buffer",
-			"hrsh7th/cmp-path",
-			"hrsh7th/cmp-cmdline",
-			"saadparwaiz1/cmp_luasnip",
-			"L3MON4D3/LuaSnip",
-		},
-		{
-			"hrsh7th/nvim-cmp",
-			event = "InsertEnter",
-			dependencies = {
-				"hrsh7th/cmp-buffer",
-				"hrsh7th/cmp-path",
-				"hrsh7th/cmp-nvim-lsp",
-				"saadparwaiz1/cmp_luasnip",
-				"hrsh7th/cmp-nvim-lua",
-				"rafamadriz/friendly-snippets",
-
-				{
-					"L3MON4D3/LuaSnip",
-					config = function()
-						local ls = require("luasnip")
-						ls.config.set_config({
-							history = true,
-							enable_autosnippets = true,
-						})
-						require("luasnip.loaders.from_vscode").lazy_load()
-					end,
-				},
-			},
-			opts = function()
-				return require("fastvim.configs.lsp")
-			end,
-		},
-		config = function()
-			require("fastvim.configs.lsp")
-		end,
-	},
-	{
-		"folke/lazydev.nvim",
-		ft = "lua",
-		opts = {
-			library = {
-				{ path = "${3rd}/luv/library", words = { "vim%.uv" } },
-			},
-		},
-	},
-	{
-		"goolord/alpha-nvim",
-		config = function()
-			require("fastvim.configs.ui")
-		end,
-	},
-	{
-		"windwp/nvim-ts-autotag",
-		dependencies = {
-			"nvim-treesitter/nvim-treesitter",
-		},
-		config = function()
-			require("nvim-ts-autotag").setup({
-				filetypes = { "html", "xml", "javascript", "typescript", "tsx", "jsx", "vue" },
-				enable_check_bracket_line = false,
-				autotag = {
-					enable = true,
-				},
-			})
-		end,
-	},
-	{
-		"jake-stewart/multicursor.nvim",
-		branch = "1.0",
-	},
-	{
-		"mfussenegger/nvim-jdtls",
-		lazy = false,
-	},
-	{
-		"echasnovski/mini.statusline",
-		config = function()
-			require("mini.statusline").setup({ set_vim_settings = false })
-		end,
-	},
-	{
-		"saghen/blink.cmp",
-		dependencies = "rafamadriz/friendly-snippets",
+  {
+    "BrunoCiccarino/nekonight",
+    lazy = false,
+  },
+  {
+    "folke/todo-comments.nvim",
+    event = "VimEnter",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = { signs = false },
+  },
+  {
+    "folke/lazydev.nvim",
+    ft = "lua",
+    opts = {
+      library = {
+        { path = "${3rd}/luv/library", words = { "vim%.uv" } },
+      },
+    },
+  },
+  {
+    "folke/lazydev.nvim",
+    ft = "lua",
+    opts = {
+      library = {
+        { path = "${3rd}/luv/library", words = { "vim%.uv" } },
+      },
+    },
+  },
   {
     "pmizio/typescript-tools.nvim",
     opts = {},
@@ -126,64 +35,58 @@ return {
     config = function()
       require("typescript-tools").setup {}
     end,
+  },
   {
-
-		version = "*",
-		---@module 'blink.cmp'
-		---@type blink.cmp.Config
-		config = function()
-			require("fastvim.configs.blink-cmp")
-		end,
-	},
-	{
-		"xzbdmw/colorful-menu.nvim",
-		config = function()
-			require("fastvim.configs.colorful-menu")
-		end,
-	},
-	{
-		"lukas-reineke/indent-blankline.nvim",
-		event = { "BufReadPre", "BufNewFile" },
-		config = function()
-			require("ibl").setup({
-				indent = { char = "│" },
-				scope = { char = "│", highlight = "Comment" },
-			})
-		end,
-	},
-	{
-		"nvim-telescope/telescope.nvim",
-		cmd = "Telescope",
-		opts = require("fastvim.configs.telescope"),
-	},
-	{
-		"williamboman/mason.nvim",
-		build = ":MasonUpdate",
-		cmd = { "Mason", "MasonInstall" },
-		opts = {
-			ensure_installed = {
-				"clangd",
-				"golps",
-				"ts_ls",
-				"jdtls",
-			},
-		},
-	},
-	{
-		"akinsho/bufferline.nvim",
-		event = "BufReadPre",
-		opts = require("fastvim.configs.bufferline"),
-	},
-	{
-		"nvim-neo-tree/neo-tree.nvim",
-		branch = "v3.x",
-		dependencies = {
-			"nvim-lua/plenary.nvim",
-			"BrunoCiccarino/neokinds",
-			"MunifTanjim/nui.nvim",
-		},
-		config = function()
-			require("fastvim.configs.neo-tree")
-		end,
-	},
+    "windwp/nvim-ts-autotag",
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+    },
+    config = function()
+      require("nvim-ts-autotag").setup {
+        filetypes = { "html", "xml", "javascript", "typescript", "tsx", "jsx", "vue" },
+        enable_check_bracket_line = false,
+        autotag = {
+          enable = true,
+        },
+      }
+    end,
+  },
+  {
+    "jake-stewart/multicursor.nvim",
+    branch = "1.0",
+  },
+  {
+    "mfussenegger/nvim-jdtls",
+    lazy = false,
+  },
+  {
+    "echasnovski/mini.statusline",
+    config = function()
+      require("mini.statusline").setup { set_vim_settings = false }
+    end,
+  },
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    event = { "BufReadPre", "BufNewFile" },
+    config = function()
+      require("ibl").setup {
+        indent = { char = "│" },
+        scope = { char = "│", highlight = "Comment" },
+      }
+    end,
+  },
+  require "fastvim.configs.plenary",
+  require "fastvim.configs.mini",
+  require "fastvim.configs.telescope",
+  require "fastvim.configs.mason",
+  require "fastvim.configs.bufferline",
+  require "fastvim.configs.neo-tree",
+  require "fastvim.configs.toggleterm",
+  require "fastvim.configs.neokinds-config",
+  require "fastvim.configs.treesitter",
+  require "fastvim.configs.conform",
+  require "fastvim.configs.lsp",
+  require "fastvim.configs.ui",
+  require "fastvim.configs.blink-cmp",
+  require "fastvim.configs.colorful-menu",
 }

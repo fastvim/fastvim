@@ -2,7 +2,6 @@ return {
   "BrunoCiccarino/neokinds",
   config = function()
     local neokinds = require "neokinds"
-
     neokinds.setup {
       icons = {
         diagnostics = {
