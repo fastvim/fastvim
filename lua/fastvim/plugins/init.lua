@@ -7,13 +7,8 @@ return {
   require "fastvim.configs.plenary",
   require "fastvim.configs.mini",
   require "fastvim.configs.toggleterm",
+  require "fastvim.configs.neokinds",
 
-	{
-		"BrunoCiccarino/neokinds",
-		config = function()
-			require("fastvim.configs.neokinds")
-		end,
-	},
 	{
 		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate",
