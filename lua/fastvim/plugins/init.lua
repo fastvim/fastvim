@@ -87,15 +87,6 @@ return {
 		end,
 	},
 	{
-		"pmizio/typescript-tools.nvim",
-		opts = {},
-		dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
-		ft = { "javascript", "javascriptreact", "typescript", "typescriptreact", "vue" },
-		config = function()
-			require("fastvim.configs.lsp")
-		end,
-	},
-	{
 		"windwp/nvim-ts-autotag",
 		dependencies = {
 			"nvim-treesitter/nvim-treesitter",
@@ -127,6 +118,15 @@ return {
 	{
 		"saghen/blink.cmp",
 		dependencies = "rafamadriz/friendly-snippets",
+  {
+    "pmizio/typescript-tools.nvim",
+    opts = {},
+    dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
+    ft = { "javascript", "javascriptreact", "typescript", "typescriptreact", "vue" },
+    config = function()
+      require("typescript-tools").setup {}
+    end,
+  {
 
 		version = "*",
 		---@module 'blink.cmp'
