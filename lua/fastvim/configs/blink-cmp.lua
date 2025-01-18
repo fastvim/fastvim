@@ -2,12 +2,14 @@ local neokinds = require "neokinds"
 
 require("blink-cmp").setup {
   completion = {
-    list = {
-      selection = {
-        preselect = true,
-        auto_insert = false,
-      },
-    },
+		-- TODO: fix this
+    -- this block of code for some reason is breaking the whole plugin
+    --list = {
+    --   selection = {
+    --     preselect = true,
+    --     auto_insert = false,
+    --   },
+    -- },
     menu = {
       border = "rounded",
       winhighlight = "Normal:NormalFloat,FloatBorder:FloatBorder,CursorLine:PmenuSel,Search:None",
