@@ -6,14 +6,8 @@ return {
 	},
   require "fastvim.configs.plenary",
   require "fastvim.configs.mini",
+  require "fastvim.configs.toggleterm",
 
-	{
-		"akinsho/toggleterm.nvim",
-		version = "*",
-		config = function()
-			require("fastvim.configs.toggleterm")
-		end,
-	},
 	{
 		"BrunoCiccarino/neokinds",
 		config = function()
