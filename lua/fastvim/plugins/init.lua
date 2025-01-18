@@ -8,14 +8,8 @@ return {
   require "fastvim.configs.mini",
   require "fastvim.configs.toggleterm",
   require "fastvim.configs.neokinds",
+  require "fastvim.configs.treesitter",
 
-	{
-		"nvim-treesitter/nvim-treesitter",
-		build = ":TSUpdate",
-		config = function()
-			require("fastvim.configs.treesitter")
-		end,
-	},
 	{
 		"stevearc/conform.nvim",
 		event = { "BufWritePre" },
