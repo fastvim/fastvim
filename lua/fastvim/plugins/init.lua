@@ -1,17 +1,11 @@
 return {
 	{
-		"echasnovski/mini.nvim",
-		version = "*",
-		config = function()
-			require("fastvim.configs.mini")
-		end,
-	},
-	{
 		"BrunoCiccarino/nekonight",
 		lazy = false,
 		otps = {},
 	},
   require "fastvim.configs.plenary",
+  require "fastvim.configs.mini",
 
 	{
 		"akinsho/toggleterm.nvim",
