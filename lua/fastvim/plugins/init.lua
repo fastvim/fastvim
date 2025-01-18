@@ -1,80 +1,15 @@
 return {
 	{
-		lazy = true,
-		"nvim-lua/plenary.nvim",
-		config = function()
-			require("fastvim.configs.plenary")
-		end,
-	},
-	{
-		"echasnovski/mini.nvim",
-		version = "*",
-		config = function()
-			require("fastvim.configs.mini")
-		end,
-	},
-	{
 		"BrunoCiccarino/nekonight",
 		lazy = false,
 		otps = {},
 	},
+  require "fastvim.configs.plenary",
+  require "fastvim.configs.mini",
+  require "fastvim.configs.toggleterm",
+  require "fastvim.configs.neokinds",
+  require "fastvim.configs.treesitter",
 
-	{
-		"akinsho/toggleterm.nvim",
-		version = "*",
-		config = function()
-			require("fastvim.configs.toggleterm")
-		end,
-	},
-	{
-		"BrunoCiccarino/neokinds",
-		config = function()
-			require("fastvim.configs.neokinds")
-		end,
-	},
-	{
-		"nvim-treesitter/nvim-treesitter",
-		build = ":TSUpdate",
-		config = function()
-			require("fastvim.configs.treesitter")
-		end,
-	},
-	{
-		"stevearc/conform.nvim",
-		event = { "BufWritePre" },
-		cmd = { "ConformInfo" },
-		keys = {
-			{
-				"<leader>f",
-				function()
-					require("conform").format({ async = true, lsp_format = "fallback" })
-				end,
-				mode = "",
-				desc = "[F]ormat buffer",
-			},
-		},
-		opts = {
-			notify_on_error = false,
-			format_on_save = function(bufnr)
-				local disable_filetypes = { c = true, cpp = true }
-				local lsp_format_opt
-				if disable_filetypes[vim.bo[bufnr].filetype] then
-					lsp_format_opt = "never"
-				else
-					lsp_format_opt = "fallback"
-				end
-				return {
-					timeout_ms = 500,
-					lsp_format = lsp_format_opt,
-				}
-			end,
-			formatters_by_ft = {
-				lua = { "stylua" },
-				python = { "isort", "black" },
-				javascript = { "prettierd", "prettier", stop_after_first = true },
-			},
-		},
-	},
 	{
 		"folke/todo-comments.nvim",
 		event = "VimEnter",
@@ -152,15 +87,6 @@ return {
 		end,
 	},
 	{
-		"pmizio/typescript-tools.nvim",
-		opts = {},
-		dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
-		ft = { "javascript", "javascriptreact", "typescript", "typescriptreact", "vue" },
-		config = function()
-			require("fastvim.configs.lsp")
-		end,
-	},
-	{
 		"windwp/nvim-ts-autotag",
 		dependencies = {
 			"nvim-treesitter/nvim-treesitter",
@@ -192,6 +118,15 @@ return {
 	{
 		"saghen/blink.cmp",
 		dependencies = "rafamadriz/friendly-snippets",
+  {
+    "pmizio/typescript-tools.nvim",
+    opts = {},
+    dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
+    ft = { "javascript", "javascriptreact", "typescript", "typescriptreact", "vue" },
+    config = function()
+      require("typescript-tools").setup {}
+    end,
+  {
 
 		version = "*",
 		---@module 'blink.cmp'
