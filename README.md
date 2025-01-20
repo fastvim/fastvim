@@ -52,7 +52,6 @@ Get ready to experience a Neovim setup that just works, without all the hassle. 
   - [💻 Setup](#-setup)
   - [Quickstart](#quickstart)
     - [🗺️ keymaps](#️-keymaps)
-    - [⚙️  Unified Guide: Customizing FastVim](#️--unified-guide-customizing-fastvim)
   - [Tasks](#tasks)
   - [Goals](#goals)
 - [🔥 Contributing](#-contributing)
@@ -70,21 +69,6 @@ Get ready to experience a Neovim setup that just works, without all the hassle. 
 - 🚀 Super fast
 - 🧹 Common settings for options, autocms and keymaps
 - 📦 Contains a variety of pre-configured and ready-to-use plugins
-
-- ⚙️ **LSP (Language Server Protocol)**:
-    - 🖥️ **astro.lua** - Astro server configuration
-    - 🖥️ **angular.lua** - Angular server configuration
-    - 🖥️ **clangd.lua** - clangd server configuration
-    - 🌐 **cssls.lua** - CSSLS server configuration
-    - 🖥️ **go.lua** - Go server configuration
-    - 🌐 **html.lua** - HTML server configuration
-    - 🖥️ **java.lua** - Java server configuration
-    - 🖥️ **lua.lua** - Lua server configuration
-    - 🖥️ **python.lua** - Python server configuration
-    - 🖥️ **svelte.lua** - Svelte server configuration
-    - 🖥️ **ts_ls.lua** - TypeScript/JavaScript server configuration
-    - 🔧 **utils.lua** - LSP utilities
-    - 🖥️ **vue.lua** - Vue server configuration
 
 ## 📦 requirements 
 
@@ -245,50 +229,6 @@ To make your workflow much more fluid, we created countless keyboard shortcuts b
 | ctrl+t             | open toggle terminal              |
 | ctrl+d             | open fastvim user reference manual|
 
-#### ⚙️  Unified Guide: Customizing FastVim 
-
-FastVim has two interesting configurable features: seamless theme switching and the File Starter module. Both are simple to configure and give you control over the behavior of your editor. Let’s explore both options!
-
-Configuration directory
-FastVim uses a dedicated directory for configurations, and its location depends on your operating system:
-
-- Linux: `~/.fast.d/`
-- Windows: `%AppData%\\.fast.d\\` (this points to the Roaming directory).
-Make sure this directory exists before proceeding.
-
-Configuring theme switching
-Customize the look of your editor by easily switching themes.
-
-Open your operating system’s configuration directory.
-Inside .fast.d, make sure there is an init.lua file (create it if necessary).
-
-Add this line to set your desired theme:
-
-```lua
-vim.g.define_colorscheme("themename")
-```
-
-Replace "themename" with your desired theme, such as "gruvbox":
-
-```lua
-vim.g.define_colorscheme("gruvbox")
-```
-Managing the File Starter module:
-The File Starter module is disabled by default, automatically creating Java class files. If performance is your priority, you can enable it.
-
-In the same init.lua file, add the following line to enable the module:
-```lua
-vim.g.auto_create_java_class = true
-```
-
-The FastVim loader will automatically parse the init.lua file in your configuration directory and apply all the settings during Neovim startup. No extra steps are necessary — just set your preferences and they will take effect.
-
-Why configure these features?
-Theme Switcher: Customize your editor with styles that match your taste, whether vibrant or minimalist.
-File starter: Saves you time by automatically creating a class when opening an empty Java file.
-
-This setup ensures flexibility while maintaining simplicity in configuration.
-
 ### Tasks
 
 - Handlers:
@@ -363,4 +303,11 @@ This project thanks everyone who inspired it
 
 ## ☕ Sponsor this project
 
+<div align="center"> 
+
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/ciccabr9p)
+[!["ko-fi"](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/brunociccarinoo)
+[!["github-sponsors"](https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#white)](https://github.com/sponsors/BrunoCiccarino/)
+</div>
+
+<p align="center">Copyright © 2025 fastvim</p>
