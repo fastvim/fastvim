@@ -45,6 +45,15 @@
 - live-server
 - zenmode 
 - nvim-tree
+- neorg 
+- lualine
+- gamify.nvim
+- monaspace.nvim
+- neoscroll.nvim
+- nvim-cmp
+- nvim-tree.lua
+- nui.nvim
+- auto-save.nvim
 
 ## 0.0.4 2025-01-02
 
