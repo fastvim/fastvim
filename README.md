@@ -1,7 +1,7 @@
 <h1 align="center">
   <br>
   <a href="https://github.com/fastvim/fastvim">
-    <img src="./fastvim.png" width="600" height="400">
+    <img src="https://i.ibb.co/gMZpKy2/Untitled-89.png">
   </a>
   <br>
   FastVim <img src="https://github.com/BrunoCiccarino/BrunoCiccarino/blob/main/img/icons8-lua-language-96.png" height="48" width="48"> 
