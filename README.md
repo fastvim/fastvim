@@ -1,8 +1,11 @@
 <h1 align="center">
   <br>
   <a href="https://github.com/fastvim/fastvim">
-    <img src="https://i.ibb.co/gMZpKy2/Untitled-89.png">
+    <img src="./fastvim.png" width="600" height="400">
   </a>
+  <br>
+  FastVim <img src="https://github.com/BrunoCiccarino/BrunoCiccarino/blob/main/img/icons8-lua-language-96.png" height="48" width="48"> 
+  <br>
 </h1>
 
 <p align="center">
@@ -41,190 +44,7 @@ This distro has everything you need for a smooth and efficient workflow, and if 
 
 Get ready to experience a Neovim setup that just works, without all the hassle. Let’s get you set up, fast and easy!
 
-- [✨ Features](#-features)
-- [📦 requirements](#-requirements)
-- [💤 Installation](#-installation)
-    - [linux or mac](#linux-or-mac)
-    - [Windows](#windows)
-  - [💻 Setup](#-setup)
-  - [Quickstart](#quickstart)
-    - [🗺️ keymaps](#️-keymaps)
-  - [Tasks](#tasks)
-  - [Goals](#goals)
-- [🔥 Contributing](#-contributing)
-- [Contributors](#contributors)
-- [👏 Acknowledgements](#-acknowledgements)
-- [👨‍🏫 Team](#-team)
-- [☕ Sponsor this project](#-sponsor-this-project)
-
-![dashboard](./img/fastlazyvim.jpg)
-![code](./img/fastcode.jpg)
-
-## ✨ Features
-- 🔥 Turn your Neovim into a complete IDE.
-- 💤 Customize and extend your configuration easily with lazy.nvim
-- 🚀 Super fast
-- 🧹 Common settings for options, autocms and keymaps
-- 📦 Contains a variety of pre-configured and ready-to-use plugins
-
-## 📦 requirements 
-
-- Neovim >= 0.9.0 (needs to be built with LuaJIT)
-- Git >= 2.19.0 (for partial clones support)
-- a Nerd Font(v3.0 or greater) (optional, but needed to display some icons)
-- a C compiler for nvim-treesitter. See [here](https://github.com/nvim-treesitter/nvim-treesitter#requirements)
-- pnpm for compile live server plugin (optional, but needed to load live server)
-- build-essential needed to compile lua snip
-
-## 💤 Installation
-
-> [!WARNING]
-> Please, before installing, remember to make a backup of your dotfiles.
-
-```
-mv ~/.config/nvim ~/.config/nvim.bak
-mv ~/.local/share/nvim ~/.local/share/nvim.bak 
-
-# optional but recommended
-mv ~/.local/state/nvim{,.bak}
-mv ~/.cache/nvim{,.bak}
-```
-
-#### linux or mac
-
-```bash
-git clone https://github.com/fastvim/fastvim.git ~/.config/nvim 
-cd .config/nvim
-nvim # Then it will download everything by itself
-```
-#### Windows
-
-```posh
-git clone https://github.com/fastvim/fastvim.git $HOME\AppData\Local\nvim 
-```
-
-### 💻 Setup
-
-For the distro to work as expected, we need to configure a few things, let's start by downloading the lsp(language server protocol) that you will use by installing with mason
-
-To do this you type: `MasonInstall LspName`
-
-Ex: 
-
-```
-:MasonInstall clangd
-```
-Or if you are java dev 
-
-```
-MasonInstall jdtls
-```
-
-Lsp (language server protocol) bring you countless benefits when coding, such as auto completions, syntactic error warnings in real time, and for this we have some plugins like [nvim-cmp](), for snippets we have [ luasnip]() that works exceptionally well and we have mini.pairs to autocomplete special characters like [], (), <>, etc...
-
-![code-completions](./img/fastcodecompletions.jpg)
-
-With the setup complete, you're now ready to dive into using your new Neovim IDE. Let's get started!
-
-### Quickstart
-
-Now that everything is set up, let's jump into using FastVim. Follow these steps to start coding efficiently:
-
-Open Neovim
-Launch Neovim by running:
-
-```bash
-nvim
-```
-Explore the Dashboard
-Upon starting Neovim, you'll see a customizable dashboard. Use it to quickly open recent files, create new projects, or access settings.
-
-Install Plugins
-Ensure all required plugins are installed by running:
-
-```bash
-:Lazy
-```
-This will display the plugin manager. Press u to update all plugins.
-
-Set Up LSP
-If you haven't installed your language server yet, use Mason:
-
-```bash
-:MasonInstall <LspName>
-```
-Replace <LspName> with the appropriate server for your language (e.g., clangd for C/C++, jdtls for Java).
-
-Start Coding
-Open a file or create a new one:
-
-```bash
-nvim myfile.<extension>
-```
-Replace <extension> with the file type you're working with (e.g., java, go, sql). Autocompletions, syntax highlighting, and LSP features will be ready to assist you.
-
-**update distro**
-
-To update the distro you have two options, `:FastUpdate` which will update the distro to the latest version, and `:FastStable` which will update the distro to the latest stable version (recommended)
-
-**Explore Keymaps**
-This configuration comes with pre-mapped keys for common actions. Check the keybindings guide by pressing:
-
-```bash
-:help keymaps
-```
-
-FastVim features a robust, Telescope-based search-and-replace system designed to optimize your workflow. With just two commands, you can efficiently find and replace terms across your project:
-
-Replace in Selected Files: `:LazyReplace`
-Use this command to replace terms within files containing matches for your search term.
-FastVim will perform the replacements in the selected files and provide a summary of the results.
-
-Replace Everywhere: `:LazyReplaceAll`
-For project-wide replacements, simply use `:LazyReplaceAll`.
-
-**documentation**
-
-In this latest update of version 0.0.4 we added documentation written in neorg, as neorg is more complete, both in highlighting and other features, it is as good as markdown for documentation, and at any time you can open the documentation to ask any questions with `Ctrl + d`. 
-
-You're now ready to enjoy a complete IDE experience with FastVim!
-
-#### 🗺️ keymaps
-
-To make your workflow much more fluid, we created countless keyboard shortcuts both to use the incredible plugins and to move around neovim in a faster and more efficient way.
-
-| shortcut           | action                            |
-|--------------------|-----------------------------------|
-| \fu                | fast update                       |
-| \fs                | fast stable distro update         |
-| ctrl-h             | focus_nvimtree                    |
-| ctrl-n             | toggle_nvimtree                   |
-| \ff                | find_files                        |
-| \fo                | recent_files                      |
-| \fw                | live_grep                         |
-| \gt                | git_status                        |
-| Tab                | cycle_buffer_next                 |
-| S-Tab              | cycle_buffer_prev                 |
-| ctrl-q             | close_buffer                      |
-| \/ (Normal)        | toggle_comment_line               |
-| \/ (Visual)        | toggle_comment_block              |
-| \fm                | format_code                       |
-| ctrl-\             | open_themery                      |
-| \t                 | split_terminal_horizontal         |
-| \tv                | split_terminal_vertical           |
-| A-Up (Insert)      | move_line_up                      |
-| A-Down (Insert)    | move_line_down                    |
-| ctrl-Up (Insert)   | select_line_up                    |
-| ctrl-Down (Insert) | select_line_down                  |
-| ctrl-left (Insert) | select_line_left                  |
-| ctrl-right (Insert)| select_line_right                 |
-| \nw                | neorg_switch_workspace            |
-| \nn                | neorg_open_index                  |
-| \nt                | neorg_toggle_concealer            |
-| \nh                | neorg_toggle_todo                 |
-| \nc                | neorg_toggle_concealer_visibility |
-| ctrl+t             | open toggle terminal              |
-| ctrl+d             | open fastvim user reference manual|
+To find out more about the distro consult our [reference material](https://fastvim.github.io/docs/intro)
 
 ### Tasks
 
@@ -300,11 +120,4 @@ This project thanks everyone who inspired it
 
 ## ☕ Sponsor this project
 
-<div align="center"> 
-
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/ciccabr9p)
-[!["ko-fi"](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/brunociccarinoo)
-[!["github-sponsors"](https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#white)](https://github.com/sponsors/BrunoCiccarino/)
-</div>
-
-<p align="center">Copyright © 2025 fastvim</p>

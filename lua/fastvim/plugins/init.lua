@@ -75,15 +75,6 @@ return {
       }
     end,
   },
-  {
-    "BrunoCiccarino/webdev.nvim",
-    dependencies = {
-      "ColinKennedy/mega.cmdparse",
-      "ColinKennedy/mega.logging",
-      "stevearc/dressing.nvim",
-      "rcarriga/nvim-notify",
-    },
-  },
   require "fastvim.configs.plenary",
   require "fastvim.configs.mini",
   require "fastvim.configs.telescope",

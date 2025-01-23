@@ -1,20 +1,16 @@
 return {
-  "nvim-neo-tree/neo-tree.nvim",
-  branch = "v3.x",
-  dependencies = {
-    "nvim-lua/plenary.nvim",
-    "BrunoCiccarino/neokinds",
-    "MunifTanjim/nui.nvim",
-  },
-  cmd = "Neotree",
-  keys = {
-    { "\\", ":Neotree reveal<CR>", desc = "NeoTree reveal", silent = true },
-  },
-  -- Did it this way so i dont need to change it too much now
-  -- TODO: We should probably take a look into this later
-  opts = function()
-    local neokinds = require "neokinds"
-    return {
+    'nvim-neo-tree/neo-tree.nvim',
+    version = '*',
+    dependencies = {
+      'nvim-lua/plenary.nvim',
+      'BrunoCiccarino/neokinds',
+      'MunifTanjim/nui.nvim',
+    },
+    cmd = 'Neotree',
+    keys = {
+      { '\\', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
+    },
+    opts = {
       close_if_last_window = false,
       popup_border_style = "rounded",
       enable_git_status = true,
@@ -38,10 +34,10 @@ return {
         },
         window = {
           mappings = {
-            ["\\"] = "close_window",
+            ['\\'] = 'close_window',
           },
         },
       },
-    }
-  end,
-}
+    },
+  }
+  
