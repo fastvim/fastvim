@@ -1,7 +1,7 @@
 <h1 align="center">
   <br>
   <a href="https://github.com/fastvim/fastvim">
-    <img src="./fastvim.png" width="600" height="400">
+    <img src="./fastvim.png">
   </a>
   <br>
   FastVim <img src="https://github.com/BrunoCiccarino/BrunoCiccarino/blob/main/img/icons8-lua-language-96.png" height="48" width="48"> 
@@ -120,4 +120,10 @@ This project thanks everyone who inspired it
 
 ## ☕ Sponsor this project
 
+<div align="center"> 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/ciccabr9p)
+[!["ko-fi"](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/brunociccarinoo)
+[!["github-sponsors"](https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#white)](https://github.com/sponsors/BrunoCiccarino/)
+</div>
+
+<p align="center">Copyright © 2025 fastvim</p>
