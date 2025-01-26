@@ -1,6 +1,6 @@
 return {
   {
-    "BrunoCiccarino/nekonight",
+    "neko-night/nvim",
     lazy = false,
   },
   {
