@@ -1,5 +1,9 @@
 return {
   {
+    "xiyaowong/transparent.nvim",
+    lazy = false,
+  },
+  {
     "neko-night/nvim",
     lazy = false,
   },
@@ -75,6 +79,7 @@ return {
       }
     end,
   },
+  require "fastvim.configs.transparent",
   require "fastvim.configs.plenary",
   require "fastvim.configs.mini",
   require "fastvim.configs.telescope",
