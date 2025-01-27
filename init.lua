@@ -20,5 +20,5 @@ local plugins = require "fastvim.plugins"
 require("lazy").setup(plugins)
 
 vim.cmd "syntax enable"
-vim.cmd "colorscheme nekonight-dracula"
+vim.cmd "colorscheme nekonight-deep-ocean"
 require "fastvim.core.mappings"
